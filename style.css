@@ -1,0 +1,289 @@
+* {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+#container-1 {
+  height: 700px;
+  border: 2px solid red;
+  background-image: url(assets/bgImage-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* COMPANIES SECTION */
+#container-2 {
+  /* border: 2px solid green; */
+  height: 150px;
+  width: 90%;
+  /* max-width: 1140px; */
+  padding: 40px 0px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  /* border: 2px solid black; */
+  width: 16%;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box img {
+  filter: grayscale(100%);
+  opacity: 0.4;
+  transition: 0.2s ease;
+}
+.box img:hover {
+  filter: none;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* OUR FEATURES SECTION  */
+#container-3 {
+  /* border: 2px solid yellow; */
+  height: 450px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf5f8;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.features {
+  /* border: 2px solid grey; */
+  height: 100%;
+  width: 24%;
+  margin: 0px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.features-img {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+.features-head {
+  text-align: center;
+  margin: 0px 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  padding: 10px 15px;
+}
+.about-features {
+  top: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 18px;
+  color: grey;
+}
+#consult-head {
+  margin-left: 15%;
+  text-align: left;
+}
+#consult-p {
+  margin-left: 10%;
+  text-align: left;
+}
+.consult-btn {
+  display: block;
+  height: 45px;
+  width: 150px;
+  background: #571f9c;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-size: 14px;
+  margin: 20px 0px;
+  margin-left: -10%;
+}
+
+/* HIRE US SECTION  */
+#container-4 {
+  /* border: 2px solid cyan; */
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+}
+#container-4-h3 {
+  margin-top: 80px;
+  color: grey;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+#container-4-hr {
+  background-color: rgb(214, 210, 210);
+  width: 28%;
+}
+#container-4-h2 {
+  margin: 20px 10px;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+}
+#container-4-p {
+  text-align: center;
+  margin: 10px auto;
+  width: 50%;
+  font-size: 15px;
+  color: grey;
+}
+#container-4-btn-1 {
+  margin-top: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: rgb(214, 213, 213);
+  cursor: pointer;
+}
+.fa-thumbs-up {
+  font-size: 25px;
+}
+#vertical-line {
+  border-left: 2px solid rgb(214, 213, 213);
+  height: 100px;
+}
+#container-4-btn-2 {
+  height: 60px;
+  width: 200px;
+  color: #571f9c;
+  border: 4px solid #571f9c;
+  background-color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-delay: 0.1s ease;
+  transition-duration: 0.6s;
+}
+#container-4-btn-1:hover {
+  background-color: #571f9c;
+  color: white;
+  transition-delay: 0.2s ease;
+  transition-duration: 0.6s;
+}
+#container-4-btn-1:hover ~ #container-4-btn-2 {
+  background-color: #571f9c;
+  color: white;
+  animation-iteration-count: 1;
+}
+#container-4-btn-2:hover {
+  background-color: #571f9c;
+  color: white;
+}
+/* #container-4-btn-2:hover + #container-4-btn-1 {
+  background-color: #571f9c;
+  color: white;
+  transition-delay: 0.2s ease;
+  transition-duration: 0.6s;
+} */
+
+/* SERVICES SECTION  */
+#container-5 {
+  /* border: 2px solid antiquewhite; */
+  height: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+#container-5-h4 {
+  margin: 10px 0px;
+  color: grey;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+#container-5-h1 {
+  margin-bottom: 30px;
+  font-size: 70px;
+  /* font-weight: bold; */
+}
+#items {
+  /* border: 2px solid black; */
+  width: 75%;
+  margin: 10px auto;
+  padding: 10px 60px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  border-color: rgba(0, 0, 0, 0.08);
+  height: 340px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px;
+  padding: 50px 50px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.item:hover {
+  background-color: #edf5f8;
+}
+.item-img {
+  height: 100px;
+  width: 100px;
+  margin: 0px auto;
+}
+.item-content-head {
+  font-size: 25px;
+  margin: 10px 10px;
+  font-weight: lighter;
+}
+.item-content {
+  margin: 15px 0px;
+  color: grey;
+}
+
+/* SECTION FOR TEAM  */
+#container-6 {
+  height: 780px;
+  width: 100%;
+  background-color: #edf5f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-items: center; */
+}
+#container-6-h4 {
+  font-size: 15px;
+  color: grey;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+#container-6-h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+#members {
+  border: 2px solid brown;
+  height: 550px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.member {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 10px;
+  height: 450px;
+  width: 22%;
+  margin: 10px;
+}
