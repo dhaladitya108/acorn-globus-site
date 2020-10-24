@@ -1,0 +1,200 @@
+/* OUR FEATURES SECTION  */
+#container-3 {
+  height: 1100px;
+  flex-wrap: wrap;
+}
+.features {
+  height: 25%;
+  width: 100%;
+  margin: 0px 0px;
+}
+.features-head {
+  font-weight: bold;
+}
+.about-features {
+  padding: 10px 20px;
+  font-size: 15px;
+  width: 50%;
+}
+#consult-head {
+  margin: 0px auto;
+  text-align: center;
+  font-size: 28px;
+}
+#consult-p {
+  margin: 5px 0px;
+  text-align: center;
+}
+.consult-btn-container {
+  margin: 10px auto;
+}
+/* HIRE US SECTION  */
+#container-4-h2 {
+  font-size: 35px;
+}
+#container-4-p {
+  width: 70%;
+}
+#container-4-btn-2 {
+  height: 50px;
+  width: 180px;
+  font-size: 26px;
+}
+
+/* SERVICES SECTION  */
+#container-5 {
+  height: 2300px;
+}
+#container-5-h4 {
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+#container-5-h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+#items {
+  margin: 5px auto;
+  padding: 10px 50px;
+  justify-content: center;
+}
+.item {
+  height: 350px;
+  width: 400px;
+  padding: 50px 50px;
+}
+.item:focus {
+  background-color: #edf5f8;
+}
+
+/* TEAMS SECTION  */
+#container-6 {
+  height: 1520px;
+}
+#container-6-h4 {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+#container-6-h2 {
+  font-size: 45px;
+}
+#members {
+  height: 1250px;
+  flex-wrap: wrap;
+}
+.member {
+  height: 400px;
+  width: 60%;
+}
+.member-img-container {
+  height: 120px;
+  width: 120px;
+  margin: 30px auto;
+}
+.member-img {
+  height: 120px;
+  width: 120px;
+}
+.member-name {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.member-role {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+/* SECTION TO DISPLAY THE NUMBER OF TIMES WE ARE CONTACTED  */
+#container-7 {
+  height: 900px;
+  flex-wrap: wrap;
+}
+.blocks {
+  width: 50%;
+  height: 200px;
+}
+.blocks-img {
+  margin-top: 30px;
+}
+.counter {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.vl {
+  display: none;
+  height: 0px;
+  margin-top: 50px;
+}
+.h-line {
+  width: 10%;
+}
+.blocks:hover > .h-line {
+  width: 15%;
+}
+
+/* SUPPORT SECTION  */
+#container-8 {
+  height: 800px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.part {
+  background-color: #edf5f8;
+  width: 100%;
+  margin: 5px auto;
+}
+.part-img {
+  height: 120px;
+  width: 120px;
+  margin-left: 50px;
+}
+
+/* FOOTER SECTION  */
+footer {
+  height: 1100px;
+}
+#footer-content {
+  height: 1000px;
+  flex-wrap: wrap;
+}
+.footer-content-elements {
+  height: 24%;
+  width: 80%;
+}
+#work-days {
+  margin: 15px 10px;
+}
+#footer-element-2-h3 {
+  margin: 10px 10px;
+}
+.helpful-links {
+  margin: 10px 10px;
+}
+.h-link {
+  width: 30%;
+}
+#footer-element-3 {
+  height: 26%;
+}
+#footer-element-3-h3 {
+  margin: 5px 10px;
+}
+.support-member {
+  margin: 1px 0px;
+  width: 50%;
+}
+.support-member-name {
+  font-size: 18px;
+}
+#footer-element-4 {
+  margin-left: 20px;
+}
+#brochure-img {
+  width: 45%;
+}
+.brochure-download-btn {
+  width: 45%;
+  height: 55px;
+}

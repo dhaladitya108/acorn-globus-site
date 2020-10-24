@@ -277,7 +277,6 @@ html {
   align-items: center;
   justify-content: center;
   background: #edf5f8;
-  font-family: "Noto Sans JP", sans-serif;
 }
 .features {
   /* border: 2px solid grey; */
@@ -335,7 +334,7 @@ html {
   cursor: pointer;
   color: white;
   border: none;
-  font-size: 14px;
+  font-size: 15px;
   transition: 0.3s ease-in;
 }
 .consult-btn-container:hover {
@@ -344,6 +343,7 @@ html {
 .consult-btn-container:hover > .consult-btn {
   background: #4b1a86;
 }
+
 /* HIRE US SECTION  */
 #container-4 {
   /* border: 2px solid cyan; */
@@ -427,7 +427,7 @@ html {
 
 /* SERVICES SECTION  */
 #container-5 {
-  /* border: 2px solid antiquewhite; */
+  /* border: 2px solid red; */
   height: 900px;
   width: 100%;
   display: flex;
@@ -563,7 +563,7 @@ html {
 .member-name {
   font-size: 25px;
   margin: 5px auto;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .member-role {
   color: grey;
@@ -694,7 +694,6 @@ html {
 }
 
 /* FOOTER SECTION  */
-
 footer {
   background-color: #2a2a68;
   height: 460px;
