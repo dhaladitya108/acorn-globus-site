@@ -82,6 +82,12 @@ html {
   transition: 0.3s ease-out;
   color: red;
 }
+.header .menu-icon,
+.header .menu-btn {
+  display: none;
+}
+
+/* CONTENTS SECTION FOR HEAD  */
 #header-content {
   /* border: 2px solid cyan; */
   height: 85%;
@@ -140,7 +146,7 @@ html {
   color: white;
 }
 #area-2 {
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 32%;
   height: 84%;
   background-color: white;
@@ -236,15 +242,14 @@ html {
 #input-form button:focus {
   outline: none;
 }
+
 /* COMPANIES SECTION */
 #container-2 {
   /* border: 2px solid green; */
   height: 150px;
   width: 90%;
   /* max-width: 1140px; */
-  padding: 40px 0px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 40px 15px;
   margin: 0px auto;
   display: flex;
   flex-direction: row;
@@ -393,6 +398,7 @@ html {
   border: none;
   background-color: rgb(214, 213, 213);
   cursor: pointer;
+  outline: none;
 }
 .fa-thumbs-up {
   font-size: 25px;
