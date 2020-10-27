@@ -1,0 +1,197 @@
+/*SECTION FOR NAVIGATION BAR  */
+.nav-items {
+  width: 56%;
+}
+.nav-item-link {
+  font-size: 15px;
+}
+
+/* HEAD CONTENT SECTION  */
+#area-1-h2 {
+  font-size: 40px;
+}
+#area-2 {
+  width: 55%;
+}
+#area-2-h5 {
+  font-size: 22px;
+}
+#area-2-p {
+  font-size: 16px;
+}
+/* COMPANIES SECTION */
+#container-2 {
+  height: 350px;
+  width: 94%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  width: 30%;
+}
+
+/* FEATURES SECTION */
+#container-3 {
+  height: 620px;
+  flex-wrap: wrap;
+}
+.features {
+  width: 32%;
+  height: 380px;
+  margin: 2px 2px;
+}
+.about-features {
+  padding: 10px 20px;
+}
+#feature-1 {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+}
+#consult-head {
+  margin: 5px 0px;
+}
+#consult-p {
+  margin: 5px auto;
+  text-align: center;
+}
+.consult-btn-container {
+  margin: 15px auto;
+}
+/* SERVICES SECTION  */
+#container-5 {
+  height: 1250px;
+}
+#container-5-h4 {
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+#container-5-h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+#items {
+  margin: 5px auto;
+  padding: 10px 50px;
+  justify-content: center;
+}
+.item {
+  height: 350px;
+  width: 45%;
+  padding: 50px 50px;
+}
+.item:focus {
+  background-color: #edf5f8;
+}
+
+/* TEAMS SECTION  */
+#container-6 {
+  height: 1520px;
+}
+#container-6-h4 {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+#container-6-h2 {
+  font-size: 45px;
+}
+#members {
+  height: 1250px;
+  flex-wrap: wrap;
+}
+.member {
+  height: 400px;
+  width: 60%;
+}
+.member-img-container {
+  height: 120px;
+  width: 120px;
+  margin: 30px auto;
+}
+.member-img {
+  height: 120px;
+  width: 120px;
+}
+.member-name {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.member-role {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+/* SUPPORT SECTION  */
+#container-8 {
+  height: 800px;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.part {
+  background-color: #edf5f8;
+  width: 100%;
+  margin: 5px auto;
+}
+.part-img {
+  height: 120px;
+  width: 120px;
+  margin-left: 50px;
+}
+
+/* FOOTER SECTION  */
+footer {
+  height: 1100px;
+}
+#footer-content {
+  height: 1000px;
+  flex-wrap: wrap;
+}
+.footer-content-elements {
+  height: 24%;
+  width: 80%;
+}
+#work-days {
+  margin: 15px 10px;
+}
+#footer-element-2 {
+  height: 22%;
+}
+#footer-element-2-h3 {
+  margin: 10px 10px;
+}
+.helpful-links {
+  margin: 10px 10px;
+}
+.h-link {
+  width: 30%;
+}
+#footer-element-3 {
+  height: 26%;
+}
+#footer-element-3-h3 {
+  margin: 5px 10px;
+}
+.support-member {
+  margin: 2px 0px;
+  width: 50%;
+}
+.support-member-details {
+  width: 55%;
+}
+.support-member-name {
+  font-size: 20px;
+}
+#footer-element-4 {
+  height: 27%;
+}
+#brochure-img {
+  margin-left: 10px;
+  width: 42%;
+}
+.brochure-download-btn {
+  width: 42%;
+  height: 45px;
+  margin-left: 10px;
+}

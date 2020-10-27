@@ -9,7 +9,8 @@
 }
 #nav-bar {
   height: 40px;
-  width: 100%;
+  width: 82%;
+  margin: 10px auto;
   padding: 5px 2px;
 }
 .nav-items {
@@ -214,9 +215,10 @@
 .consult-btn-container {
   margin: 10px auto;
 }
+
 /* HIRE US SECTION  */
 #container-4-h2 {
-  font-size: 35px;
+  font-size: 30px;
 }
 #container-4-p {
   width: 70%;
@@ -350,7 +352,7 @@ footer {
   width: 80%;
 }
 #work-days {
-  margin: 15px 10px;
+  margin: 5px 10px;
 }
 #footer-element-2-h3 {
   margin: 10px 10px;

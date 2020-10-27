@@ -1,7 +1,7 @@
 * {
   margin: 0px 0px;
   padding: 0px 0px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -35,6 +35,15 @@ html {
   align-items: center;
   background-color: transparent;
   /* position: fixed; */
+}
+#logo img {
+  /* margin: 10px 10px; */
+  width: 200px;
+  height: 40px;
+  background-color: white;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  /* filter: invert(100%); */
+  padding: 5px 0px;
 }
 #logo:hover {
   cursor: pointer;
@@ -144,6 +153,7 @@ html {
   justify-content: center;
   align-items: center;
   color: white;
+  cursor: pointer;
 }
 #area-2 {
   /* border: 2px solid green; */
@@ -162,13 +172,14 @@ html {
   font-weight: 600;
   font-size: 25px;
   line-height: 1.3em;
-  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
 }
 #area-2-p {
   color: #5d5d75;
   font-size: 18px;
   margin: 10px auto;
   text-align: center;
+  font-family: "Roboto Slab", serif;
 }
 #who-are-you {
   /* border: 2px solid red; */
@@ -304,7 +315,8 @@ html {
   margin-bottom: 20px;
   font-size: 22px;
   padding: 10px 15px;
-  font-family: "Quicksand", sans-serif;
+  /* font-family: "Quicksand", sans-serif; */
+  font-family: "Roboto Slab", serif;
 }
 .about-features {
   top: 20px;
@@ -316,7 +328,6 @@ html {
 #consult-head {
   margin-left: 15%;
   text-align: left;
-  font-family: "Quicksand", sans-serif;
 }
 #consult-p {
   margin-left: 10%;
@@ -486,7 +497,10 @@ html {
   font-size: 25px;
   margin: 10px 10px;
   font-weight: lighter;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+.item-content-head strong {
+  font-family: "Roboto Slab", serif;
 }
 .item-content {
   margin: 15px 0px;
@@ -569,7 +583,7 @@ html {
 .member-name {
   font-size: 25px;
   margin: 5px auto;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .member-role {
   color: grey;
@@ -629,6 +643,7 @@ html {
   font-size: 35px;
   margin-top: 40px;
   font-weight: bold;
+  font-family: "Roboto Slab", serif;
 }
 .vl {
   height: 100px;
@@ -691,7 +706,10 @@ html {
   padding-left: 10px;
   font-weight: lighter;
   font-size: 25px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
+}
+.part-content-h4 strong {
+  font-family: "Roboto Slab", serif;
 }
 .part-content-p {
   margin: 10px 20px;
@@ -728,18 +746,24 @@ footer {
   color: rgb(131, 131, 169);
 }
 #company-logo-footer {
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 10px 10px;
+  /* border: 2px solid red; */
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  /* filter: invert(100%); */
+  padding: 5px 0px;
 }
 #company-moto-footer {
-  margin: 10px 10px;
+  margin: 5px 10px;
   font-size: 18px;
 }
 #work-days {
   font-size: 22px;
   color: white;
-  margin: 20px 10px;
-  font-family: "Quicksand", sans-serif;
+  margin: 10px 10px;
+  font-family: "Roboto Slab", serif;
 }
 .days {
   text-align: left;
@@ -756,7 +780,7 @@ footer {
   font-size: 25px;
   color: white;
   margin: 10px 20px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .helpful-links {
   /* border: 2px solid red; */
@@ -787,7 +811,7 @@ footer {
   font-size: 25px;
   color: white;
   margin: 10px 15px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .support-member {
   /* border: 2px solid red; */
@@ -801,7 +825,7 @@ footer {
   color: white;
   font-size: 20px;
   margin: 5px 5px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 .support-member-role {
   font-size: 15px;
