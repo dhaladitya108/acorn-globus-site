@@ -465,7 +465,7 @@ html {
 .item {
   border-color: rgba(0, 0, 0, 0.08);
   height: 340px;
-  width: 300px;
+  width: 33%;
   display: flex;
   flex-direction: column;
   border-style: solid;
@@ -687,9 +687,10 @@ html {
   flex-direction: column;
 }
 .part-content-h4 {
-  margin: 15px 20px;
+  margin: 15px 10px;
+  padding-left: 10px;
   font-weight: lighter;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Quicksand", sans-serif;
 }
 .part-content-p {
