@@ -156,7 +156,7 @@
 }
 #area-1-h2 {
   margin: 10px auto;
-  font-size: 45px;
+  font-size: 38px;
 }
 #recruit-together {
   height: 0px;
@@ -236,8 +236,11 @@
 #container-5-h4 {
   font-size: 15px;
   letter-spacing: 0.8px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 #container-5-h1 {
+  margin-top: 10px;
   margin-bottom: 20px;
   font-size: 40px;
 }
@@ -341,18 +344,27 @@
 
 /* FOOTER SECTION  */
 footer {
-  height: 1100px;
+  height: 600px;
 }
 #footer-content {
-  height: 1000px;
-  flex-wrap: wrap;
+  height: 500px;
+  /* flex-wrap: wrap; */
 }
 .footer-content-elements {
-  height: 24%;
-  width: 80%;
+  height: 48%;
+  width: 95%;
+}
+#company-moto-footer {
+  margin: 5px 10px;
+  font-size: 16px;
+  width: 70%;
+}
+.working-days-table {
+  width: 60%;
+  font-size: 16px;
 }
 #work-days {
-  margin: 5px 10px;
+  margin: 10px 10px;
 }
 #footer-element-2-h3 {
   margin: 10px 10px;
@@ -363,7 +375,10 @@ footer {
 .h-link {
   width: 30%;
 }
-#footer-element-3 {
+.h-link a {
+  font-size: 16px;
+}
+/* #footer-element-3 {
   height: 26%;
 }
 #footer-element-3-h3 {
@@ -385,4 +400,4 @@ footer {
 .brochure-download-btn {
   width: 45%;
   height: 55px;
-}
+} */

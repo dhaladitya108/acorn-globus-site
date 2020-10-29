@@ -56,7 +56,7 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
 }
 .nav-list-item {
@@ -67,6 +67,7 @@ html {
   margin: 0px 10px;
   font-size: 18px;
   text-decoration: none;
+  font-family: "Roboto Slab", serif;
 }
 .current-active {
   color: red;
@@ -117,7 +118,7 @@ html {
 #area-1-heading {
   font-size: 25px;
   font-weight: lighter;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
   letter-spacing: 2px;
 }
 #area-1-h2 {
@@ -125,7 +126,7 @@ html {
   font-size: 60px;
   font-weight: 600;
   letter-spacing: 1px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -172,7 +173,7 @@ html {
   font-weight: 600;
   font-size: 25px;
   line-height: 1.3em;
-  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 #area-2-p {
   color: #5d5d75;
@@ -193,7 +194,7 @@ html {
 }
 .option {
   width: 50%;
-  height: 100%;
+  height: 40px;
   color: rgb(57, 57, 139);
   font-size: 15px;
   font-weight: 550;
@@ -315,7 +316,6 @@ html {
   margin-bottom: 20px;
   font-size: 22px;
   padding: 10px 15px;
-  /* font-family: "Quicksand", sans-serif; */
   font-family: "Roboto Slab", serif;
 }
 .about-features {
@@ -362,7 +362,7 @@ html {
 
 /* HIRE US SECTION  */
 #container-4 {
-  /* border: 2px solid cyan; */
+  /*   border: 2px solid cyan; */
   height: 600px;
   width: 100%;
   display: flex;
@@ -375,7 +375,7 @@ html {
   padding-bottom: 20px;
   letter-spacing: 1px;
   /* font-weight: lighter; */
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 #container-4-hr {
   background-color: rgb(214, 210, 210);
@@ -386,7 +386,7 @@ html {
   font-size: 40px;
   line-height: 50px;
   text-align: center;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 #container-4-p {
   text-align: center;
@@ -444,25 +444,27 @@ html {
 
 /* SERVICES SECTION  */
 #container-5 {
-  /* border: 2px solid red; */
+  /*   border: 2px solid red; */
   height: 900px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px;
+  /*   padding-top: 40px; */
+  margin-top: 40px;
 }
 #container-5-h4 {
   margin: 10px 0px;
+  margin-top: 20px;
   color: grey;
   font-size: 20px;
   letter-spacing: 1px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 #container-5-h1 {
   margin-bottom: 30px;
   font-size: 60px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 #items {
   /* border: 2px solid black; */
@@ -523,12 +525,12 @@ html {
   margin-top: 40px;
   margin-bottom: 15px;
   letter-spacing: 2px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 #container-6-h2 {
   font-size: 60px;
   margin-bottom: 30px;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 #members {
   /* border: 2px solid brown; */
@@ -740,7 +742,7 @@ footer {
 .footer-content-elements {
   /* border: 2px solid pink; */
   height: 85%;
-  width: 24%;
+  width: 48%;
   display: flex;
   flex-direction: column;
   color: rgb(131, 131, 169);
@@ -758,9 +760,10 @@ footer {
 #company-moto-footer {
   margin: 5px 10px;
   font-size: 18px;
+  width: 80%;
 }
 #work-days {
-  font-size: 22px;
+  font-size: 25px;
   color: white;
   margin: 10px 10px;
   font-family: "Roboto Slab", serif;
@@ -770,7 +773,7 @@ footer {
   padding-left: 10px;
 }
 .working-days-table {
-  font-size: 15px;
+  font-size: 18px;
 }
 .text-secondary {
   color: red;
@@ -779,18 +782,18 @@ footer {
 #footer-element-2-h3 {
   font-size: 25px;
   color: white;
-  margin: 10px 20px;
+  margin: 10px 10px;
+  margin-top: 40px;
   font-family: "Roboto Slab", serif;
 }
 .helpful-links {
-  /* border: 2px solid red; */
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 140px;
   width: 85%;
-  margin: 20px auto;
+  margin: 10px 10px;
 }
 .h-link {
   /* border: 2px solid yellow; */
@@ -807,14 +810,14 @@ footer {
   cursor: pointer;
   color: white;
 }
-#footer-element-3-h3 {
+/* #footer-element-3-h3 {
   font-size: 25px;
   color: white;
   margin: 10px 15px;
   font-family: "Roboto Slab", serif;
 }
 .support-member {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   margin: 10px auto;
   display: flex;
   flex-direction: row;
@@ -828,15 +831,15 @@ footer {
   font-family: "Roboto Slab", serif;
 }
 .support-member-role {
-  font-size: 15px;
+  font-size: 18px;
   margin: 2px 5px;
 }
 .support-member-contact {
-  font-size: 15px;
+  font-size: 18px;
   margin: 15px 5px;
 }
 .brochure-download-btn {
-  /* border: 2px solid black; */
+  border: 2px solid black;
   width: 100%;
   height: 40px;
   display: flex;
@@ -861,7 +864,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .hr-footer {
   width: 85%;
   margin: 10px auto;

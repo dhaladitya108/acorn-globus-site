@@ -18,22 +18,27 @@
   /* border: 2px solid red; */
 }
 #area-1 {
-  width: 90%;
+  width: 98%;
   height: 16%;
-  padding: 10px 10px;
+  padding: 10px 2px;
+  /* border: 2px solid black; */
 }
 #area-1-heading {
-  font-size: 18px;
+  font-size: 16px;
+  margin: auto 5px;
+  /* border: 2px solid red; */
 }
 #area-1-h2 {
   margin: 10px auto;
-  font-size: 30px;
+  font-size: 27px;
+  /* border: 2px solid red; */
+  width: 99%;
 }
 #area-2 {
   width: 92%;
   height: 70%;
   margin: 10px auto;
-  padding: 25px 10px;
+  padding: 20px 10px;
 }
 #area-2-h5 {
   margin-top: 20px;
@@ -53,11 +58,11 @@
 
 /* OUR FEATURES SECTION  */
 #container-3 {
-  height: 1100px;
+  height: 1150px;
   /* border: 2px solid red; */
 }
 .features {
-  height: 24%;
+  height: 22%;
 }
 .features-head {
   margin-bottom: 5px;
@@ -67,6 +72,7 @@
   width: 75%;
 }
 #consult-head {
+  margin-top: 15px;
   width: 80%;
 }
 #consult-p {
@@ -76,8 +82,8 @@
 
 /* HIRE US SECTION  */
 #container-4 {
-  /* border: 2px solid rebeccapurple; */
-  height: 700px;
+  /*   border: 2px solid rebeccapurple; */
+  height: 720px;
 }
 #container-4-h3 {
   margin-top: 50px;
@@ -86,17 +92,17 @@
 }
 #container-4-h2 {
   font-size: 28px;
-  width: 80%;
+  width: 90%;
   margin-bottom: 20px;
 }
 #container-4-p {
-  width: 75%;
+  width: 85%;
 }
 
 /* SERVICES SECTION  */
 #container-5 {
   height: 2300px;
-  /* border: 2px solid green; */
+  /*   border: 2px solid green; */
 }
 #container-5-h1 {
   font-size: 28px;
@@ -167,27 +173,40 @@
 
 /* FOOTER SECTION  */
 footer {
-  height: 1100px;
+  height: 600px;
   /* border: 2px solid black; */
 }
 .footer-content-elements {
   width: 95%;
-  height: 25%;
+  height: 48%;
 }
 #company-logo-footer {
-  margin: 5px auto;
+  margin: 10px auto;
+  margin-left: 10px;
 }
 #company-moto-footer {
   margin: 5px 10px;
   font-size: 15px;
+  width: 85%;
 }
 #work-days {
-  margin: 5px 10px;
+  margin: 10px 10px;
+  font-size: 22px;
+}
+.working-days-table {
+  font-size: 15px;
+  width: 85%;
+}
+#footer-element-2-h3 {
+  font-size: 22px;
 }
 .h-link {
   width: 40%;
 }
-.support-member {
+.h-link a {
+  font-size: 15px;
+}
+/* .support-member {
   width: 90%;
   margin: 2px 6px;
 }
@@ -204,4 +223,4 @@ footer {
 .brochure-download-btn {
   width: 65%;
   margin-left: 15px;
-}
+} */

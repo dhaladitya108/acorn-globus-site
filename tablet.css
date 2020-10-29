@@ -142,23 +142,32 @@
 
 /* FOOTER SECTION  */
 footer {
-  height: 1100px;
+  height: 600px;
 }
 #footer-content {
-  height: 1000px;
+  height: 500px;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .footer-content-elements {
-  height: 24%;
-  width: 80%;
+  height: 48%;
+  width: 90%;
+}
+#company-moto-footer {
+  width: 75%;
 }
 #work-days {
-  margin: 15px 10px;
+  margin: 10px 10px;
 }
-#footer-element-2 {
+.working-days-table {
+  width: 60%;
+}
+/* #footer-element-2 {
   height: 22%;
-}
+} */
 #footer-element-2-h3 {
+  margin-top: 0px;
   margin: 10px 10px;
 }
 .helpful-links {
@@ -167,7 +176,7 @@ footer {
 .h-link {
   width: 30%;
 }
-#footer-element-3 {
+/* #footer-element-3 {
   height: 26%;
 }
 #footer-element-3-h3 {
@@ -194,4 +203,4 @@ footer {
   width: 42%;
   height: 45px;
   margin-left: 10px;
-}
+} */
