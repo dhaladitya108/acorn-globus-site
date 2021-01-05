@@ -209,12 +209,12 @@ html {
   background-color: white;
 }
 #option-1:hover {
-  background-color: #e01631;
-  color: white;
+  background-color: #e01631 !important;
+  color: white !important;
 }
 #option-2:hover {
-  background-color: #2a2a68;
-  color: white;
+  background-color: #2a2a68 !important;
+  color: white !important;
 }
 #input-form {
   /* border: 2px solid cyan; */
@@ -410,9 +410,11 @@ html {
   background-color: rgb(214, 213, 213);
   cursor: pointer;
   outline: none;
+  transition-delay: 0.2s ease;
+  transition-duration: 0.6s;
 }
 .fa-thumbs-up {
-  font-size: 25px;
+  font-size: 20px;
 }
 #vertical-line {
   border-left: 2px solid rgb(214, 213, 213);
@@ -429,17 +431,6 @@ html {
   cursor: pointer;
   transition-delay: 0.2s ease;
   transition-duration: 0.6s;
-}
-#container-4-btn-1:hover ~ #container-4-btn-2,
-#container-4-btn-1:hover {
-  background-color: #571f9c;
-  color: white;
-  transition-delay: 0.3s ease;
-  transition-duration: 0.6s;
-}
-#container-4-btn-2:hover {
-  background-color: #571f9c;
-  color: white;
 }
 
 /* SERVICES SECTION  */
