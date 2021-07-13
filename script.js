@@ -3,8 +3,8 @@
 window.addEventListener("scroll", function () {
   var place = document.scrollingElement.scrollTop;
   var alertOn = document.getElementById("container-7").offsetTop;
-  console.log(place);
-  console.log(alertOn);
+  // console.log(place);
+  // console.log(alertOn);
   if (place + 250 > alertOn) {
     this.removeEventListener("scroll", arguments.callee, false);
 
@@ -48,6 +48,9 @@ window.addEventListener("scroll", function () {
 
 // FORMS SECTION
 
+//! Commenting the Forms User Toggle Section
+
+/*
 var employerBtn = document.querySelector("#option-1");
 var jobSeekerBtn = document.querySelector("#option-2");
 var numberOrNameInput = document.querySelector("#nameOrNumber");
@@ -61,13 +64,14 @@ employerBtn.addEventListener("click", () => {
 });
 
 jobSeekerBtn.addEventListener("click", () => {
-  console.log("Ayush");
   jobSeekerBtn.style.backgroundColor = "#2a2a68";
   jobSeekerBtn.style.color = "white";
   numberOrNameInput.placeholder = "Phone Number";
   employerBtn.style.backgroundColor = "white";
   employerBtn.style.color = "rgb(57, 57, 139)";
 });
+
+*/
 
 // HIRE US SECTION
 var likeBtn = document.querySelector("#container-4-btn-1");

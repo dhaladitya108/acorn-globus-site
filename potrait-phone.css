@@ -177,7 +177,7 @@
 
 /* FOOTER SECTION  */
 footer {
-  height: 600px;
+  height: 670px;
   /* border: 2px solid black; */
 }
 .footer-content-elements {
@@ -228,3 +228,8 @@ footer {
   width: 65%;
   margin-left: 15px;
 } */
+.copywrite {
+  text-align: center;
+  width: 95%;
+  font-size: 0.7rem;
+}

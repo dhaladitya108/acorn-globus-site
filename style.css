@@ -123,11 +123,11 @@ html {
 }
 #area-1-h2 {
   margin: 10px auto;
-  font-size: 60px;
+  font-size: 45px;
   font-weight: 600;
   letter-spacing: 1px;
   font-family: "Roboto Slab", serif;
-  font-weight: bold;
+  /* font-weight: bold; */
   line-height: 1.2;
 }
 #recruit-together {
@@ -159,9 +159,9 @@ html {
 #area-2 {
   /* border: 2px solid green; */
   width: 32%;
-  height: 84%;
+  height: 74%;
   background-color: white;
-  padding: 55px 45px;
+  padding: 45px 45px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,7 +171,7 @@ html {
   margin-top: 40px;
   color: rgb(42, 42, 104);
   font-weight: 600;
-  font-size: 25px;
+  font-size: 24px;
   line-height: 1.3em;
   font-family: "Roboto Slab", serif;
 }
@@ -614,6 +614,7 @@ html {
 /* SECTION TO DISPLAY THE NUMBER OF TIMES WE ARE CONTACTED  */
 #container-7 {
   /* border: 2px solid black; */
+  background-color: #edf5f893;
   height: 300px;
   width: 100%;
   display: flex;
@@ -714,14 +715,13 @@ html {
 /* FOOTER SECTION  */
 footer {
   background-color: #2a2a68;
-  height: 460px;
+  height: 520px;
   width: 100%;
   color: white;
   display: flex;
   flex-direction: column;
 }
 #footer-content {
-  /* border: 2px solid white; */
   display: flex;
   flex-direction: row;
   width: 85%;
@@ -862,9 +862,12 @@ footer {
   border: 0.5px solid grey;
 }
 .copywrite {
-  height: 40px;
+  /* border: 1px solid yellow; */
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
 }

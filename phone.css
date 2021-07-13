@@ -156,7 +156,7 @@
 }
 #area-1-h2 {
   margin: 10px auto;
-  font-size: 38px;
+  font-size: 36px;
 }
 #recruit-together {
   height: 0px;
@@ -344,7 +344,7 @@
 
 /* FOOTER SECTION  */
 footer {
-  height: 600px;
+  height: 670px;
 }
 #footer-content {
   height: 500px;
@@ -401,3 +401,9 @@ footer {
   width: 45%;
   height: 55px;
 } */
+.copywrite {
+  text-align: center;
+  width: 85%;
+  margin: 0px auto;
+  font-size: 0.85rem;
+}
