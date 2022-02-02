@@ -241,7 +241,7 @@ html {
 }
 #input-form button {
   height: 60px;
-  background-color: #f71634;
+  background-color: #408ce2;
   color: white;
   border: none;
   cursor: pointer;
@@ -249,7 +249,7 @@ html {
   font-size: 15px;
 }
 #input-form button:hover {
-  background-color: #e01631;
+  background-color: #237ce2;
 }
 #input-form button:focus {
   outline: none;
@@ -502,7 +502,8 @@ html {
 
 /* SECTION FOR TEAM  */
 #container-6 {
-  height: 800px;
+  /* height: 800px; */
+  min-height: 100px;
   width: 100%;
   background-color: #edf5f8;
   display: flex;
@@ -525,8 +526,7 @@ html {
 }
 #members {
   /* border: 2px solid brown; */
-  height: 550px;
-  width: 80%;
+  width: calc(100% - 60px);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -538,13 +538,16 @@ html {
   background-color: white;
   border-radius: 10px;
   /* box-shadow: 0 0 15px 5px rgb(199, 199, 199); */
+  min-height: 300px;
   box-shadow: 0 0 15px 5px #d7ecf5;
-  height: 500px;
-  width: 24%;
+  height: 100%;
+  width: 100%;
   margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
 }
 .fade-in {
   position: absolute;
@@ -574,6 +577,7 @@ html {
   border-radius: 50%;
 }
 .member-name {
+  text-align: center;
   font-size: 25px;
   margin: 5px auto;
   font-family: "Roboto Slab", serif;
