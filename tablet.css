@@ -130,10 +130,10 @@
 #container-8 {
   height: 800px;
   flex-wrap: wrap;
-  background-color: white;
+  /* background-color: white; */
 }
 .part {
-  background-color: #edf5f8;
+  /* background-color: #edf5f8; */
   width: 100%;
   margin: 5px auto;
 }

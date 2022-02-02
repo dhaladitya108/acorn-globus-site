@@ -30,7 +30,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="assets/address_bar.jpg" />
+    <link rel="icon" href="assets/fav-icon.ico" />
     <script
       src="https://kit.fontawesome.com/4bc3609884.js"
       crossorigin="anonymous"
@@ -43,7 +43,7 @@
       <div id="main-container">
         <nav id="nav-bar" class="header">
           <div id="logo" class="logo">
-            <img src="assets/AGS-Logo.svg" alt="" />
+            <img src="assets/acorn-globus-logo.png" alt="Company Logo" />
           </div>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"
@@ -96,9 +96,11 @@
               for industry leaders
             </h6>
             <div id="recruit-together">
-              <a href="">WORK WITH US</a>
+              <a href="#container-2">Our Projects</a>
               <span id="span-plus-icon">
-                <i class="fa fa-plus" aria-hidden="true"></i>
+                <a href="#container-2" style="color: white;">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </a>
               </span>
             </div>
           </div>
@@ -128,23 +130,35 @@
     <!-- COMPANIES SECTION  -->
     <div id="container-2">
       <div class="box">
-        <img src="assets/img-1.png" alt="" />
+        <a href="https://formester.com/" target="_blank">
+          <img src="assets/formester.png" alt="" />
+        </a>
       </div>
       <div class="box">
-        <img src="assets/img-2.png" alt="" />
+        <a href="https://about.rumie.org/" target="_blank">  
+          <img src="assets/rumie.png" alt="" />
+        </a>
       </div>
       <div class="box">
-        <img src="assets/img-3.png" alt="" />
+        <a href="https://www.mayple.com/main/b" target="_blank">
+          <img src="assets/mayple.png" alt="" />
+        </a>
       </div>
       <div class="box">
-        <img src="assets/img-4.png" alt="" />
+        <a href="https://eitoss.com/" target="_blank">
+          <img src="assets/cayzen.png" alt="" />
+        </a>
       </div>
       <div class="box">
-        <img src="assets/img-5.png" alt="" />
+        <a href="https://www.skymd.com/" target="_blank">
+          <img src="assets/skymd.png" alt="" />
+        </a>
       </div>
       <div class="box">
-        <img src="assets/img-6.png" alt="" />
-      </div>
+        <a href="https://www.hackerrank.com/" target="_blank">
+          <img src="assets/hackerrank.png" alt="" />
+        </a>
+      </div>    
     </div>
 
     <!-- OUR FEATURES SECTION  -->
@@ -154,57 +168,32 @@
           The Best Agency for your Business
         </h4>
         <p class="about-features" id="consult-p">
-          Our strategy is dependent on your world and your goals. Moving towards
-          your goal empowers us too!
+          We do more than just development, we help build your business.
         </p>
         <div class="consult-btn-container">
-          <button class="consult-btn">Consult Now</button>
+          <button class="consult-btn" onclick="scrollWin()">Consult Now</button>
         </div>
       </div>
       <div class="features">
         <img src="assets/icon-arrow-board.png" class="features-img" alt="" />
-        <h4 class="features-head">Engrossing content</h4>
+        <h4 class="features-head">Web Development</h4>
         <p class="about-features">
-          The content delivery needs to be original & engrossing to hold the
-          attention of the visitors.
+          Web development as a whole is an essential component for success, and our team of experts make it look simple.
         </p>
       </div>
       <div class="features">
         <img src="assets/icon-mount-flag.png" class="features-img" alt="" />
-        <h4 class="features-head">Engaging copy nails!</h4>
+        <h4 class="features-head">UI & UX Design</h4>
         <p class="about-features">
-          When the visitor is impressed with the content, the retention is
-          likely to be longer in the site.
+          “A user interface is like a joke. If you have to explain it, it’s not that good.” - that's what we believe in.
         </p>
       </div>
       <div class="features">
         <img src="assets/icon-fire-torch.png" class="features-img" alt="" />
-        <h4 class="features-head">Retaining the visitor</h4>
+        <h4 class="features-head">Kubernetes</h4>
         <p class="about-features">
-          When the copy nails it, the call to action appears like a shadow
-          intending to trigger a move.
+          We effectively adopt and integrate various test & production automation solutions.
         </p>
-      </div>
-    </div>
-
-    <!-- HIRE US SECTION  -->
-    <div id="container-4">
-      <h3 id="container-4-h3">WE ARE THE BEST AGENCY FOR YOU</h3>
-      <hr id="container-4-hr" />
-      <h2 id="container-4-h2">
-        Take your business soaring high... <br />Reach for us
-      </h2>
-      <p id="container-4-p">
-        When you objectively analyze your business, you are likely to get a new
-        perspective. These new perspectives propel your business up by infusing
-        fresh strategy. We can support whenever new strategy is needed.
-      </p>
-      <div class="btns-container">
-        <button id="container-4-btn-1">
-          <i class="fas fa-thumbs-up"></i>
-        </button>
-        <div id="vertical-line"></div>
-        <button id="container-4-btn-2">Hire us</button>
       </div>
     </div>
 
@@ -278,7 +267,7 @@
 
     <!-- SECTION FOR TEAM  -->
     <!-- ! Commenting out the Teams Section -->
-    <!-- 
+
 
     <div id="container-6">
       <h4 id="container-6-h4">THE SHOWRUNNERS</h4>
@@ -287,43 +276,87 @@
         <div class="member">
           <div class="fade-in"></div>
           <div class="member-img-container">
-            <img src="assets/testimonial4.jpg" alt="" class="member-img" />
+            <img src="https://ca.slack-edge.com/T69CYLMCJ-U6A9RUUKY-787f4f445564-512" alt="" class="member-img" />
           </div>
-          <h4 class="member-name">Jeff Norton</h4>
-          <h5 class="member-role">BUSINESS ANALYST</h5>
+          <h4 class="member-name">Ankit Singhaniya</h4>
+          <h5 class="member-role">CEO</h5>
           <hr class="horizontal-separation" />
           <p class="member-role-details">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Proven ability to work in a team and contribute as an individual.
           </p>
         </div>
         <div class="member">
           <div class="fade-in"></div>
           <div class="member-img-container">
-            <img src="assets/testimonial6.jpg" alt="" class="member-img" />
+            <img src="https://media-exp1.licdn.com/dms/image/C5103AQETh0TS2VQK_Q/profile-displayphoto-shrink_100_100/0/1546272021271?e=1649289600&v=beta&t=FE5tYMB2QYXXBTiXZBIUXQjwWk9OlzbxmVRTKuxskR8" alt="" class="member-img" />
           </div>
-          <h4 class="member-name">Sonja Summers</h4>
-          <h5 class="member-role">MARKETING RESEARCH</h5>
+          <h4 class="member-name">Tarun Kumar</h4>
+          <h5 class="member-role">CTO</h5>
           <hr class="horizontal-separation" />
           <p class="member-role-details">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Always open to new technologies as it is my driving force and motivation.
           </p>
         </div>
         <div class="member">
           <div class="fade-in"></div>
           <div class="member-img-container">
-            <img src="assets/testimonial8.jpg" alt="" class="member-img" />
+            <img src="https://media-exp1.licdn.com/dms/image/C5603AQEJE33AV8Fn6A/profile-displayphoto-shrink_200_200/0/1620467978616?e=1649289600&v=beta&t=bqMdYnChqs7NUF-eEUTURPTOEzserF2peJgV53ER0lI" alt="" class="member-img" />
           </div>
-          <h4 class="member-name">Anita Allen</h4>
-          <h5 class="member-role">DIGITAL ANALYST</h5>
+          <h4 class="member-name">Yaswanth</h4>
+          <h5 class="member-role">Developer</h5>
           <hr class="horizontal-separation" />
           <p class="member-role-details">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Calm, cool and focued towards my work.
           </p>
         </div>
       </div>
     </div>
 
-     -->
+    <!-- SUPPORT SECTION  -->
+    <div class="container-8-box">    
+      <div id="container-8">
+        <div class="part" id="part-1">
+          <img src="assets/icon-question.png" alt="" class="part-img" />
+          <div class="part-content">
+            <h4 class="part-content-h4">
+              Get your <br />
+              <strong>clarifications</strong>
+            </h4>
+            <p class="part-content-p">
+              Using our 24/7 knowledgebase, forum & comments get clarified.
+            </p>
+          </div>
+        </div>
+        <div class="part" id="part-2">
+          <img src="assets/icon-support.png" alt="" class="part-img" />
+          <div class="part-content">
+            <h4 class="part-content-h4">
+              Legendary <br />
+              <strong>support</strong>
+            </h4>
+            <p class="part-content-p">
+              Get your doubts cleared using our 
+              <span style="color: #571f9c">
+                <a target="_blank" href="mailto:ankit@formester.com">email</a>
+              </span>
+              support, phone or knowledgebase.
+            </p>
+          </div>
+        </div>
+        <div class="part" id="part-3">
+          <img src="assets/icon-package.png" alt="" class="part-img" />
+          <div class="part-content">
+            <h4 class="part-content-h4">
+              Maintenance <br />
+              <strong>package</strong>
+            </h4>
+            <p class="part-content-p">
+              We offer annual maintenance packages for different needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- SECTION TO DISPLAY THE NUMBER OF TIMES WE ARE CONTACTED -->
     <div id="container-7">
@@ -352,44 +385,26 @@
       </div>
     </div>
 
-    <!-- SUPPORT SECTION  -->
-    <div id="container-8">
-      <div class="part" id="part-1">
-        <img src="assets/icon-question.png" alt="" class="part-img" />
-        <div class="part-content">
-          <h4 class="part-content-h4">
-            Get your <br />
-            <strong>clarifications</strong>
-          </h4>
-          <p class="part-content-p">
-            Using our 24/7 knowledgebase, forum & comments get clarified.
-          </p>
-        </div>
-      </div>
-      <div class="part" id="part-2">
-        <img src="assets/icon-support.png" alt="" class="part-img" />
-        <div class="part-content">
-          <h4 class="part-content-h4">
-            Legendary <br />
-            <strong>support</strong>
-          </h4>
-          <p class="part-content-p">
-            Get your doubts cleared using our email support, phone or
-            knowledgebase.
-          </p>
-        </div>
-      </div>
-      <div class="part" id="part-3">
-        <img src="assets/icon-package.png" alt="" class="part-img" />
-        <div class="part-content">
-          <h4 class="part-content-h4">
-            Maintenance <br />
-            <strong>package</strong>
-          </h4>
-          <p class="part-content-p">
-            We offer annual maintenance packages for different needs.
-          </p>
-        </div>
+    
+
+    <!-- CTA SECTION  -->
+    <div id="container-4">
+      <h3 id="container-4-h3">WE ARE THE BEST AGENCY FOR YOU</h3>
+      <hr id="container-4-hr" />
+      <h2 id="container-4-h2">
+        Take your business soaring high... <br />Reach for us
+      </h2>
+      <p id="container-4-p">
+        When you objectively analyze your business, you are likely to get a new
+        perspective. These new perspectives propel your business up by infusing
+        fresh strategy. We can support whenever new strategy is needed.
+      </p>
+      <div class="btns-container">
+        <button id="container-4-btn-1">
+          <i class="fas fa-thumbs-up"></i>
+        </button>
+        <div id="vertical-line"></div>
+        <button id="container-4-btn-2" onclick="scrollWin()">Hire us</button>
       </div>
     </div>
 
@@ -397,7 +412,7 @@
     <footer>
       <div id="footer-content">
         <div class="footer-content-elements" id="footer-element-1">
-          <img src="assets/AGS-Logo.svg" alt="" id="company-logo-footer" />
+          <img src="assets/acorn-globus-logo.png" alt="" id="company-logo-footer" />
           <p id="company-moto-footer">
             We work to ensure people’s comfort at their company specializing in
             house hours

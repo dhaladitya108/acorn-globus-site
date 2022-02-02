@@ -13,32 +13,32 @@ window.addEventListener("scroll", function () {
     setInterval(() => {
       if (count < 500) {
         count = count + 1;
-        counterPhoneCalls.innerHTML = `${count}M`;
+        counterPhoneCalls.innerHTML = `${count}`;
       }
     }, 1);
 
-    let count2 = 18500;
+    let count2 = 8500;
     var counterCostAndTime = document.getElementsByClassName("counter")[1];
     setInterval(() => {
-      if (count2 < 19000) {
+      if (count2 < 9000) {
         count2 = count2 + 1;
         counterCostAndTime.innerHTML = `${count2}`;
       }
     }, 1.2);
 
-    let count3 = 1831;
+    let count3 = 831;
     var counterStatsBar = document.getElementsByClassName("counter")[2];
     setInterval(() => {
-      if (count3 < 2331) {
+      if (count3 < 1331) {
         count3 = count3 + 1;
         counterStatsBar.innerHTML = `${count3}`;
       }
     }, 1.4);
 
-    let count4 = 111760;
+    let count4 = 1760;
     var counterCupCoffee = document.getElementsByClassName("counter")[3];
     setInterval(() => {
-      if (count4 < 112260) {
+      if (count4 < 2260) {
         count4 = count4 + 1;
         counterCupCoffee.innerHTML = `${count4}`;
       }
@@ -73,7 +73,7 @@ jobSeekerBtn.addEventListener("click", () => {
 
 */
 
-// HIRE US SECTION
+// CTA SECTION
 var likeBtn = document.querySelector("#container-4-btn-1");
 var hireUsBtn = document.querySelector("#container-4-btn-2");
 
@@ -104,3 +104,8 @@ hireUsBtn.addEventListener("mouseout", () => {
   hireUsBtn.style.backgroundColor = "";
   hireUsBtn.style.color = "";
 });
+
+// scroll to contact form
+function scrollWin() {
+  window.scrollTo(0, 0);
+}
