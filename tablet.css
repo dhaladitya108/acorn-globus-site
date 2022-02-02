@@ -56,6 +56,9 @@
   text-align: center;
 }
 .consult-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 15px auto;
 }
 /* SERVICES SECTION  */
