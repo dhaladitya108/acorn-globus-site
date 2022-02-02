@@ -73,7 +73,7 @@ jobSeekerBtn.addEventListener("click", () => {
 
 */
 
-// HIRE US SECTION
+// CTA SECTION
 var likeBtn = document.querySelector("#container-4-btn-1");
 var hireUsBtn = document.querySelector("#container-4-btn-2");
 

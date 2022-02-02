@@ -216,8 +216,12 @@
   margin: 10px auto;
 }
 
-/* HIRE US SECTION  */
+/* CTA SECTION  */
+#container-4 {
+  margin-bottom: 0px;
+}
 #container-4-h2 {
+  line-height: 40px;
   font-size: 30px;
 }
 #container-4-p {
