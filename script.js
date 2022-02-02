@@ -104,3 +104,8 @@ hireUsBtn.addEventListener("mouseout", () => {
   hireUsBtn.style.backgroundColor = "";
   hireUsBtn.style.color = "";
 });
+
+// scroll to contact form
+function scrollWin() {
+  window.scrollTo(0, 0);
+}
