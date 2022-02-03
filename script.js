@@ -109,3 +109,59 @@ hireUsBtn.addEventListener("mouseout", () => {
 function scrollWin() {
   window.scrollTo(0, 0);
 }
+
+// Project Details Section - controlled with vue
+var app = new Vue({
+  el: '#projects',
+  data: {
+    message: 'Hello Vue!',
+    projects: [
+      // {
+      //   title: "Frappe Books",
+      //   link: "https://frappebooks.com/",
+      //   role: "Full stack developer",
+      //   tags: ["Opensource"],
+      //   filename: "Frappe-Books.png",
+      //   stack: ["vue.svg", "electron.png", "javascript.png", "nodejs.png", "tailwind.png"],
+      //   description: "Open source contribution on Frappe Books. <Br /> A free Desktop book-keeping software for small-businesses and freelancers."
+      // },
+      {
+        title: "Eitoss",
+        link: "https://eitoss.com/",
+        role: "SOFTWARE CONSULTANT",
+        tags: ["Remote Work"],
+        filename: "eitoss.png",
+        stack: ["vue.svg", "nodejs.png", "javascript.png"],
+        description: "Eitoss is a communication tool for managers and frontline workers. It builds on the concept of Kaizen and help companies build product that are driven by the people who are on the frontline."
+      },
+      {
+        title: "SkyMD",
+        link: "https://www.skymd.com/",
+        role: "SOFTWARE CONSULTANT",
+        tags: ["Remote Work"],
+        filename: "skymd-pic.png",
+        stack: ["rails.png"],
+        description: "SkyMd is a telemedicine platform for dermatology related problems. It helps a patient get access to the best doctors without ever leaving their home. The app is building using Rails and MySql and supports thousands of active users every month."
+      },
+      {
+        title: "Rumie",
+        link: "https://about.rumie.org/",
+        role: "SENIOR FRONTEND ENGINEER",
+        tags: ["Project"],
+        filename: "rumie-pic.png",
+        stack: ["vue.svg", "javascript.png"],
+        description: "Rumie is a non-profit that makes access to free digital education possible for underserved communities worldwide. We collaborated on revamping the experience for application content managers. The new app built using Vue provides a fast and intuitive way to deal with complex flows."
+      },
+      {
+        title: "Formester",
+        link: "https://formester.com/",
+        role: "FULL STACK DEVELOPER",
+        tags: ["Full time"],
+        filename: "formester-pic.png",
+        stack: ["vue.svg", "javascript.png", "rails.png"],
+        description: "A form backend as a service. It makes creating form endpoints for websites very easy. It requires zero programming knowledge. The user has the full control over the look and feel of the form. In Formester validation, spam protection and integration with different CRMs are few clicks away."
+      },
+
+    ]
+  }
+})
