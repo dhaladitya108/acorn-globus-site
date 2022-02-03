@@ -498,7 +498,7 @@ a {
 
 /* SECTION FOR TEAM  */
 #container-6 {
-  height: 800px;
+  height: 1300px;
   width: 100%;
   background-color: #edf5f8;
   display: flex;
@@ -528,6 +528,7 @@ a {
   justify-content: space-around;
   align-items: center;
   padding: 30px;
+  flex-wrap: wrap;
 }
 .member {
   /* border: 2px solid black; */
@@ -537,7 +538,7 @@ a {
   box-shadow: 0 0 15px 5px #d7ecf5;
   height: 500px;
   width: 24%;
-  margin: 10px;
+  margin: 20px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
