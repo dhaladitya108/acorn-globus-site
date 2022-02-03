@@ -21,6 +21,8 @@
       media="screen and (max-width: 540px)"
       href="potrait-phone.css"
     />
+    <!-- Vue import -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
@@ -35,6 +37,7 @@
       src="https://kit.fontawesome.com/4bc3609884.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="project.css" />
   </head>
 
   <body>
@@ -56,7 +59,7 @@
               >
             </li>
             <li class="nav-list-item">
-              <a href="#container-2"" class="nav-item-link">Projects</a>
+              <a href="#projects" class="nav-item-link">Projects</a>
             </li>
             <li class="nav-list-item">
               <a href="#container-3" class="nav-item-link">About</a>
@@ -199,32 +202,72 @@
     <div id="tech-section">
       <h3>Our Tech Expertise</h3>
       <div class="tech-stacks">
-        <div class="tech">
+        <div class="technology">
           <img src="assets/vue.svg" alt="vue logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/nodejs.png" alt="nodejs logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/rails.png" alt="rails logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/docker.png" alt="kubernetes logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/react.png" alt="react logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/python.png" alt="python logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/figma.png" alt="figma logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/postgres.png" alt="postgresql logo">
         </div>
-        <div class="tech">
+        <div class="technology">
           <img src="assets/github.png" alt="version control logo">
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT DETAILS SECTION -->
+    <div id="projects">
+      <h3 class="projects__heading">OUR PROJECTS</h3>
+      <div v-for="project in projects" :key="project.title">
+        <div class="project">
+          <div class="details">
+            <h3 class="project__title">
+               {{project.title}}
+            </h3>
+            <h5 class="project__role"> {{project.role}} </h5>
+            <p class="project__description">
+              <span v-html="project.description"></span>
+            </p>
+            <!-- <div class="tag__cloud">
+              <div class="tags" v-for="tag in project.tags" :key="tag">
+                #{{tag}}
+              </div>
+            </div> -->
+            <div class="tech__stack">
+              <div class="tech" v-for="tech in project.stack">
+                <img :src="(`../assets/${tech}`)" alt="">
+              </div>
+            </div>
+            <a 
+              v-if="project.link"
+              :href="project.link"
+              target="_blank"
+            >
+              <button class="know__more">
+                Know More
+              </button>
+            </a>
+          </div>
+          <div class="picture">
+            <img :src="(`../assets/${project.filename}`)" alt="">
+          </div>
         </div>
       </div>
     </div>
