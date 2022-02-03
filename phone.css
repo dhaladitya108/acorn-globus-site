@@ -414,3 +414,12 @@ footer {
   margin: 0px auto;
   font-size: 0.85rem;
 }
+
+/* Tech section */
+#tech-section {
+  margin: 30px auto;
+}
+#tech-section h3 {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
