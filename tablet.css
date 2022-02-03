@@ -29,6 +29,11 @@
 .box {
   width: 30%;
 }
+.box img {
+  filter: none;
+  opacity: 1;
+  transition: 0.2s ease;
+}
 
 /* FEATURES SECTION */
 #container-3 {
