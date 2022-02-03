@@ -282,7 +282,7 @@ a {
 /* OUR FEATURES SECTION  */
 #container-3 {
   /* border: 2px solid yellow; */
-  height: 450px;
+  height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -441,8 +441,7 @@ a {
   margin-top: 40px;
 }
 #container-5-h4 {
-  margin: 10px 0px;
-  margin-top: 20px;
+  margin: 20px auto 10px;
   color: grey;
   font-size: 20px;
   letter-spacing: 1px;
@@ -450,6 +449,9 @@ a {
 }
 #container-5-h1 {
   margin-bottom: 30px;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
   font-size: 60px;
   font-family: "Roboto Slab", serif;
 }
@@ -866,4 +868,35 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
+}
+
+/* Tech stack */
+#tech-section {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
+#tech-section h3 {
+  color: grey;
+  font-size: 36px;
+  margin: 10px auto;
+  font-weight: 500;
+  font-family: "Roboto Slab", serif;
+}
+.tech-stacks {
+  max-width: 900px;
+  margin: 0px auto 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.tech {
+  width: 280px;
+  margin: 30px auto;
+}
+.tech img {
+  height: 70px;
 }
