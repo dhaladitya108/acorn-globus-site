@@ -13,34 +13,21 @@
   font-family: "Roboto Slab", serif;
 }
 
-@media only screen and (max-width: 1400px) {
-  .projects__heading {
-    width: 94%
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .projects__heading {
-    width: 95%
-  }
-}
-
 @media only screen and (max-width: 992px) {
   .projects__heading {
-    width: 90%;
+    font-size: 36px;
   }
 }
 
 @media only screen and (max-width: 768px){
   .projects__heading {
-    width: 90%;
+    font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 576px) {
   .projects__heading {
-    width: 95%;
-    margin-bottom: -20px;
+    margin: 20px;
   }
 } 
 
