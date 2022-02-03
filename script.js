@@ -135,15 +135,6 @@ var app = new Vue({
         description: "Eitoss is a communication tool for managers and frontline workers. It builds on the concept of Kaizen and help companies build product that are driven by the people who are on the frontline."
       },
       {
-        title: "SkyMD",
-        link: "https://www.skymd.com/",
-        role: "SOFTWARE CONSULTANT",
-        tags: ["Remote Work"],
-        filename: "skymd-pic.png",
-        stack: ["rails.png"],
-        description: "SkyMd is a telemedicine platform for dermatology related problems. It helps a patient get access to the best doctors without ever leaving their home. The app is building using Rails and MySql and supports thousands of active users every month."
-      },
-      {
         title: "Rumie",
         link: "https://about.rumie.org/",
         role: "SENIOR FRONTEND ENGINEER",
@@ -158,7 +149,7 @@ var app = new Vue({
         role: "FULL STACK DEVELOPER",
         tags: ["Full time"],
         filename: "formester-pic.png",
-        stack: ["vue.svg", "javascript.png", "rails.png"],
+        stack: ["vue.svg", "javascript.png", "rails-logo.png"],
         description: "A form backend as a service. It makes creating form endpoints for websites very easy. It requires zero programming knowledge. The user has the full control over the look and feel of the form. In Formester validation, spam protection and integration with different CRMs are few clicks away."
       },
 
