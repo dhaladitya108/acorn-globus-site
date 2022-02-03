@@ -423,3 +423,10 @@ footer {
   font-size: 24px;
   letter-spacing: 1px;
 }
+.technology {
+  width: 250px;
+  margin: 10px auto;
+}
+.technology img {
+  height: 50px;
+}
