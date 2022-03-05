@@ -145,7 +145,7 @@ var app = new Vue({
           },
           {
             img: 'javascript.png',
-            alg: 'javascript',
+            alt: 'javascript',
           },
         ],
         description:
@@ -167,7 +167,7 @@ var app = new Vue({
           },
           {
             img: 'javascript.png',
-            alg: 'javascript',
+            alt: 'javascript',
           },
         ],
         description:
@@ -189,7 +189,7 @@ var app = new Vue({
           },
           {
             img: 'javascript.png',
-            alg: 'javascript',
+            alt: 'javascript',
           },
           {
             img: 'rails-logo.png',
