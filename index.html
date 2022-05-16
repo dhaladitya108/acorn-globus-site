@@ -1,650 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acorn Globus</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 992px)"
-      href="tablet.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 768px)"
-      href="phone.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 540px)"
-      href="potrait-phone.css"
-    />
-    <!-- Vue import -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/fav-icon.ico" />
-    <script
-      src="https://kit.fontawesome.com/4bc3609884.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="project.css" />
 
-    <!-- Meta Tags -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acorn Globus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" media="screen and (max-width: 992px)" href="tablet.css" />
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="phone.css" />
+  <link rel="stylesheet" media="screen and (max-width: 540px)" href="potrait-phone.css" />
+  <!-- Vue import -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/fav-icon.ico" />
+  <script src="https://kit.fontawesome.com/4bc3609884.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="project.css" />
 
-    <!-- Facebook -->
-    <meta name="title" property="og:title" content="Acorn Globus" />
-    <meta property="og:site_name" content="Acorn Globus" />
-    <meta name="description" property="og:description" content="Building innovative software for industry leaders" />
-    <meta name="type" property="og:type" content="website" />
-    <meta name="url" property="og:url" content="https://www.acornglobus.com/" />
-    <meta name="image" property="og:image" content="https://www.acornglobus.com/assets/acorn-globus.png" />
-    <meta property="og:image:alt" content="Acorn Globus Logo" />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.min.css">
 
-    <!-- Twitter -->
-    <meta name="twitter:site" content="@_formester_">
-    <meta name="twitter:title" content="Acorn Globus">
-    <meta name="twitter:description" content="Building innovative software for industry leaders">
-    <meta name="twitter:image" content="https://www.acornglobus.com/assets/acorn-globus.png">
-    <meta name="twitter:image:alt" content="Acorn Globus Logo">
-    <meta name="twitter:card" content="summary_large_image">
+  <!-- Meta Tags -->
 
-    <!-- Other Meta Tags -->
-    <meta name="robots" content="index,follow">
-    <meta name="apple-mobile-web-app-title" content="Acorn Globus">
-    <meta name="description" content="Building innovative software for industry leaders">
-    <meta
-      name="keywords"
-      content="Web Development, Company, Agency, Software Solution,
+  <!-- Facebook -->
+  <meta name="title" property="og:title" content="Acorn Globus" />
+  <meta property="og:site_name" content="Acorn Globus" />
+  <meta name="description" property="og:description" content="Building innovative software for industry leaders" />
+  <meta name="type" property="og:type" content="website" />
+  <meta name="url" property="og:url" content="https://www.acornglobus.com/" />
+  <meta name="image" property="og:image" content="https://www.acornglobus.com/assets/acorn-globus.png" />
+  <meta property="og:image:alt" content="Acorn Globus Logo" />
+
+  <!-- Twitter -->
+  <meta name="twitter:site" content="@_formester_">
+  <meta name="twitter:title" content="Acorn Globus">
+  <meta name="twitter:description" content="Building innovative software for industry leaders">
+  <meta name="twitter:image" content="https://www.acornglobus.com/assets/acorn-globus.png">
+  <meta name="twitter:image:alt" content="Acorn Globus Logo">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Other Meta Tags -->
+  <meta name="robots" content="index,follow">
+  <meta name="apple-mobile-web-app-title" content="Acorn Globus">
+  <meta name="description" content="Building innovative software for industry leaders">
+  <meta name="keywords" content="Web Development, Company, Agency, Software Solution,
       Software Product, Application, software development agency, software development,
       building a software development portfolio, building a software development team,
       software, software agency, software consultancy, software consultant,
       software consulting business, building a software company,
       building a software company from scratch, building a software team, freelancer to agency,
       growing a software business, software development, full stack developer, web development,
-      web developer, web design, web development projects"
-    />
-  </head>
+      web developer, web design, web development projects" />
+</head>
 
-  <body>
-    <!-- HEADER SECTION  -->
-    <div id="container-1">
-      <div id="main-container">
-        <nav id="nav-bar" class="header">
-          <div id="logo" class="logo">
-            <img src="assets/acorn-globus-logo.png" alt="Company Logo" />
-          </div>
-          <input class="menu-btn" type="checkbox" id="menu-btn" />
-          <label class="menu-icon" for="menu-btn"
-            ><span class="navicon"></span
-          ></label>
-          <ul class="nav-items menu">
-            <li class="nav-list-item">
-              <a href="#container-1" class="nav-item-link current-active"
-                >Home</a
-              >
-            </li>
-            <li class="nav-list-item">
-              <a href="#projects" class="nav-item-link">Projects</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#container-3" class="nav-item-link">About</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#container-5" class="nav-item-link">Services</a>
-            </li>
-            <!--
-            <li class="nav-list-item">
-              <a href="#container-6" class="nav-item-link">Team</a>
-            </li>
-            -->
-            <!-- <li class="nav-list-item">
-              <a href="#footer-content" class="nav-item-link">Contact</a>
-            </li> -->
-          </ul>
+<body>
 
-          <!--         
-            <div id="social-connect">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-youtube"></i>
-              <i class="fab fa-instagram"></i>
-            </div>
-          -->
-        </nav>
-        <div id="header-content">
-          <div class="area" id="area-1">
-            <span id="area-1-heading">GET YOUR JOB DONE!!</span>
-            <h6 id="area-1-h2">
-              Building
-              <br />
-              innovative software
-              <br />
-              for industry leaders
-            </h6>
-            <div id="recruit-together">
-              <a href="#projects">Our Projects</a>
-              <span id="span-plus-icon">
-                <a href="#projects" style="color: white;">
-                  <i class="fa fa-plus" aria-hidden="true"></i>
-                </a>
-              </span>
-            </div>
-          </div>
-          <div class="area" id="area-2">
-            <h5 id="area-2-h5">Request For Call Back</h5>
-            <p id="area-2-p">Need scalable softwares?</p>
-
-            <!-- ! Commenting the Employer and Job Seeker Button -->
-
-            <!-- <div id="who-are-you">
-              <button class="option" id="option-1">Employer</button>
-              <button class="option" id="option-2">Job Seeker</button>
-            </div> -->
-
-            <form id="input-form" accept-charset='UTF-8' action='https://app.formester.com/forms/479fa947-e6e3-474c-8560-686d2cd0a1b8/submissions' method='POST'>
-              <input type="text" placeholder="Name" name="name" />
-              <input type="email" placeholder="Email" name="email" />
-              <input type="text" placeholder="Company Name" name="company_name" />
-              <input type="text" placeholder="Enquiry About" name="enquiry_about" />
-              <button>SUBMIT NOW</button>
-            </form>
-          </div>
+  <header>
+    <nav id="nav-bar" class="header py-5">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div id="logo" class="logo">
+          <img src="assets/acorn-globus-logo.png" alt="Company Logo" />
         </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="nav-items menu">
+          <li class="nav-list-item">
+            <a href="#hero" class="nav-item-link current-active">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#projects" class="nav-item-link">Projects</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#services" class="nav-item-link">Services</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#our-team" class="nav-item-link">Team</a>
+          </li>
+          <li class="nav-list-item">
+            <a href="#cta" class="nav-item-link">Contact</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
+  </header>
 
-    <!-- COMPANIES SECTION  -->
-    <div id="container-2">
-      <div class="box">
-        <a href="https://formester.com/" target="_blank">
-          <img src="assets/formester.png" alt="Formester logo" />
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1 class="hero__heading text-center text-md-start">Building innovative software for industry leaders</h1>
+        <a href="" class="hero__btn d-flex align-items-center justify-content-center justify-content-md-start">
+          Our Project
+          <svg width="38" height="20" viewBox="0 0 38 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M36.9247 10.9247C37.4353 10.414 37.4353 9.58601 36.9247 9.07534L28.6027 0.753379C28.092 0.242702 27.2641 0.242702 26.7534 0.753379C26.2427 1.26406 26.2427 2.09203 26.7534 2.6027L34.1507 10L26.7534 17.3973C26.2427 17.908 26.2427 18.7359 26.7534 19.2466C27.2641 19.7573 28.092 19.7573 28.6027 19.2466L36.9247 10.9247ZM0 11.3077H36V8.69233H0V11.3077Z"
+              fill="white" />
+          </svg>
         </a>
       </div>
-      <div class="box">
-        <a href="https://about.rumie.org/" target="_blank">  
-          <img src="assets/rumie-1.png" alt="Rumie logo" />
-        </a>
-      </div>
-      <div class="box">
-        <a href="https://www.mayple.com/main/b" target="_blank">
-          <img src="assets/mayple.png" alt="Mayple logo" />
-        </a>
-      </div>
-      <div class="box">
-        <a href="https://eitoss.com/" target="_blank">
-          <img src="assets/cayzen.png" alt="Cayzen logo" />
-        </a>
-      </div>
-      <div class="box">
-        <a href="https://www.hackerrank.com/" target="_blank">
-          <img src="assets/HackerRank-Logo.png" alt="HackerRank logo" />
-        </a>
-      </div>    
-      <div class="box">
-        <a href="https://equipmentconnect.co.uk/" target="_blank">
-          <img src="assets/equipment-connect.png" alt="Equipment connect logo" />
-        </a>
-      </div>
-    </div>
+    </section>
 
-    <!-- OUR FEATURES SECTION  -->
-    <div id="container-3">
-      <div class="features" id="feature-1">
-        <h4 class="features-head" id="consult-head">
-          The Best Agency for your Business
-        </h4>
-        <p class="about-features" id="consult-p">
-          We do more than just development, we help build your business.
-        </p>
-        <div class="consult-btn-container">
-          <button class="consult-btn" onclick="scrollWin()">Consult Now</button>
-        </div>
-      </div>
-      <div class="features">
-        <img src="assets/icon-arrow-board.png" class="features-img" alt="Arrow Board Icon" />
-        <h4 class="features-head">Web Development</h4>
-        <p class="about-features">
-          Web development as a whole is an essential component for success, and our team of experts make it look simple.
-        </p>
-      </div>
-      <div class="features">
-        <img src="assets/icon-mount-flag.png" class="features-img" alt="Mount Flag Icon" />
-        <h4 class="features-head">UI & UX Design</h4>
-        <p class="about-features">
-          “A user interface is like a joke. If you have to explain it, it’s not that good.” - that's what we believe in.
-        </p>
-      </div>
-      <div class="features">
-        <img src="assets/icon-fire-torch.png" class="features-img" alt="Fire torch Icon" />
-        <h4 class="features-head">Mobile Development</h4>
-        <p class="about-features">
-          We know precisely how to build highly responsive apps for iOS and Android.
-        </p>
-      </div>
-    </div>
-
-    <!-- TECH SECTION -->
-    <div id="tech-section">
-      <h3>Our Tech Expertise</h3>
-      <div class="tech-stacks">
-        <div class="technology">
-          <img src="assets/vue.svg" alt="vue logo">
-        </div>
-        <div class="technology">
-          <img src="assets/nodejs.png" alt="nodejs logo">
-        </div>
-        <div class="technology">
-          <img src="assets/rails.png" alt="rails logo">
-        </div>
-        <div class="technology">
-          <img src="assets/docker.png" alt="kubernetes logo">
-        </div>
-        <div class="technology">
-          <img src="assets/react.png" alt="react logo">
-        </div>
-        <div class="technology">
-          <img src="assets/python.png" alt="python logo">
-        </div>
-        <div class="technology">
-          <img src="assets/figma.png" alt="figma logo">
-        </div>
-        <div class="technology">
-          <img src="assets/postgres.png" alt="postgresql logo">
-        </div>
-        <div class="technology">
-          <img src="assets/github.png" alt="version control logo">
-        </div>
-      </div>
-    </div>
-
-    <!-- PROJECT DETAILS SECTION -->
-    <div id="projects">
-      <h3 class="projects__heading">OUR PROJECTS</h3>
-      <div v-for="project in projects" :key="project.title">
-        <div class="project">
-          <div class="details">
-            <h3 class="project__title">
-               {{project.title}}
-            </h3>
-            <h5 class="project__role"> {{project.role}} </h5>
-            <p class="project__description">
-              <span v-html="project.description"></span>
-            </p>
-            <!-- <div class="tag__cloud">
-              <div class="tags" v-for="tag in project.tags" :key="tag">
-                #{{tag}}
-              </div>
-            </div> -->
-            <div class="tech__stack">
-              <div class="tech" v-for="tech in project.stack">
-                <img :src="(`../assets/${tech.img}`)" :alt="tech.alt">
-              </div>
-            </div>
-            <a 
-              v-if="project.link"
-              :href="project.link"
-              target="_blank"
-            >
-              <button class="know__more">
-                Know More
-              </button>
+    <!-- COMPANIES -->
+    <section id="companies" class="companies">
+      <div class="container">
+        <div class="all__companies d-flex flex-column flex-sm-row align-items-center justify-content-between flex-wrap">
+          <div class="box">
+            <a href="https://formester.com/" target="_blank">
+              <img src="assets/formester.png" alt="Formester logo" class="company__img" />
             </a>
           </div>
-          <div class="picture">
-            <img :src="(`../assets/${project.image.filename}`)" :alt="project.image.alt">
+          <div class="box">
+            <a href="https://about.rumie.org/" target="_blank">
+              <img src="assets/rumie-1.png" alt="Rumie logo" class="company__img" />
+            </a>
+          </div>
+          <div class="box">
+            <a href="https://www.mayple.com/main/b" target="_blank">
+              <img src="assets/mayple.png" alt="Mayple logo" class="company__img" />
+            </a>
+          </div>
+          <div class="box">
+            <a href="https://eitoss.com/" target="_blank">
+              <img src="assets/cayzen.png" alt="Cayzen logo" class="company__img" />
+            </a>
+          </div>
+          <div class="box">
+            <a href="https://www.hackerrank.com/" target="_blank">
+              <img src="assets/HackerRank-Logo.png" alt="HackerRank logo" class="company__img" />
+            </a>
+          </div>
+          <div class="box">
+            <a href="https://equipmentconnect.co.uk/" target="_blank">
+              <img src="assets/equipment-connect.png" alt="Equipment connect logo" class="company__img" />
+            </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- SERVICES SECTION  -->
-    <div id="container-5">
-      <h4 id="container-5-h4">ALL THESE SERVICES FOR YOU</h4>
-      <h1 id="container-5-h1">The Best Services</h1>
-      <div id="items">
-        <div class="item">
-          <img src="assets/icon-stats-counter.png" alt="Track Record icon" class="item-img" />
-          <h4 class="item-content-head">
-            Track <br />
-            <strong>Record</strong>
-          </h4>
-          <p class="item-content">
-            Consistent track record of clients both big and SMEs
-          </p>
-        </div>
-        <div class="item">
-          <img src="assets/icon-analyze.png" alt="Analyze icon" class="item-img"  />
-          <h4 class="item-content-head">
-            Exponential <br />
-            <strong>Growth</strong>
-          </h4>
-          <p class="item-content">
-            Our recommendations ensures rapid expansion of business.
-          </p>
-        </div>
-        <div class="item">
-          <img src="assets/icon-video-play.png" alt="Video play icon" class="item-img" />
-          <h4 class="item-content-head">
-            Brand <br />
-            <strong>Equity</strong>
-          </h4>
-          <p class="item-content">
-            The brands have exceptional premium value of equity
-          </p>
-        </div>
-        <div class="item">
-          <img src="assets/icon-edit-cogs.png" alt="Edit cogs icon" class="item-img" />
-          <h4 class="item-content-head">
-            Trusted<br />
-            <strong>by leaders</strong>
-          </h4>
-          <p class="item-content">
-            The leaders trust in us empowers our operations.
-          </p>
-        </div>
-        <div class="item">
-          <img src="assets/icon-certified-batch.png" alt="Certified batch icon" class="item-img" />
-          <h4 class="item-content-head">
-            Diverse <br />
-            <strong>Portfolio</strong>
-          </h4>
-          <p class="item-content">
-            Our range of clients encompasses the big & the small.
-          </p>
-        </div>
-        <div class="item">
-          <img src="assets/icon-zoom-eye.png" alt="Zoom eye icon" class="item-img" />
-          <h4 class="item-content-head">
-            Pioneers <br />
-            <strong>in consultancy</strong>
-          </h4>
-          <p class="item-content">
-            We pioneered the agency concept by launching our own unit.
-          </p>
+    <!-- OUR SERVICES -->
+    <section id="services" class="wrapper">
+      <div class="container">
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <span class="subtext">our services</span>
+          <h2 class="subheading mb-2">What we offer</h2>
+          <div class="row mt-4">
+            <div
+              class="service__card col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
+              <div class="icon">
+                <img src="./assets/services/fluent_paint-brush-16-regular.svg" alt="Paint Brush">
+              </div>
+              <h3 class="sub__subheading">UI & UX Design</h3>
+              <p>A user interface is like a joke. If you have to explain it, it’s not that good.” - that's what we
+                believe in.</p>
+            </div>
+            <div
+              class="service__card col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
+              <div class="icon">
+                <img src="./assets/services/carbon_application-web.svg" alt="Computer">
+              </div>
+              <h3 class="sub__subheading">Web Development</h3>
+              <p>Web development as a whole is an essential component for success, and our team of experts make it look
+                simple.</p>
+            </div>
+            <div
+              class="service__card col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start">
+              <div class="icon">
+                <img src="./assets/services/carbon_application-mobile.svg" alt="Mobile">
+              </div>
+              <h3 class="sub__subheading">Mobile Development</h3>
+              <p>We know precisely how to build highly responsive apps for iOS and Android.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- SECTION FOR TEAM  -->
+    <!-- OUR PROJECTS -->
+    <section id="projects" class="wrapper">
+      <div class="container">
+        <span class="subtext">our project</span>
+        <h2 class="subheading mb-2">Few Projects we worked on</h2>
+        <div class="all__projects d-flex flex-column mt-4">
+          <div class="project__card d-flex flex-column flex-lg-row">
+            <img src="./assets/projects/eitoss.png" alt="Eitoss" class="project__img">
+            <div class="d-flex flex-column align-items-start">
+              <h3 class="sub__subheading">Eitoss</h3>
+              <span class="project__subtext">software consultant</span>
+              <p>Eitoss is a communication tool for managers and frontline workers. It builds on the concept of Kaizen
+                and help companies build product that are driven by the people who are on the frontline.</p>
+              <a href="" class="project__btn">View Project</a>
+            </div>
+          </div>
+          <div class="project__card d-flex flex-column flex-lg-row">
+            <img src="./assets/projects/rumie.png" alt="Rumie" class="project__img">
+            <div class="d-flex flex-column align-items-start">
+              <h3 class="sub__subheading">Rumie</h3>
+              <span class="project__subtext">Senior Frontend Engineer</span>
+              <p>Rumie is a non-profit that makes access to free digital education possible for underserved communities
+                worldwide. We collaborated on revamping the experience for application content managers. The new app
+                built using Vue provides a fast and intuitive way to deal with complex flows.</p>
+              <a href="" class="project__btn">View Project</a>
+            </div>
+          </div>
+          <div class="project__card d-flex flex-column flex-lg-row">
+            <img src="./assets/projects/formester.png" alt="Formester" class="project__img">
+            <div class="d-flex flex-column align-items-start">
+              <h3 class="sub__subheading">Formester</h3>
+              <span class="project__subtext">FullStack Developer</span>
+              <p>A form backend as a service. It makes creating form endpoints for websites very easy. It requires zero
+                programming knowledge. The user has the full control over the look and feel of the form. In Formester
+                validation, spam protection and integration with different CRMs are few clicks away.</p>
+              <a href="" class="project__btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div id="container-6">
-      <h4 id="container-6-h4">THE SHOWRUNNERS</h4>
-      <h2 id="container-6-h2">Perfect Team</h2>
-      <div id="members">
-        <div class="member">
-          <div class="fade-in"></div>
-          <div class="member-img-container">
-            <img src="assets/ankit-img.jpg" alt="Ankit" class="member-img" />
+    <!-- OUR EXPERTIZE -->
+    <section id="expertize" class="wrapper expertize">
+      <div class="container text-center">
+        <span class="subtext">our expertize</span>
+        <h2 class="subheading">Tech Expertize</h2>
+        <div class="tech-stacks">
+          <div class="technology">
+            <img src="assets/expertize/vue.png" alt="vue logo">
           </div>
-          <h4 class="member-name">Ankit</h4>
-          <h5 class="member-role">CEO</h5>
-          <hr class="horizontal-separation" />
-          <p class="member-role-details">
-            Proven ability to work in a team and contribute as an individual.
-          </p>
-        </div>
-        <div class="member">
-          <div class="fade-in"></div>
-          <div class="member-img-container">
-            <img src="assets/tarun.jpeg" alt="Tarun" class="member-img" />
+          <div class="technology">
+            <img src="assets/expertize/node.png" alt="nodejs logo">
           </div>
-          <h4 class="member-name">Tarun</h4>
-          <h5 class="member-role">CTO</h5>
-          <hr class="horizontal-separation" />
-          <p class="member-role-details">
-            Always open to new technologies as it is my driving force and motivation.
-          </p>
-        </div>
-        <div class="member">
-          <div class="fade-in"></div>
-          <div class="member-img-container">
-            <img src="assets/yaswant.jpeg" alt="Yaswant" class="member-img" />
+          <div class="technology">
+            <img src="assets/expertize/rails.png" alt="rails logo">
           </div>
-          <h4 class="member-name">Yaswanth</h4>
-          <h5 class="member-role">Developer</h5>
-          <hr class="horizontal-separation" />
-          <p class="member-role-details">
-            Calm, cool and focued towards my work.
-          </p>
-        </div>
-        <div class="member">
-          <div class="fade-in"></div>
-          <div class="member-img-container">
-            <img src="assets/aditya.jpeg" alt="Aditya" class="member-img" />
+          <div class="technology">
+            <img src="assets/expertize/docker.png" alt="kubernetes logo">
           </div>
-          <h4 class="member-name">Aditya</h4>
-          <h5 class="member-role">UI/UX, Frontend</h5>
-          <hr class="horizontal-separation" />
-          <p class="member-role-details">
-            I love desgining and devloping websites.
-          </p>
-        </div>
-        <div class="member">
-          <div class="fade-in"></div>
-          <div class="member-img-container">
-            <img src="assets/santosh.jpeg" alt="Santosh" class="member-img" />
+          <div class="technology">
+            <img src="assets/expertize/react.png" alt="react logo">
           </div>
-          <h4 class="member-name">Santosh</h4>
-          <h5 class="member-role">Developer</h5>
-          <hr class="horizontal-separation" />
-          <p class="member-role-details">
-            Self-motivated computer science engineer with keen interest in coding.
-          </p>
-        </div>
-        <div class="member">
-          <div class="fade-in"></div>
-          <div class="member-img-container">
-            <img src="assets/piyush-img.jpeg" alt="Piyush" class="member-img" />
+          <div class="technology">
+            <img src="assets/expertize/python.png" alt="python logo">
           </div>
-          <h4 class="member-name">Piyush</h4>
-          <h5 class="member-role">Developer</h5>
-          <hr class="horizontal-separation" />
-          <p class="member-role-details">
-            Web Developer with a demonstrated history of working in the retail industry.
-          </p>
+          <div class="technology">
+            <img src="assets/expertize/figma.png" alt="figma logo">
+          </div>
+          <div class="technology">
+            <img src="assets/expertize/postgresql.png" alt="postgresql logo">
+          </div>
+          <div class="technology">
+            <img src="assets/expertize/github.png" alt="version control logo">
+          </div>
+          <div class="technology">
+            <img src="assets/expertize/golang.png" alt="golang logo">
+          </div>
+          <div class="technology">
+            <img src="assets/expertize/android.png" alt="android logo">
+          </div>
+          <div class="technology">
+            <img src="assets/expertize/flutter.png" alt="flutter logo">
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- SUPPORT SECTION  -->
-    <div class="container-8-box">    
-      <div id="container-8">
-        <div class="part" id="part-1">
-          <img src="assets/icon-question.png" alt="Question mark icon" class="part-img" />
-          <div class="part-content">
-            <h4 class="part-content-h4">
-              Get your <br />
-              <strong>clarifications</strong>
-            </h4>
-            <p class="part-content-p">
-              Using our 24/7 knowledgebase, forum & comments get clarified.
-            </p>
+    <!-- OUR TEAM -->
+    <section id="our-team" class="wrapper">
+      <div class="container">
+        <span class="subtext">our team</span>
+        <h2 class="subheading">Get to Know us Closer</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="item py-4 px-2">
+            <div class="team__card">
+              <img src="./assets/team/ankit-img.jpg" alt="Ankit" class="pr__img">
+              <h4 class="pr__name mt-4">Ankit</h4>
+              <p class="pr__role">CEO</p>
+              <div class="socials d-flex mt-3">
+                <img src="./assets/socials/Social Icons.svg" alt="">
+                <img src="./assets/socials/Social Icons-1.svg" alt="">
+                <img src="./assets/socials/Social Icons-2.svg" alt="">
+                <img src="./assets/socials/Social Icons-3.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item py-4 px-2">
+            <div class="team__card">
+              <img src="./assets/team/tarun.jpeg" alt="Tarun" class="pr__img">
+              <h4 class="pr__name mt-4">Tarun</h4>
+              <p class="pr__role">CTO</p>
+              <div class="socials d-flex mt-3">
+                <img src="./assets/socials/Social Icons.svg" alt="">
+                <img src="./assets/socials/Social Icons-1.svg" alt="">
+                <img src="./assets/socials/Social Icons-2.svg" alt="">
+                <img src="./assets/socials/Social Icons-3.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item py-4 px-2">
+            <div class="team__card">
+              <img src="./assets/team/yaswant.jpeg" alt="Ankit" class="pr__img">
+              <h4 class="pr__name mt-4">Yash</h4>
+              <p class="pr__role">Developer</p>
+              <div class="socials d-flex mt-3">
+                <img src="./assets/socials/Social Icons.svg" alt="">
+                <img src="./assets/socials/Social Icons-1.svg" alt="">
+                <img src="./assets/socials/Social Icons-2.svg" alt="">
+                <img src="./assets/socials/Social Icons-3.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item py-4 px-2">
+            <div class="team__card">
+              <img src="./assets/team/piyush.png" alt="Ankit" class="pr__img">
+              <h4 class="pr__name mt-4">Piyush</h4>
+              <p class="pr__role">Developer</p>
+              <div class="socials d-flex mt-3">
+                <img src="./assets/socials/Social Icons.svg" alt="">
+                <img src="./assets/socials/Social Icons-1.svg" alt="">
+                <img src="./assets/socials/Social Icons-2.svg" alt="">
+                <img src="./assets/socials/Social Icons-3.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item py-4 px-2">
+            <div class="team__card">
+              <img src="./assets/team/santosh.jpeg" alt="Ankit" class="pr__img">
+              <h4 class="pr__name mt-4">Santosh</h4>
+              <p class="pr__role">Developer</p>
+              <div class="socials d-flex mt-3">
+                <img src="./assets/socials/Social Icons.svg" alt="">
+                <img src="./assets/socials/Social Icons-1.svg" alt="">
+                <img src="./assets/socials/Social Icons-2.svg" alt="">
+                <img src="./assets/socials/Social Icons-3.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="item py-4 px-2">
+            <div class="team__card">
+              <img src="./assets/team/aditya.jpeg" alt="Ankit" class="pr__img">
+              <h4 class="pr__name mt-4">Aditya</h4>
+              <p class="pr__role">Designer</p>
+              <div class="socials d-flex mt-3">
+                <img src="./assets/socials/Social Icons.svg" alt="">
+                <img src="./assets/socials/Social Icons-1.svg" alt="">
+                <img src="./assets/socials/Social Icons-2.svg" alt="">
+                <img src="./assets/socials/Social Icons-3.svg" alt="">
+              </div>
+            </div>
           </div>
         </div>
-        <div class="part" id="part-2">
-          <img src="assets/icon-support.png" alt="Support icon" class="part-img" />
-          <div class="part-content">
-            <h4 class="part-content-h4">
-              Legendary <br />
-              <strong>support</strong>
-            </h4>
-            <p class="part-content-p">
-              Get your doubts cleared using our 
-              <span style="color: #571f9c">
-                <a target="_blank" href="mailto:ankit@formester.com">email</a>
-              </span>
-              support, phone or knowledgebase.
-            </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="wrapper cta__container">
+      <div class="text-center text-white cta__wrapper mx-auto">
+        <span class="subtext">contact us</span>
+        <h2 class="subheading">Get in Touch with Us</h2>
+        <p class="mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut magnam minus sunt reprehenderit
+          sed eaque
+          molestiae excepturi? Ad, necessitatibus odit odio consequatur quam quod vero quia eveniet, deserunt, enim
+          dicta?</p>
+        <a href="" class="cta__btn">Contact Now</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer__container text-white text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <div class="logo">
+            <img src="assets/acorn-globus-logo.png" alt="Company Logo" />
           </div>
-        </div>
-        <div class="part" id="part-3">
-          <img src="assets/icon-package.png" alt="Maintenance Icon" class="part-img" />
-          <div class="part-content">
-            <h4 class="part-content-h4">
-              Maintenance <br />
-              <strong>package</strong>
-            </h4>
-            <p class="part-content-p">
-              We offer annual maintenance packages for different needs.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECTION TO DISPLAY THE NUMBER OF TIMES WE ARE CONTACTED -->
-    <div id="container-7">
-      <div class="blocks">
-        <img src="assets/icon-phone.png" alt="Phone icon" class="blocks-img" />
-        <div class="counter">500M</div>
-        <hr class="h-line" />
-      </div>
-      <div class="vl"></div>
-      <div class="blocks">
-        <img src="assets/icon-cost-n-time.png" alt="Cost and time icon" class="blocks-img" />
-        <div class="counter">19000</div>
-        <hr class="h-line" />
-      </div>
-      <div class="vl"></div>
-      <div class="blocks">
-        <img src="assets/icon-stats-bar-chart.png" alt="Stats bar icon" class="blocks-img" />
-        <div class="counter">2331</div>
-        <hr class="h-line" />
-      </div>
-      <div class="vl"></div>
-      <div class="blocks">
-        <img src="assets/icon-cup-coffee.png" alt="Coffee icon" class="blocks-img" />
-        <div class="counter">112260</div>
-        <hr class="h-line" />
-      </div>
-    </div>
-
-    
-
-    <!-- CTA SECTION  -->
-    <div id="container-4">
-      <h3 id="container-4-h3">WE ARE THE BEST AGENCY FOR YOU</h3>
-      <hr id="container-4-hr" />
-      <h2 id="container-4-h2">
-        Take your business soaring high... <br />Reach for us
-      </h2>
-      <p id="container-4-p">
-        When you objectively analyze your business, you are likely to get a new
-        perspective. These new perspectives propel your business up by infusing
-        fresh strategy. We can support whenever new strategy is needed.
-      </p>
-      <div class="btns-container">
-        <button id="container-4-btn-1">
-          <i class="fas fa-thumbs-up"></i>
-        </button>
-        <div id="vertical-line"></div>
-        <button id="container-4-btn-2" onclick="scrollWin()">Hire us</button>
-      </div>
-    </div>
-
-    <!-- FOOTER SECTION  -->
-    <footer>
-      <div id="footer-content">
-        <div class="footer-content-elements" id="footer-element-1">
-          <img src="assets/acorn-globus-logo.png" alt="Company logo" id="company-logo-footer" />
-          <p id="company-moto-footer">
-            We work to ensure people's comfort at their company specializing in
-            house hours
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
           </p>
-          <h3 id="work-days">Working Days</h3>
-          <table class="working-days-table">
-            <tbody>
-              <tr id="table-row-1">
-                <th scope="row" class="days">Mon - Sat</th>
-                <td>09am - 05pm</td>
-              </tr>
-              <tr>
-                <th scope="row" class="days">Sun</th>
-                <td class="text-secondary">Closed</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="social__icons d-flex">
+
+          </div>
         </div>
-        <div class="footer-content-elements" id="footer-element-2">
-          <h3 id="footer-element-2-h3">Useful Links</h3>
-          <ul class="helpful-links">
-            <li class="h-link">
-              <a href="#container-1">Home</a>
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer__subheading mb-4">Quick Links</h5>
+
+          <ul class="footer__items list-unstyled mb-0">
+            <li>
+              <a href="#!" class="footer__link text-white">Home</a>
             </li>
-            <li class="h-link">
-              <a href="#container-2">Companies</a>
+            <li>
+              <a href="#!" class="footer__link text-white">Services</a>
             </li>
-            <li class="h-link">
-              <a href="#container-3">Features</a>
+            <li>
+              <a href="#!" class="footer__link text-white">Projects</a>
             </li>
-            <li class="h-link">
-              <a href="#container-4">Hire us</a>
+            <li>
+              <a href="#!" class="footer__link text-white">Expertize</a>
             </li>
-            <li class="h-link">
-              <a href="#container-5">Services</a>
-            </li>
-
-            <!--              
-              <li class="h-link">
-                <a href="#container-6">Team</a>
-              </li>
-            -->
-            <li class="h-link">
-              <a href="#container-7">Numbers</a>
-            </li>
-            <li class="h-link">
-              <a href="#container-8">Support</a>
+            <li>
+              <a href="#!" class="footer__link text-white">Contact</a>
             </li>
           </ul>
         </div>
 
-        <!-- <div class="footer-content-elements" id="footer-element-3">
-        <h3 id="footer-element-3-h3">Fast Contact</h3>
-        <div class="support-member">
-          <img src="assets/contact-1.jpg" alt="Jasos">
-          <div class="support-member-details">
-            <h4 class="support-member-name">Jasos William</h4>
-            <h5 class="support-member-role">Consultant</h5>
-            <p class="support-member-contact">info@contact.me</p>
-          </div>
-        </div>
-        <div class="support-member">
-          <img src="assets/contact-2.jpg" alt="Winnie">
-          <div class="support-member-details">
-            <h4 class="support-member-name">Winnie Jones</h4>
-            <h5 class="support-member-role">Consultant</h5>
-            <p class="support-member-contact">info@contact.me</p>
-          </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer__subheading mb-4">Reach Us</h5>
+
+          <ul class="footer__items list-unstyled">
+            <li>
+              <a href="#!" class="footer__link text-white">business@acornglobus.com</a>
+            </li>
+            <li>
+              <a href="#!" class="footer__link text-white">+91 55555555555</a>
+            </li>
+            <li>
+              <a href="#!" class="footer__link text-white">49/D, Naya Bazar, Jamshedpur</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="footer-content-elements" id="footer-element-4">
-        <img src="assets/brochure.jpg" alt="Brochure" id="brochure-img">
-        <a href="" class="brochure-download-btn">
-          <span class="brochure-download">OUR BROCHURE </span>
-          <span class="download-icon"><i class="fas fa-download"></i></span>
-        </a>
-      </div> -->
-      </div>
-      <hr class="hr-footer" />
-      <div class="copywrite">
-        &copy; This site is owned and operated by Acorn Globus, copyright 2021
-        <br />
-        49D, Naya Bazar, Jugsalai, Jamshedpur - 831006
-      </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Acorn Globus.
+      <span class="text-white">All Rights Reserved</span>
+    </div>
+  </footer>
+
+  <!-- Jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Owl Carousel -->
+  <script src="./owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
