@@ -426,3 +426,7 @@ body {
 .footer__link {
   text-decoration: none;
 }
+
+.social__icons {
+  gap: 1em;
+}
