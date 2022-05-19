@@ -296,7 +296,7 @@ body {
 /* ==== PROJECTS ===== */
 
 .all__projects {
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .project__card {
@@ -317,10 +317,14 @@ body {
 .project__btn {
   background-color: var(--clr-primary);
   color: white;
-  padding: 0.75em 1em;
+  padding: 10px 5px 10px 14px;
   text-decoration: none;
   border-radius: 0.25em;
   transition: ease-in-out 300ms;
+
+  display: flex;
+  align-items: center;
+  justify-items: center;
 }
 
 .project__btn:hover {
