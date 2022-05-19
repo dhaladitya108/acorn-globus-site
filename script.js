@@ -3,7 +3,7 @@ $(".owl-carousel").owlCarousel({
   margin: 12,
   nav: true,
   lazyLoad: true,
-  navigation: false,
+  dots: false,
   responsive: {
     0: {
       items: 1,
