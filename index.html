@@ -51,39 +51,37 @@
 
 <body>
 
-  <header>
-    <nav id="nav-bar" class="header py-5">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div id="logo" class="logo">
-          <img src="assets/acorn-globus-logo.png" alt="Company Logo" />
+  <section class="bg__primary position-relative overflow-hidden">
+    <div class="container">
+      <!-- NAVIGATION  -->
+      <nav id="nav-bar" class="header py-5">
+        <div class="d-flex align-items-center justify-content-between w-100">
+          <div id="logo" class="logo">
+            <img src="assets/acorn-globus-logo.png" alt="Company Logo" />
+          </div>
+          <input class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="nav-items menu">
+            <li class="nav-list-item">
+              <a href="#hero" class="nav-item-link current-active">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#projects" class="nav-item-link">Projects</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#services" class="nav-item-link">Services</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#our-team" class="nav-item-link">Team</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#cta" class="nav-item-link">Contact</a>
+            </li>
+          </ul>
         </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="nav-items menu">
-          <li class="nav-list-item">
-            <a href="#hero" class="nav-item-link current-active">Home</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#projects" class="nav-item-link">Projects</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#services" class="nav-item-link">Services</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#our-team" class="nav-item-link">Team</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="#cta" class="nav-item-link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="hero" class="hero">
-      <div class="container">
+      </nav>
+      <!-- HERO -->
+      <div id="hero" class="hero">
         <h1 class="hero__heading text-center text-md-start">Building innovative software for industry leaders</h1>
         <a href="" class="hero__btn d-flex align-items-center justify-content-center justify-content-md-start">
           Our Project
@@ -94,8 +92,11 @@
           </svg>
         </a>
       </div>
-    </section>
+    </div>
+    <img src="./assets/acorn-watermark.png" alt="Acorn Globus Logo Watermark" class="hero-watermark">
+  </section>
 
+  <main>
     <!-- COMPANIES -->
     <section id="companies" class="companies">
       <div class="container">
