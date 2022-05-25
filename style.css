@@ -309,6 +309,10 @@ body {
   transition: 0.2s ease;
 }
 
+.box .company__img.rumie {
+  opacity: 0.85;
+}
+
 .box .company__img:hover {
   filter: none;
   opacity: 1;
