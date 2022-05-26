@@ -166,6 +166,12 @@ body {
   margin: 0;
 }
 
+.contact-us__description {
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
 .bg__primary {
   background-color: var(--clr-primary);
 }
@@ -452,7 +458,7 @@ body {
   border-radius: 0.25em;
 
   display: inline-block;
-  margin-top: 2em;
+  margin-top: 1em;
   text-decoration: none;
   transition: ease-in-out 300ms;
 }
@@ -471,6 +477,7 @@ body {
 
 .footer__desc {
   max-width: 400px;
+  font-weight: 200;
 }
 
 .footer__subheading {
@@ -487,6 +494,8 @@ body {
 
 .footer__link {
   text-decoration: none;
+  font-weight: 300;
+  color: white;
 }
 
 .social__icons {
@@ -517,4 +526,10 @@ body {
   .footer-watermark-acorn {
     display: none;
   }
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 0.8px;
 }
