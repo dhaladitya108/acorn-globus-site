@@ -461,6 +461,10 @@ body {
   z-index: 10;
 }
 
+.footer__desc {
+  max-width: 400px;
+}
+
 .footer__subheading {
   font-size: 1.5rem;
   line-height: 32px;
