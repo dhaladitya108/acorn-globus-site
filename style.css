@@ -195,6 +195,8 @@ body {
   align-items: center;
   justify-content: space-around;
   font-weight: 600;
+
+  margin-bottom: 0;
 }
 .nav-list-item {
   list-style-type: none;
@@ -288,6 +290,12 @@ body {
 @media screen and (max-width: 768px) {
   .hero-watermark {
     display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero {
+    z-index: 1;
   }
 }
 /* ==== COMPANIES ==== */

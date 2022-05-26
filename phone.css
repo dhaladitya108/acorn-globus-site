@@ -127,7 +127,8 @@
 /* ==== COMPANIES  ===== */
 
 .all__companies {
-  gap: 2rem;
+  margin-top: 2em;
+  gap: 3.5em;
 }
 
 /* ==== EXPERTIZE ===== */
@@ -135,4 +136,9 @@
 .technology {
   width: 250px;
   margin: 10px auto;
+}
+
+.tech-stacks {
+  margin-top: 2em;
+  gap: 2em;
 }
