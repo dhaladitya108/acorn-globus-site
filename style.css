@@ -320,12 +320,12 @@ body {
 .box .company__img {
   width: 150px;
   filter: grayscale(1);
-  opacity: 0.5;
+  opacity: 0.25;
   transition: 0.2s ease;
 }
 
 .box .company__img.rumie {
-  opacity: 0.85;
+  opacity: 0.6;
 }
 
 .box .company__img:hover {
