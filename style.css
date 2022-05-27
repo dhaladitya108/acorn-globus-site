@@ -162,7 +162,7 @@ body {
 
 .sub__subheading {
   font-size: 1.75rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 36px;
   margin: 0;
 }
@@ -364,10 +364,14 @@ body {
   color: hsla(222, 40%, 43%, 1);
 }
 
+.project__description {
+  letter-spacing: 0.3px;
+}
+
 .project__btn {
   background-color: var(--clr-primary);
   color: white;
-  padding: 10px 5px 10px 14px;
+  padding: 5px 10px;
   text-decoration: none;
   border-radius: 0.25em;
   transition: ease-in-out 300ms;
@@ -402,6 +406,7 @@ body {
   font-size: 1.5rem;
   line-height: 32px;
   color: #333333;
+  font-weight: 700;
 }
 
 .pr__role {
@@ -480,6 +485,7 @@ body {
 .footer__desc {
   max-width: 400px;
   font-weight: 200;
+  letter-spacing: 0.5px;
 }
 
 .footer__subheading {
