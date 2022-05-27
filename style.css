@@ -354,7 +354,11 @@ body {
 }
 
 .project__img {
-  border-radius: 0.25em;
+  border: 5px solid #d7e0f4;
+  height: 180px;
+  border-radius: 0.45em;
+  box-sizing: border-box;
+  aspect-ratio: 2/1;
 }
 
 .project__subtext {
