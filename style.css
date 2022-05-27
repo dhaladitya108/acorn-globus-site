@@ -215,11 +215,11 @@ body {
   text-decoration: none;
 }
 .current-active {
-  color: red;
+  color: #f65c5c;
 }
 .nav-item-link:hover {
   transition: 0.3s ease-in-out;
-  color: red;
+  color: #f65c5c;
 }
 #social-connect {
   width: 15%;
@@ -234,7 +234,7 @@ body {
 }
 #social-connect i:hover {
   transition: 0.3s ease-out;
-  color: red;
+  color: #f65c5c;
 }
 .header .menu-icon,
 .header .menu-btn {
