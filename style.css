@@ -351,6 +351,7 @@ body {
 
 .project__card {
   gap: 2rem;
+  margin-bottom: 14px;
 }
 
 .project__img {
