@@ -31,8 +31,6 @@
 }
 
 .box .company__img {
-  filter: none;
-  opacity: 1;
   transition: 0.2s ease;
 }
 
