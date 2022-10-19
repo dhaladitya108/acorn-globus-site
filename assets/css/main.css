@@ -1,0 +1,49 @@
+:root {
+    --clr-primary: hsla(222, 53%, 21%, 1);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Aileron", sans-serif;
+    color: var(--clr-primary);
+  }
+  
+  .wrapper {
+    padding-block: 4rem;
+  }
+  
+  .subtext {
+    font-size: 0.75rem;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+  
+  .subheading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  
+  .sub__subheading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0;
+  }
+  
+  .contact-us__description {
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-weight: 200;
+  }
+  
+  .bg__primary {
+    background-color: var(--clr-primary);
+  }
+  
