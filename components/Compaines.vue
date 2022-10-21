@@ -7,7 +7,7 @@
         <div class="box">
           <a href="https://formester.com/" target="_blank">
             <img
-              src="@/assets/images/formester.png"
+              src="@/assets/images/companies/formester.png"
               alt="Formester logo"
               class="company__img"
             />
@@ -16,7 +16,7 @@
         <div class="box">
           <a href="https://about.rumie.org/" target="_blank">
             <img
-              src="@/assets/images/rumie.png"
+              src="@/assets/images/companies/rumie.png"
               alt="Rumie logo"
               class="company__img rumie"
             />
@@ -25,7 +25,7 @@
         <div class="box">
           <a href="https://www.mayple.com/main/b" target="_blank">
             <img
-              src="@/assets/images/mayple.png"
+              src="@/assets/images/companies/mayple.png"
               alt="Mayple logo"
               class="company__img"
             />
@@ -34,7 +34,7 @@
         <div class="box">
           <a href="https://eitoss.com/" target="_blank">
             <img
-              src="@/assets/images/cayzen.png"
+              src="@/assets/images/companies/cayzen.png"
               alt="Cayzen logo"
               class="company__img"
             />
@@ -43,7 +43,7 @@
         <div class="box">
           <a href="https://www.hackerrank.com/" target="_blank">
             <img
-              src="@/assets/images/HackerRank-Logo.png"
+              src="@/assets/images/companies/HackerRank-Logo.png"
               alt="HackerRank logo"
               class="company__img"
             />
@@ -52,7 +52,7 @@
         <div class="box">
           <a href="https://equipmentconnect.co.uk/" target="_blank">
             <img
-              src="@/assets/images/equipment-connect.png"
+              src="@/assets/images/companies/equipment-connect.png"
               alt="Equipment connect logo"
               class="company__img"
             />
