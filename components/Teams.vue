@@ -118,10 +118,6 @@
 export default {
   data() {
     return {
-      options: {
-        loop: true,
-        perPage: 4,
-      },
       settings: {
         arrows: true,
         dots: true,
@@ -208,5 +204,11 @@ export default {
 .socials img {
   width: 32px;
   height: 32px;
+}
+
+@media screen and (max-width: 544px) {
+  .team__card {
+    margin: 0;
+  }
 }
 </style>
