@@ -60,7 +60,7 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
 .icon {
   background-color: #f0f4ff;
   padding: 1rem;
