@@ -112,7 +112,7 @@
         <div class="team__card">
           <img
             src="@/assets/images/team/ravindra.png"
-            alt="Anirudh"
+            alt="Ravindra"
             class="pr__img"
           />
           <h4 class="pr__name mt-4">Ravindra</h4>
@@ -138,7 +138,7 @@ export default {
         perPage: 4,
       },
       settings: {
-        arrows: true,
+        // arrows: true,
         dots: true,
         infinite: false,
         speed: 500,
@@ -149,9 +149,9 @@ export default {
         speed: 350,
         autoplaySpeed: 350,
         cssEase: "linear",
-        touchMove: false,
-        swipe: false,
-        swipeToSlide: false,
+        // touchMove: false,
+        // swipe: false,
+        // swipeToSlide: false,
         responsive: [
           {
             breakpoint: 1024,
@@ -186,7 +186,7 @@ export default {
 
 <style>
 .team__card {
-  margin: 1rem;
+  margin: 1rem 0rem;
   padding: 1rem 1.5rem;
   transition: ease-in-out 300ms;
 }
