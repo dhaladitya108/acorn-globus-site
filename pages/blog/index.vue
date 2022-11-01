@@ -26,42 +26,17 @@
 
 <script>
 export default {
-  data() {
-    return {
-      articles: [
-        {
-          title: "Which tech stack is best for website development?",
-          author: "Vivek Badani",
-          date: "20 Oct 2022",
-          topic: "tech",
-        },
-        {
-          title:
-            "Nicklas Haslestad on ditching PDF guidelines, the future of design & why AI isn't a threat",
-          author: "Vivek Badani",
-          date: "27 Oct 2022",
-          topic: "design",
-        },
-        {
-          title:
-            "Doing things that scare us: the things that unexpectedly build confidence",
-          author: "Vivek Badani",
-          date: "22 Oct 2022",
-          topic: "career",
-        },
-      ],
-    };
-  },
-  // async asyncData({ $content }) {
-  //   const articles = await $content("blog")
-  //     .where({
-  //       published: true,
-  //     })
-  //     .sortBy("createdAt", "desc")
-  //     .fetch();
+  // fetching list of all the blogs
+  async asyncData({ $content }) {
+    const articles = await $content("blog")
+      .where({
+        published: true,
+      })
+      .sortBy("createdAt", "desc")
+      .fetch();
 
-  //   return articles;
-  // },
+    return { articles };
+  },
 };
 </script>
 

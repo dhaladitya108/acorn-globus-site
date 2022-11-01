@@ -61,9 +61,24 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/content',
   ],
+
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        const stats = require('reading-time')(document.text)
+        document.readingStats = stats
+      }
+    },
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+
+  // disable live editing feature in nuxt content
+  content: {
+    liveEdit: false,
+  },
 }
