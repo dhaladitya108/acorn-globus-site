@@ -178,6 +178,7 @@ export default {
   margin-top: -4rem;
   position: absolute;
   color: #777;
+  text-decoration: none;
 }
 
 .blog__back__margin {
