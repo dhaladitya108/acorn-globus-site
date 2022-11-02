@@ -111,7 +111,7 @@ export default {};
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 575.5px) {
   .all__companies {
     margin-top: 2em;
     gap: 3.5em;
