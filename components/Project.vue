@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="wrapper">
-    <div class="container">
+    <div class="container px-3">
       <span class="subtext">our projects</span>
       <h2 class="subheading mb-5">Few Projects we worked on</h2>
       <div class="all__projects d-flex flex-column mt-4">
@@ -8,6 +8,7 @@
           <img
             src="@/assets/images/projects/formester-mockup.svg"
             alt="Formester Mockup"
+            class="mockup__img"
           />
           <div
             class="d-flex flex-column align-items-start justify-content-center"
@@ -79,10 +80,18 @@
               </svg>
             </a>
           </div>
-          <img src="@/assets/images/projects/rumie-mockup.svg" alt="Rumie" />
+          <img
+            src="@/assets/images/projects/rumie-mockup.svg"
+            alt="Rumie"
+            class="mockup__img"
+          />
         </div>
         <div class="project__card d-flex flex-column flex-lg-row">
-          <img src="@/assets/images/projects/eitoss-mockup.svg" alt="Eitoss" />
+          <img
+            src="@/assets/images/projects/eitoss-mockup.svg"
+            alt="Eitoss"
+            class="mockup__img"
+          />
           <div
             class="d-flex flex-column align-items-start justify-content-center"
           >
@@ -162,5 +171,11 @@ export default {};
 .project__btn:hover {
   color: var(--clr-primary);
   gap: 32px;
+}
+
+@media screen and (max-width: 540px) {
+  .mockup__img {
+    padding-inline: 3rem;
+  }
 }
 </style>
