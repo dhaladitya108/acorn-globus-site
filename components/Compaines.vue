@@ -95,7 +95,7 @@ export default {};
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .all__companies {
     gap: 1rem;
   }
