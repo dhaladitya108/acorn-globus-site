@@ -18,8 +18,20 @@
         class="position-absolute acorn-light-watermark"
       />
     </div>
-    <div class="bg__primary">
+    <div class="bg__primary position-relative overflow-hidden">
+      <Cta />
       <Footer />
+      <img
+        src="@/assets/images/acorn-watermark.png"
+        alt="Acorn Globus Symbol Watermark"
+        class="footer-watermark-acorn position-absolute"
+        height="500"
+      />
+      <img
+        src="@/assets/images/footer-watermark.png"
+        alt="Footer Watermark"
+        class="footer-watermark-geometry position-absolute"
+      />
     </div>
   </div>
 </template>
