@@ -25,7 +25,7 @@
           <a href="#projects" class="nav-item-link">Projects</a>
         </li>
         <li class="nav-list-item">
-          <NuxtLink to="/blog" class="nav-item-link">Blogs</NuxtLink>
+          <NuxtLink to="/blog" class="nav-item-link">Blog</NuxtLink>
         </li>
         <li class="nav-list-item">
           <a href="#our-team" class="nav-item-link">Team</a>
