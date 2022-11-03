@@ -5,8 +5,9 @@
   >
     <img src="@/assets/images/blog/abstract1.png" alt="Abstract Image" />
     <div class="d-flex flex-column overflow-hidden">
-      <div class="d-flex align-items-center gap-3">
-        <span class="badge">{{ article.topic }}</span>
+      <div class="d-flex align-items-baseline gap-2">
+        <span class="sm__text">{{ article.topic }}</span>
+        <span class="text-gray">•</span>
         <span class="sm__text">{{ article.readingStats.text }}</span>
       </div>
       <h2 class="blog__heading my-2">
@@ -40,8 +41,6 @@ export default {
   font-size: 14px;
   line-height: 21px;
   color: var(--clr-primary);
-  padding: 4px 8px;
-  border: 1px solid var(--clr-primary);
   text-transform: capitalize;
   font-weight: 400;
 }
@@ -68,5 +67,9 @@ export default {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
+}
+
+.text-gray {
+  color: #b9b9b9;
 }
 </style>
