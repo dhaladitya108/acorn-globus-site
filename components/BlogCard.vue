@@ -43,6 +43,7 @@ export default {
   padding: 4px 8px;
   border: 1px solid var(--clr-primary);
   text-transform: capitalize;
+  font-weight: 400;
 }
 
 .blog__heading {
@@ -58,12 +59,14 @@ export default {
 .sm__text {
   font-size: 14px;
   line-height: 21px;
+  color: #495f92;
+  /* letter-spacing: 1px; */
 }
 
 .name__text {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
   margin: 0;
 }
 </style>
