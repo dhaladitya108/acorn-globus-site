@@ -65,8 +65,6 @@ export default {};
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  font-weight: 600;
-
   margin-bottom: 0;
 }
 .nav-list-item {
