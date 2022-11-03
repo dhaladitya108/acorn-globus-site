@@ -17,7 +17,7 @@
               src="@/assets/images/projects/formester-logo.svg"
               alt="Formester Logo"
             />
-            <p class="mt-3 project__description">
+            <p class="mt-4 project__description">
               A form backend as a service. It makes creating form endpoints for
               websites very easy. It requires zero programming knowledge. The
               user has the full control over the look and feel of the form. In
@@ -53,7 +53,7 @@
               src="@/assets/images/projects/rumie-logo.png"
               alt="Rumie Logo"
             />
-            <p class="mt-3 project__description">
+            <p class="mt-4 project__description">
               Rumie is a non-profit that makes access to free digital education
               possible for underserved communities worldwide. We collaborated on
               revamping the experience for application content managers. The new
@@ -99,7 +99,7 @@
               src="@/assets/images/projects/eitoss-logo.png"
               alt="Eitoss Logo"
             />
-            <p class="mt-3 project__description">
+            <p class="mt-4 project__description">
               Eitoss is a communication tool for managers and frontline workers.
               It builds on the concept of Kaizen and help companies build
               product that are driven by the people who are on the frontline.
