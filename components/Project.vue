@@ -153,7 +153,6 @@ export default {};
 
 .project__description {
   letter-spacing: 0.3px;
-  font-weight: 500;
   font-size: 18px;
   line-height: 28px;
 }
