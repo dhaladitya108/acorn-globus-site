@@ -84,12 +84,21 @@ export default {};
 }
 
 @media screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 54px;
+    line-height: 78px;
+  }
   .hero-watermark {
     display: none;
   }
 }
 
 @media screen and (max-width: 540px) {
+  .hero__heading {
+    font-size: 48px;
+    line-height: 62px;
+  }
+
   .hero {
     z-index: 1;
   }

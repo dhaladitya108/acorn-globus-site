@@ -60,7 +60,18 @@
 export default {};
 </script>
 
-<style>
+<style scoped>
+.services {
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+
+.service__description {
+  margin-top: 16px;
+  /* letter-spacing: 0.6px; */
+  color: #000000c4;
+  font-weight: 400;
+}
 .icon {
   background-color: #f0f4ff;
   padding: 1rem;

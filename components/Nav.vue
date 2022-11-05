@@ -3,13 +3,13 @@
     <div
       class="container d-flex align-items-center justify-content-between w-100"
     >
-      <div id="logo" c lass="logo">
+      <NuxtLink to="/" id="logo" c lass="logo">
         <img
           src="@/assets/images/acorn-globus-logo.svg"
           alt="Company Logo"
           width="150px"
         />
-      </div>
+      </NuxtLink>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
         ><span class="navicon"></span
@@ -23,6 +23,9 @@
         </li>
         <li class="nav-list-item">
           <a href="#projects" class="nav-item-link">Projects</a>
+        </li>
+        <li class="nav-list-item">
+          <NuxtLink to="/blog" class="nav-item-link">Blog</NuxtLink>
         </li>
         <li class="nav-list-item">
           <a href="#our-team" class="nav-item-link">Team</a>
@@ -62,8 +65,6 @@ export default {};
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  font-weight: 600;
-
   margin-bottom: 0;
 }
 .nav-list-item {

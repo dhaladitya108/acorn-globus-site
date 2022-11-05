@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="wrapper">
-    <div class="container">
+    <div class="container px-3">
       <span class="subtext">our projects</span>
       <h2 class="subheading mb-5">Few Projects we worked on</h2>
       <div class="all__projects d-flex flex-column mt-4">
@@ -8,6 +8,7 @@
           <img
             src="@/assets/images/projects/formester-mockup.svg"
             alt="Formester Mockup"
+            class="mockup__img"
           />
           <div
             class="d-flex flex-column align-items-start justify-content-center"
@@ -16,7 +17,7 @@
               src="@/assets/images/projects/formester-logo.svg"
               alt="Formester Logo"
             />
-            <p class="mt-3 project__description">
+            <p class="mt-4 project__description">
               A form backend as a service. It makes creating form endpoints for
               websites very easy. It requires zero programming knowledge. The
               user has the full control over the look and feel of the form. In
@@ -52,7 +53,7 @@
               src="@/assets/images/projects/rumie-logo.png"
               alt="Rumie Logo"
             />
-            <p class="mt-3 project__description">
+            <p class="mt-4 project__description">
               Rumie is a non-profit that makes access to free digital education
               possible for underserved communities worldwide. We collaborated on
               revamping the experience for application content managers. The new
@@ -79,10 +80,18 @@
               </svg>
             </a>
           </div>
-          <img src="@/assets/images/projects/rumie-mockup.svg" alt="Rumie" />
+          <img
+            src="@/assets/images/projects/rumie-mockup.svg"
+            alt="Rumie"
+            class="mockup__img"
+          />
         </div>
         <div class="project__card d-flex flex-column flex-lg-row">
-          <img src="@/assets/images/projects/eitoss-mockup.svg" alt="Eitoss" />
+          <img
+            src="@/assets/images/projects/eitoss-mockup.svg"
+            alt="Eitoss"
+            class="mockup__img"
+          />
           <div
             class="d-flex flex-column align-items-start justify-content-center"
           >
@@ -90,7 +99,7 @@
               src="@/assets/images/projects/eitoss-logo.png"
               alt="Eitoss Logo"
             />
-            <p class="mt-3 project__description">
+            <p class="mt-4 project__description">
               Eitoss is a communication tool for managers and frontline workers.
               It builds on the concept of Kaizen and help companies build
               product that are driven by the people who are on the frontline.
@@ -144,7 +153,6 @@ export default {};
 
 .project__description {
   letter-spacing: 0.3px;
-  font-weight: 500;
   font-size: 18px;
   line-height: 28px;
 }
@@ -162,5 +170,11 @@ export default {};
 .project__btn:hover {
   color: var(--clr-primary);
   gap: 32px;
+}
+
+@media screen and (max-width: 540px) {
+  .mockup__img {
+    padding-inline: 3rem;
+  }
 }
 </style>
