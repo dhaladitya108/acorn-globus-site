@@ -6,7 +6,7 @@
       <div class="all__projects d-flex flex-column mt-4">
         <div class="project__card d-flex flex-column flex-lg-row">
           <img
-            src="@/assets/images/projects/formester-mockup.svg"
+            src="@/assets/images/projects/formester-mockup.png"
             alt="Formester Mockup"
             class="mockup__img"
           />
@@ -81,14 +81,14 @@
             </a>
           </div>
           <img
-            src="@/assets/images/projects/rumie-mockup.svg"
+            src="@/assets/images/projects/rumie-mockup.png"
             alt="Rumie"
             class="mockup__img"
           />
         </div>
         <div class="project__card d-flex flex-column flex-lg-row">
           <img
-            src="@/assets/images/projects/eitoss-mockup.svg"
+            src="@/assets/images/projects/eitoss-mockup.png"
             alt="Eitoss"
             class="mockup__img"
           />
