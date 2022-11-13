@@ -177,4 +177,10 @@ export default {};
     padding-inline: 3rem;
   }
 }
+
+@media screen and (max-width: 992px) and (min-width: 541px) {
+  .mockup__img {
+    width: 350px;
+  }
+}
 </style>
