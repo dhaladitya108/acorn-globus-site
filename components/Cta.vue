@@ -10,20 +10,37 @@
           infusing fresh strategy. We can support whenever new strategy is
           needed.
         </p>
-        <a
-          href="https://app.formester.com/survey/efd1648b-1621-41ff-ade9-59630c129567"
+        <!-- You can change the value for button-text, button-color, width and height with the value you want -->
+        <formester-popup
+          id="efd1648b-1621-41ff-ade9-59630c129567"
+          width="900px"
+          height="95%"
+        ></formester-popup>
+        <button
           class="cta__btn"
-          target="_blank"
+          onclick="Formester.openPopup('efd1648b-1621-41ff-ade9-59630c129567')"
         >
           Contact Now
-        </a>
+        </button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  head() {
+    return {
+      script: [
+        {
+          src: "https://app.formester.com/widget/popup.js",
+          type: "module",
+          defer: true,
+        },
+      ],
+    }
+  }
+};
 </script>
 
 <style>
