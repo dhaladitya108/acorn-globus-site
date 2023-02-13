@@ -81,21 +81,6 @@
         </div>
         <div class="team__card">
           <img
-            src="@/assets/images/team/prashant.png"
-            alt="Prashant"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Prashant</h4>
-          <p class="pr__role">Full Stack Engineer</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
             src="@/assets/images/team/anirudh.png"
             alt="Anirudh"
             class="pr__img"
@@ -117,6 +102,21 @@
           />
           <h4 class="pr__name mt-4">Ravindra</h4>
           <p class="pr__role">Full Stack Engineer</p>
+          <div class="socials d-flex mt-3 d-none">
+            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
+            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
+            <img src="@/assets/images/socials/github.svg" alt="Github" />
+            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
+          </div>
+        </div>
+        <div class="team__card">
+          <img
+            src="@/assets/images/team/rakshit.png"
+            alt="Rakshit"
+            class="pr__img"
+          />
+          <h4 class="pr__name mt-4">Rakshit</h4>
+          <p class="pr__role">Senior Frontend Engineer</p>
           <div class="socials d-flex mt-3 d-none">
             <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
             <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
