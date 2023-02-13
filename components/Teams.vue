@@ -4,119 +4,18 @@
       <span class="subtext">our team</span>
       <h2 class="subheading">Get to know us closer</h2>
       <VueSlickCarousel v-bind="settings">
-        <div class="team__card">
+        <div
+          v-for="(member, index) in teamMembers"
+          :key="index"
+          class="team__card"
+        >
           <img
-            src="@/assets/images/team/ankit-img.png"
-            alt="Ankit"
+            :src="getImageSource(member.profileImage)"
+            :alt="member.name"
             class="pr__img"
           />
-          <h4 class="pr__name mt-4">Ankit</h4>
-          <p class="pr__role">Founder & Partner</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
-            src="@/assets/images/team/tarun.png"
-            alt="Tarun"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Tarun</h4>
-          <p class="pr__role">Founder & Partner</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
-            src="@/assets/images/team/piyush.png"
-            alt="Piyush"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Piyush</h4>
-          <p class="pr__role">Developer</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
-            src="@/assets/images/team/santosh.png"
-            alt="Santosh"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Santosh</h4>
-          <p class="pr__role">Developer</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
-            src="@/assets/images/team/aditya.png"
-            alt="Aditya"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Aditya</h4>
-          <p class="pr__role">Designer</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
-            src="@/assets/images/team/anirudh.png"
-            alt="Anirudh"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Anirudh</h4>
-          <p class="pr__role">Developer</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
-            src="@/assets/images/team/ravindra.png"
-            alt="Ravindra"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Ravindra</h4>
-          <p class="pr__role">Full Stack Engineer</p>
-          <div class="socials d-flex mt-3 d-none">
-            <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
-            <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
-            <img src="@/assets/images/socials/github.svg" alt="Github" />
-            <img src="@/assets/images/socials/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-        <div class="team__card">
-          <img
-            src="@/assets/images/team/rakshit.png"
-            alt="Rakshit"
-            class="pr__img"
-          />
-          <h4 class="pr__name mt-4">Rakshit</h4>
-          <p class="pr__role">Senior Frontend Engineer</p>
+          <h4 class="pr__name mt-4">{{ member.name }}</h4>
+          <p class="pr__role">{{ member.role }}</p>
           <div class="socials d-flex mt-3 d-none">
             <img src="@/assets/images/socials/twitter.svg" alt="Twitter" />
             <img src="@/assets/images/socials/linkedin.svg" alt="Linkedin" />
@@ -130,6 +29,7 @@
 </template>
 
 <script>
+import { teamMembers } from "@/constants";
 export default {
   data() {
     return {
@@ -175,7 +75,13 @@ export default {
           },
         ],
       },
+      teamMembers,
     };
+  },
+  methods: {
+    getImageSource(profileImage) {
+      return require(`@/assets/images/team/${profileImage}.webp`);
+    },
   },
 };
 </script>
