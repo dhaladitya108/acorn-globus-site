@@ -27,7 +27,7 @@ export const teamMembers = [
     },
     {
       name: "Anirudh",
-      role: "Developer",
+      role: "Full Stack Engineer",
       profileImage: "anirudh",
     },
     {
@@ -49,6 +49,11 @@ export const teamMembers = [
       name: "Navni",
       role: "Marketing Associate",
       profileImage: "navni",
+    },
+    {
+      name: "Hritika",
+      role: "Business Development Associate",
+      profileImage: "hritika",
     },
   ];
   
