@@ -3,7 +3,7 @@ export const teamMembers = [
     {
       name: "Ankit",
       role: "Founder & Partner",
-      profileImage: "ankit-img",
+      profileImage: "ankit",
     },
     {
       name: "Tarun",
@@ -55,5 +55,9 @@ export const teamMembers = [
       role: "Business Development Associate",
       profileImage: "hritika",
     },
+    {
+      name: "Neha",
+      role: "Senior Sales Manager",
+      profileImage: "neha",
+    },
   ];
-  
