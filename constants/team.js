@@ -51,11 +51,6 @@ export const teamMembers = [
       profileImage: "navni",
     },
     {
-      name: "Hritika",
-      role: "Business Development Associate",
-      profileImage: "hritika",
-    },
-    {
       name: "Neha",
       role: "Senior Sales Manager",
       profileImage: "neha",
