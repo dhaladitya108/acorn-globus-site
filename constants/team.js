@@ -41,6 +41,11 @@ export const teamMembers = [
     profileImage: "deeptanshu",
   },
   {
+    name: "Hanzala",
+    role: "Full Stack Engineer",
+    profileImage: "hanzala",
+  },
+  {
     name: "Siddharth",
     role: "Full Stack Engineer",
     profileImage: "siddharth",
