@@ -143,9 +143,10 @@ export default {
 }
 
 .nuxt-content p,
+.nuxt-content ul,
 .article__desc {
-  font-size: 1rem;
-  line-height: 24px;
+  font-size: 17px;
+  line-height: 28px;
   letter-spacing: 0.2px;
   color: hsla(0, 0%, 31%, 1);
 }
