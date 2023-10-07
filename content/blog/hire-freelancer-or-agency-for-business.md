@@ -27,7 +27,7 @@ A freelancer can be an excellent addition to your business for many reasons, but
 
 While you understand why hiring a freelancer is beneficial, you should also learn some drawbacks of hiring an agency.
 
-* **Less flexibility** - onboarding a new agency may take longer than hiring freelancers. The paperwork, due diligence, and match need to be good before anything can start. The upfront commitment from your business is generally more significant when working with an Agency.
+* **Less flexibility** - onboarding a new agency may take longer than hiring freelancers. The paperwork, due diligence, and match need to be good before anything can start. The upfront commitment from your business is generally more significant when working with a freelancer.
 * **Higher cost** - Agencies will charge a premium over hiring freelancers. They will generally be costlier by 10% to 30%.
 * **Less control over the project** - if you are someone who may want to have complete control over the work, you have to work out the right kind of agency. There are multiple models in which an agency can operate.
 
@@ -38,16 +38,16 @@ While you understand why hiring a freelancer is beneficial, you should also lear
 And of course, there are correct answers here, and Agencies may be the best thing for business. Here's how you can identify if it makes sense for your business.
 
 
-### Pros of hiring an agency:**
+### Pros of Hiring an Agency
 
 * **Full-service solutions** - an agency can help you with multiple things, and you don't have to fight your hiring pipeline to find the right candidate. It's like you identify the right agency once, and then recruiting and vetting are no longer your concern. Agencies can help you with product development, design, QA, and marketing.
 * **Teamwork** - Agencies have an experienced network internally, which can enable a faster and better solution to your problem. You can tap into the experience of numerous projects the agencies have already worked with.
 * **Accountability** - accountability is a challenging trait to evaluate and recruit for. With agencies, they have figured out the process and system to make that possible.
 
 
-### Cons of hiring freelancers:
+### Cons of Hiring Freelancers:
 * **Lack of management** - freelancers generally work on multiple projects, and you may need to manage and monitor to get the best output constantly.
-* Difficulty finding qualified freelancers - recruitment is said to be one of the most complex problems for a reason, and after that is retention. Finding trustworthy talent of any kind - full-time or contract is challenging. With an agency, you have to vet once, and they can be your constant source of delegation.
+* **Difficulty finding qualified freelancers** - recruitment is said to be one of the most complex problems for a reason, and after that is retention. Finding trustworthy talent of any kind full-time or contract is challenging. With an agency, you have to vet once, and they can be your constant source of delegation.
 * **Communication challenges** - Freelancers and independent contractors are generally good at the work. However, they may need to improve processes and communication needs for your business, which may be crucial for its functioning.
 * **Less accountability** - there are great freelancers out there, but doing repeated work sometimes makes it dull for them, and you may need help to ensure the right and the best things happen at the right time.
 
