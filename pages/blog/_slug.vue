@@ -151,6 +151,11 @@ export default {
   color: hsla(0, 0%, 31%, 1);
 }
 
+.nuxt-content tr,
+.nuxt-content th {
+  padding: 10px;
+}
+
 .nuxt-content img {
   height: auto;
   width: 100%;
