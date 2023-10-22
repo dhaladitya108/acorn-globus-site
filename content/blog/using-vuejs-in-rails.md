@@ -2,7 +2,7 @@
 title: "Using Vue.js in Rails"
 author: Ankit Singhaniya
 topic: Tech
-coverImg: abstract1.png
+coverImg: /img/abstract1.png
 coverImgAlt: Cover image for the blog, "Using Vue.js in Rails"
 published: true
 createdAt: "2022-10-01"
@@ -17,13 +17,13 @@ In this post, we are going to migrate our devise signup page to use Vue. I've ch
 First let us see how the end result will look like. Here are a few screenshots.
 
 The first time view
-![Vue Rails Registration Form](/blog/using-vuejs-in-rails/vue-normal.png "Vue Rails Registration Form")
+![Vue Rails Registration Form](/img/vue-normal.png "Vue Rails Registration Form")
 
 The client side validation
-![Vue Rails Client Side Validation ](/blog/using-vuejs-in-rails/vue-validation.png "Vue Rails Client Side Validation")
+![Vue Rails Client Side Validation ](/img/vue-validation.png "Vue Rails Client Side Validation")
 
 The server side errors and validation
-![Vue Rails Server Side Validation ](/blog/using-vuejs-in-rails/vue-errors.png "Vue Rails Server Side Validation")
+![Vue Rails Server Side Validation ](/img/vue-errors.png "Vue Rails Server Side Validation")
 
 ### Setting Up
 

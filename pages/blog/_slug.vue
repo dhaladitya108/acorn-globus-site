@@ -110,19 +110,19 @@ export default {
   computed: {
     meta() {
       const metaData = {
-        type: 'article',
-        url: `https://formester.com/blog/${this.$route.params.slug}/`,
+        type: "article",
+        url: `https://acornglobus.com/blog/${this.$route.params.slug}/`,
         title: this.article.metaTitle,
         description: this.article.metaDescription,
         mainImage: this.article.coverImg
-          ? `https://formester.com/${this.article.coverImg}`
-          : 'https://formester.com/formester-form-builder-background.png',
+          ? `https://acornglobus.com/${this.article.coverImg}`
+          : "https://acornglobus.com/acorn-globus.png",
         mainImageAlt:
           this.article.coverImgAlt ||
-          'Form builder showing drag and drop functionality',
-        keywords: this.article.keywords
-      }
-      return getSiteMeta(metaData)
+          "Building Innovative Software For Industry Leaders",
+        keywords: this.article.keywords,
+      };
+      return getSiteMeta(metaData);
     },
   },
 };
