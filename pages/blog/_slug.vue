@@ -89,6 +89,8 @@
 </template>
 
 <script>
+import getSiteMeta from "@/utils/getSiteMeta";
+
 export default {
   // fetching the contents of the current blog
   async asyncData({ $content, params }) {
@@ -103,6 +105,24 @@ export default {
     },
     to() {
       this.$router.back();
+    },
+  },
+  computed: {
+    meta() {
+      const metaData = {
+        type: 'article',
+        url: `https://formester.com/blog/${this.$route.params.slug}/`,
+        title: this.article.metaTitle,
+        description: this.article.metaDescription,
+        mainImage: this.article.coverImg
+          ? `https://formester.com/${this.article.coverImg}`
+          : 'https://formester.com/formester-form-builder-background.png',
+        mainImageAlt:
+          this.article.coverImgAlt ||
+          'Form builder showing drag and drop functionality',
+        keywords: this.article.keywords
+      }
+      return getSiteMeta(metaData)
     },
   },
 };
