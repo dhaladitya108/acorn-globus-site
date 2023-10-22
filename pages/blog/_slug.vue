@@ -89,6 +89,8 @@
 </template>
 
 <script>
+import getSiteMeta from "@/utils/getSiteMeta";
+
 export default {
   // fetching the contents of the current blog
   async asyncData({ $content, params }) {
@@ -103,6 +105,24 @@ export default {
     },
     to() {
       this.$router.back();
+    },
+  },
+  computed: {
+    meta() {
+      const metaData = {
+        type: "article",
+        url: `https://acornglobus.com/blog/${this.$route.params.slug}/`,
+        title: this.article.metaTitle,
+        description: this.article.metaDescription,
+        mainImage: this.article.coverImg
+          ? `https://acornglobus.com/${this.article.coverImg}`
+          : "https://acornglobus.com/acorn-globus.png",
+        mainImageAlt:
+          this.article.coverImgAlt ||
+          "Building Innovative Software For Industry Leaders",
+        keywords: this.article.keywords,
+      };
+      return getSiteMeta(metaData);
     },
   },
 };

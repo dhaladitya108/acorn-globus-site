@@ -3,7 +3,11 @@
     :to="{ name: 'blog-slug', params: { slug: article.slug } }"
     class="d-flex flex-column flex-md-row gap-md-4 gap-3 blog__card"
   >
-    <img src="@/assets/images/blog/abstract1.png" alt="Abstract Image" />
+    <img
+      :src="article.coverImg"
+      :alt="article.coverImgAlt"
+      :title="article.coverImgAlt"
+    />
     <div class="d-flex flex-column overflow-hidden">
       <div class="d-flex align-items-baseline gap-2">
         <span class="sm__text">{{ article.topic }}</span>
