@@ -16,11 +16,12 @@ authorProfile: https://www.linkedin.com/in/tarun-kumar-bhukya-40168b85/
 createdAt: 2023-10-25T03:17:10.538Z
 coverImg: /img/nginx.png
 coverImgAlt: Nginx for Beginners
-published: false
+published: true
 ---
 Well, we have all heard about Nginx as a web server, reverse proxy, load balancer, and proxy server for email communications, and it is also known for its performance and stability. Let us start with some hands-on with Nginx and see what it can do.
 
 ## How to Set Up Nginx
+
 Let's first install nginx by running the below command
 
 ```bash
@@ -42,15 +43,18 @@ sudo systemctl start nginx
 Now, if everything is set, you can visit `localhost`, and you should see an nginx welcome page.
 
 ## Getting Started with Web Server Configuration
+
 After installing Nginx, the Linux system stores all the Nginx files in the directory `/etc`. So let's go to `/etc/nginx` and check all the files. In those files, there is one particular file which is very interesting to us, i.e. `nginx.conf`, which has all the instructions for various configurations.
 
 Let's do one thing. Let's take a backup of that file and let's write our own code.
 For taking a backup, lets run this
+
 ```bash
 sudo mv nginx.conf nginx.conf.backup
 ```
 
 Now, lets have our configuration.
+
 ```bash
 events {
 
@@ -62,6 +66,7 @@ http {
     }
 }
 ```
+
 It's a simple one; we just defined an HTTP server which listens to port 80, and when accessed, it will just return `Hello from nginx!`
 
 Before that, we need to tell Nginx about our new configuration and then restart Nginx. First, let's check for any syntax mistakes by running.
@@ -69,13 +74,17 @@ Before that, we need to tell Nginx about our new configuration and then restart 
 ```bash
 sudo nginx -t
 ```
+
 If there were no errors, it should say successful at the end. Once that is done, lets now restart our nginx by running
+
 ```bash
 sudo systemctl restart nginx
 ```
+
 `Note:` There are various ways to reload nginx, which we will mention in further blogs.
 
 Now, let's refresh our `localhost` and see the response. Vola. it shows `Hello from nginx!`
 
 ### Conclusion
-See, a simple Nginx server is relatively easy to set up. Let's learn more about nginx and its configurations in our next blog. 
+
+See, a simple Nginx server is relatively easy to set up. Let's learn more about nginx and its configurations in our next blog.
