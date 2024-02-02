@@ -36,19 +36,9 @@ export const teamMembers = [
     profileImage: "ravindra",
   },
   {
-    name: "Deeptanshu",
-    role: "Full Stack Developer",
-    profileImage: "deeptanshu",
-  },
-  {
     name: "Hanzala",
     role: "Full Stack Engineer",
     profileImage: "hanzala",
-  },
-  {
-    name: "Siddharth",
-    role: "Full Stack Engineer",
-    profileImage: "siddharth",
   },
   {
     name: "Deepika",
@@ -64,16 +54,6 @@ export const teamMembers = [
     name: "Neha",
     role: "Senior Sales Manager",
     profileImage: "neha",
-  },
-  {
-    name: "Akshat",
-    role: "Business Development Associate",
-    profileImage: "akshat",
-  },
-  {
-    name: "Dnyaneshwari",
-    role: "Sales Development Representative ",
-    profileImage: "dnyaneshwari",
   },
   {
     name: "Partha",
