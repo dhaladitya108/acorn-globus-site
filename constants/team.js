@@ -75,4 +75,9 @@ export const teamMembers = [
     role: "Sales Development Representative ",
     profileImage: "dnyaneshwari",
   },
+  {
+    name: "Partha",
+    role: "Software Engineering Intern",
+    profileImage: "partha",
+  }
 ];
