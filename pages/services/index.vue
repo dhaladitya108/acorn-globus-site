@@ -28,7 +28,7 @@
 
   <Process />
 
-  <Contact />
+  <Cta />
 
   <Footer />
 </template>
@@ -39,8 +39,6 @@ import WhyChooseUs from "~/components/services/WhyChooseUs.vue";
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
 import Technologies from "~/components/services/Technologies.vue";
 import Process from "~/components/services/Process.vue";
-import Contact from "~/components/services/Contact.vue";
-import Footer from "~/components/services/Footer.vue";
 </script>
 
 <style scoped>

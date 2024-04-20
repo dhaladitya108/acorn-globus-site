@@ -1,53 +1,42 @@
 <template>
   <section id="expertize" class="wrapper expertize">
     <div class="container text-center">
-      <span class="subtext">our technology spectrum</span>
-      <h2 class="subheading mb-4">Tech Expertise</h2>
-      <div class="tech-stacks">
-        <div class="technology">
-          <img src="~/assets/images/expertize/rails.png" alt="rails logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/vue.png" alt="vue logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/react.png" alt="react logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/python.png" alt="python logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/node.png" alt="nodejs logo" />
-        </div>
-        <div class="technology">
+      <h2 class="subheading mb-4">Our Industry Expertise</h2>
+      <div class="expertises">
+        <div class="expertise">
           <img
-              src="~/assets/images/expertize/docker.png"
-              alt="kubernetes logo"
+            src="~/assets/images/tech-stack/vue.png"
+            alt="healthcare"
           />
+          <span>Healthcare</span>
         </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/figma.png" alt="figma logo" />
-        </div>
-        <div class="technology">
+        <div class="expertise">
           <img
-              src="~/assets/images/expertize/postgresql.png"
-              alt="postgresql logo"
+              src="~/assets/images/tech-stack/vue.png"
+              alt="healthcare"
           />
+          <span>Healthcare</span>
         </div>
-        <div class="technology">
+        <div class="expertise">
           <img
-              src="~/assets/images/expertize/github.png"
-              alt="version control logo"
+              src="~/assets/images/tech-stack/vue.png"
+              alt="healthcare"
           />
+          <span>Healthcare</span>
         </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/golang.png" alt="golang logo" />
+        <div class="expertise">
+          <img
+              src="~/assets/images/tech-stack/vue.png"
+              alt="healthcare"
+          />
+          <span>Healthcare</span>
         </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/android.png" alt="android logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/expertize/flutter.png" alt="flutter logo" />
+        <div class="expertise">
+          <img
+              src="~/assets/images/tech-stack/vue.png"
+              alt="healthcare"
+          />
+          <span>Healthcare</span>
         </div>
       </div>
     </div>
@@ -58,35 +47,31 @@
 
 </script>
 
-<style>
-.expertize {
-  background-color: hsla(222, 58%, 90%, 1);
-}
-
-.tech-stacks {
-  max-width: 900px;
-  margin: 0px auto 20px;
+<style scoped>
+.expertises {
+  width: 100%;
+  margin: 64px auto 0;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 64px;
+  align-self: stretch;
+  flex-wrap: wrap;
 }
-.technology {
-  width: 280px;
-  margin: 30px auto;
+.expertise {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
-@media screen and (max-width: 540px) {
-  .technology {
-    width: 250px;
-    margin: 10px auto;
-  }
-
-  .tech-stacks {
-    margin-top: 2em;
-    gap: 2em;
+@media screen and (max-width: 768px) {
+  .expertises {
+    gap: 16px;
   }
 }
 </style>

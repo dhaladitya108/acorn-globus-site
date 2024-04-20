@@ -74,6 +74,7 @@
     --primary: #192A52;
     --Gray-600: #475467;
     --Primary-Dark-Green: #071E0C;
+    --Primary-Black: #12141D;
   }
   
   * {
@@ -120,3 +121,8 @@
   .bg__primary {
     background-color: var(--clr-primary);
   }
+
+.carousel__slide {
+    justify-content: start;
+    align-items: stretch;
+}

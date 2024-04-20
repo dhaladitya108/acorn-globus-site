@@ -5,7 +5,7 @@
         <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
           <div class="logo">
             <img
-                src="~/assets/images/acorn-globus-logo.svg"
+                src="~/assets/images/acorn-globus-logo-dark.svg"
                 alt="Company Logo"
                 width="150px"
             />
@@ -24,7 +24,34 @@
                 target="_blank"
             >
               <img
-                  src="~/assets/images/socials/linkedin-dark.svg"
+                  src="~/assets/images/socials/linkedin.svg"
+                  alt="Linkedin"
+              />
+            </a>
+            <a
+                href="https://www.linkedin.com/company/acornglobus/about/"
+                target="_blank"
+            >
+              <img
+                  src="~/assets/images/socials/dribbble.svg"
+                  alt="Linkedin"
+              />
+            </a>
+            <a
+                href="https://www.linkedin.com/company/acornglobus/about/"
+                target="_blank"
+            >
+              <img
+                  src="~/assets/images/socials/twitter.svg"
+                  alt="Linkedin"
+              />
+            </a>
+            <a
+                href="https://www.linkedin.com/company/acornglobus/about/"
+                target="_blank"
+            >
+              <img
+                  src="~/assets/images/socials/instagram.svg"
                   alt="Linkedin"
               />
             </a>
@@ -34,24 +61,24 @@
           <h5 class="footer__subheading mb-4">Quick Links</h5>
           <ul class="footer__items list-unstyled mb-0">
             <li>
-              <a href="#hero" class="footer__link text-white">Home</a>
+              <a href="#hero" class="footer__link text-black">Home</a>
             </li>
             <li>
-              <a href="#services" class="footer__link text-white">Services</a>
+              <a href="#services" class="footer__link text-black">Services</a>
             </li>
             <li>
-              <a href="#projects" class="footer__link text-white">Projects</a>
+              <a href="#projects" class="footer__link text-black">Projects</a>
             </li>
             <li>
-              <a href="#expertize" class="footer__link text-white">Expertise</a>
+              <a href="#expertize" class="footer__link text-black">Expertise</a>
             </li>
             <li>
-              <a href="#cta" class="footer__link text-white">Contact</a>
+              <a href="#cta" class="footer__link text-black">Contact</a>
             </li>
             <li>
               <a
                   href="https://handbook.acornglobus.com"
-                  class="footer__link text-white"
+                  class="footer__link text-black"
               >Handbook</a
               >
             </li>
@@ -82,6 +109,14 @@
                   <span class="ms-2">business@acornglobus.com</span>
                 </a>
               </li>
+              <li class="text-white d-flex align-items-center">
+                <a class="footer__link" href="#">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.07145 11.4712C5.07145 10.8525 5.0789 10.2339 5.08638 9.61236L5.08638 9.61235C5.09018 9.29726 5.09398 8.98143 5.09683 8.66449C5.09683 5.25919 7.22855 2.77637 10.1724 2.77637H13.9536C16.8974 2.77637 19.0292 5.25919 19.0292 8.66449C19.0545 10.0286 19.063 11.3927 19.063 12.7666C19.063 14.1404 19.0545 15.5242 19.0292 16.8882C19.0292 20.2935 16.8974 22.7764 13.9536 22.7764H10.1724C7.22855 22.7764 5.09683 20.2935 5.09683 16.8784C5.07991 15.5929 5.06299 14.2778 5.06299 12.9432L5.07145 11.4712ZM13.343 20.4166V20.5766C13.343 21.2502 12.7798 21.7766 12.063 21.7766C11.3633 21.7766 10.783 21.2502 10.783 20.5766V20.4166C10.783 19.7606 11.3633 19.2166 12.063 19.2166C12.7798 19.2166 13.343 19.7606 13.343 20.4166ZM7.0797 9.22001C7.07435 9.62399 7.06903 10.0261 7.06903 10.4282L7.06299 11.3851C7.06299 12.2526 7.07507 13.1073 7.08716 13.943C7.08716 16.1628 8.60982 17.7766 10.7125 17.7766H13.4134C15.5162 17.7766 17.0388 16.1628 17.0388 13.9493C17.0569 13.0627 17.063 12.1633 17.063 11.2702C17.063 10.3772 17.0569 9.49055 17.0388 8.60389C17.0388 6.39045 15.5162 4.77661 13.4134 4.77661H10.7125C8.60982 4.77661 7.08716 6.39045 7.08716 8.60389C7.08512 8.80991 7.08241 9.0152 7.0797 9.22001Z" fill="#3A5EB4"/>
+                  </svg>
+                  <span class="ms-2">+91 55555555555</span>
+                </a>
+              </li>
               <li class="footer__link text-white d-flex align-items-center">
                 <svg
                     width="25"
@@ -105,7 +140,7 @@
       </div>
     </div>
     <div class="text-center p-3 copyright">
-      © 2022 Acorn Globus. <span class="text-white">All Rights Reserved</span>
+      © 2022 Acorn Globus. <span class="text-black">All Rights Reserved</span>
     </div>
   </footer>
 </template>
@@ -115,9 +150,13 @@
 </script>
 
 <style>
+* {
+  color: black;
+}
 .footer__container {
   position: relative;
   z-index: 10;
+  background: hsla(222, 58%, 90%, 1);
 }
 
 .footer__desc {

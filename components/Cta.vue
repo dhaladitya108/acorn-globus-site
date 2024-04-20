@@ -1,0 +1,181 @@
+<template>
+  <div id="cta">
+    <div class="cta__text">
+      <h2 class="subheading">Get in touch</h2>
+      <div></div>
+      <p class="mt-2">
+        When you objectively analyze your business, you are likely to get a
+        new perspective. These new perspectives propel your business up by
+        infusing fresh strategy. We can support whenever new strategy is
+        needed.
+      </p>
+    </div>
+    <div class="cta__form">
+      <div class="form-component">
+        <div class="form-component__element">
+          <label for="first-name">First Name <span>*</span></label>
+          <input type="text" id="first-name" required />
+        </div>
+        <div class="form-component__element">
+          <label for="last-name">Last Name <span>*</span></label>
+          <input type="text" id="last-name" required />
+        </div>
+      </div>
+      <div class="form-component">
+        <div class="form-component__element">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-component__element">
+          <label for="phone">Company Name <span>*</span></label>
+          <input type="text" id="phone" required />
+        </div>
+      </div>
+      <div class="form-component form-component__element">
+        <label for="message">Your Inquiry <span>*</span></label>
+        <textarea id="message" required></textarea>
+      </div>
+      <button class="form-button">Contact Now</button>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style scoped>
+#cta {
+  background-color: var(--clr-primary);
+  padding: 100px 64px;
+  display: flex;
+  gap: 64px;
+  z-index: 10;
+  position: relative;
+}
+.cta__text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cta__text > h2 {
+  color: var(--White, #FFF);
+  font-family: Aileron,sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px; /* 116.667% */
+}
+.cta__text > div {
+  width: 119px;
+  height: 9px;
+  background: var(--White, #FFF);
+  border-radius: 5px;
+}
+.cta__text > p {
+  color: var(--White, #FFF);
+  font-family: Inter,sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+}
+
+.cta__form {
+  display: inline-flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  border-radius: 8px;
+  background: var(--White, #FFF);
+}
+.form-component {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+.form-component:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.form-component__element {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-component__element > label {
+  color: var(--Black, var(--Primary-Black, #12141D));
+  font-family: Inter,sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+.form-component__element > label > span {
+  color: #FF7171;
+}
+.form-component__element > input {
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #DDE1E0;
+  background: var(--White, #FFF);
+}
+.form-component__element > textarea {
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #DDE1E0;
+  background: var(--White, #FFF);
+}
+.form-button {
+  display: flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+  border-radius: 4px;
+  background: #192A52;
+  color: var(--White, #FFF);
+  font-family: Aileron,sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+  #cta {
+    flex-direction: column;
+    gap: 32px;
+    padding: 64px 32px;
+  }
+  .cta__form {
+    padding: 32px;
+    gap: 32px;
+  }
+  .form-component {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .form-component__element > input {
+    width: 100%;
+  }
+  .form-component__element > textarea {
+    width: 100%;
+  }
+
+  .cta__text > h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .cta__text > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+</style>

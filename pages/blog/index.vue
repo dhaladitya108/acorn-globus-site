@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-// import readingTime from "reading-time";
+import BlogCard from "~/components/blog/BlogCard.vue";
 
 let {data: articles} = await useAsyncData(
     'articles-list',

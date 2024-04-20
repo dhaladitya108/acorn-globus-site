@@ -43,19 +43,7 @@ import TestimonialCard from "~/components/services/TestimonialCard.vue";
   line-height: 56px; /* 116.667% */
 }
 .testimonials__header > button {
-  display: flex;
-  padding: 16px 20px;
-  align-items: flex-start;
-  gap: 12px;
-  border-radius: 4px;
-  background: var(--primary, #192A52);
-  color: var(--White, #FFF);
-  font-family: Aileron,sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 30px; /* 136.364% */
-  text-transform: capitalize;
+  display: none;
 }
 .testimonials__cards {
   max-width: 100%;
@@ -69,6 +57,21 @@ import TestimonialCard from "~/components/services/TestimonialCard.vue";
   .testimonials__header > p {
     font-size: 32px;
     line-height: 40px; /* 116.667% */
+  }
+  .testimonials__header > button {
+    display: flex;
+    padding: 16px 20px;
+    align-items: flex-start;
+    gap: 12px;
+    border-radius: 4px;
+    background: var(--primary, #192A52);
+    color: var(--White, #FFF);
+    font-family: Aileron,sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 136.364% */
+    text-transform: capitalize;
   }
 }
 </style>

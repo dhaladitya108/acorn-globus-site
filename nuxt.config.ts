@@ -14,6 +14,7 @@ export default defineNuxtConfig({
 
     app: {
         head: {
+            title: 'Acorn Globus',
             meta: [
                 ...meta,
                 {charset: 'utf-8'},
@@ -33,9 +34,7 @@ export default defineNuxtConfig({
         '~/assets/css/main.css'
     ],
 
-    modules: [
-        '@nuxt/content',
-    ],
+    modules: ['@nuxt/content', "vue3-carousel-nuxt"],
 
     hooks: {
         'content:file:beforeInsert': (document) => {
@@ -49,9 +48,4 @@ export default defineNuxtConfig({
     content: {
         liveEdit: false,
     },
-
-    // custom components
-    compilerOptions: {
-        isCustomElement: (tag) => tag.startsWith('vue-')
-    }
 })

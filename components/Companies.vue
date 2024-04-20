@@ -43,7 +43,7 @@
         <div class="box">
           <a href="https://www.hackerrank.com/" target="_blank">
             <img
-                src="~/assets/images/companies/HackerRank-Logo.png"
+                src="~/assets/images/companies/hacker-rank.png"
                 alt="HackerRank logo"
                 class="company__img"
             />
@@ -81,8 +81,10 @@
 .box .company__img {
   width: 150px;
   filter: grayscale(1);
-  opacity: 0.25;
+  opacity: 0.5;
   transition: 0.2s ease;
+  z-index: 11;
+  position: relative;
 }
 
 .box .company__img.rumie {

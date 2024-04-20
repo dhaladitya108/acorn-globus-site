@@ -1,12 +1,13 @@
 <template>
   <Hero />
-  <Companies />
+  <Testimonials />
   <Services />
-  <Expertise />
   <Project />
+  <TechStack />
+  <Expertise />
   <Teams />
   <div class="bg__primary position-relative overflow-hidden">
-<!--    <Cta />-->
+    <Cta />
     <Footer />
     <img
         src="~/assets/images/acorn-watermark.png"
@@ -23,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-
+import Testimonials from "~/components/services/Testimonials.vue";
 </script>
 
 <style scoped>
