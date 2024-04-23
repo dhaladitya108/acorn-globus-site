@@ -11,31 +11,38 @@
       </p>
     </div>
     <div class="cta__form">
-      <div class="form-component">
-        <div class="form-component__element">
-          <label for="first-name">First Name <span>*</span></label>
-          <input type="text" id="first-name" required />
-        </div>
-        <div class="form-component__element">
-          <label for="last-name">Last Name <span>*</span></label>
-          <input type="text" id="last-name" required />
-        </div>
-      </div>
-      <div class="form-component">
-        <div class="form-component__element">
-          <label for="email">Email <span>*</span></label>
-          <input type="email" id="email" required />
-        </div>
-        <div class="form-component__element">
-          <label for="phone">Company Name <span>*</span></label>
-          <input type="text" id="phone" required />
-        </div>
-      </div>
-      <div class="form-component form-component__element">
-        <label for="message">Your Inquiry <span>*</span></label>
-        <textarea id="message" required></textarea>
-      </div>
-      <button class="form-button">Contact Now</button>
+<!--      <div class="form-component">-->
+<!--        <div class="form-component__element">-->
+<!--          <label for="first-name">First Name <span>*</span></label>-->
+<!--          <input type="text" id="first-name" required />-->
+<!--        </div>-->
+<!--        <div class="form-component__element">-->
+<!--          <label for="last-name">Last Name <span>*</span></label>-->
+<!--          <input type="text" id="last-name" required />-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="form-component">-->
+<!--        <div class="form-component__element">-->
+<!--          <label for="email">Email <span>*</span></label>-->
+<!--          <input type="email" id="email" required />-->
+<!--        </div>-->
+<!--        <div class="form-component__element">-->
+<!--          <label for="phone">Company Name <span>*</span></label>-->
+<!--          <input type="text" id="phone" required />-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="form-component form-component__element">-->
+<!--        <label for="message">Your Inquiry <span>*</span></label>-->
+<!--        <textarea id="message" required></textarea>-->
+<!--      </div>-->
+<!--      <button class="form-button">Contact Now</button>-->
+
+      <iframe
+          height="768px"
+          src="https://app.formester.com/f/efd1648b-1621-41ff-ade9-59630c129567"
+          frameborder="0"
+          sandbox="allow-scripts allow-same-origin allow-top-navigation allow-forms"
+      ></iframe>
     </div>
   </div>
 </template>
@@ -83,13 +90,18 @@
 
 .cta__form {
   display: inline-flex;
-  padding: 40px;
+  padding: 0;
   flex-direction: column;
   align-items: flex-start;
   gap: 40px;
   border-radius: 8px;
-  background: var(--White, #FFF);
   z-index: 10;
+  min-width: 50%;
+}
+.cta__form > iframe {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
 }
 .form-component {
   display: flex;
@@ -156,8 +168,11 @@
     padding: 64px 32px;
   }
   .cta__form {
-    padding: 32px;
+    padding: 0;
     gap: 32px;
+  }
+  .cta__form > iframe {
+    padding: 0;
   }
   .form-component {
     flex-direction: column;

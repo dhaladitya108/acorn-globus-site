@@ -103,7 +103,7 @@ const cards = [
 
 @media screen and (max-width: 600px) {
   #why-choose-us {
-    padding: 64px 0;
+    padding: 64px 16px;
   }
   .why-choose-us__header > p {
     font-size: 32px;

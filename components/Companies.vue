@@ -27,7 +27,7 @@
             <img
                 src="~/assets/images/companies/mayple.png"
                 alt="Mayple logo"
-                class="company__img"
+                class="company__img mayple"
             />
           </a>
         </div>
@@ -36,7 +36,7 @@
             <img
                 src="~/assets/images/companies/cayzen.png"
                 alt="Cayzen logo"
-                class="company__img"
+                class="company__img cayzen"
             />
           </a>
         </div>
@@ -54,7 +54,7 @@
             <img
                 src="~/assets/images/companies/equipment-connect.png"
                 alt="Equipment connect logo"
-                class="company__img"
+                class="company__img equipment-connect"
             />
           </a>
         </div>
@@ -85,6 +85,16 @@
   transition: 0.2s ease;
   z-index: 11;
   position: relative;
+}
+
+.company__img {
+  height: 48px;
+}
+
+.rumie,
+.equipment-connect,
+.mayple {
+  height: 42px;
 }
 
 .box .company__img.rumie {

@@ -1,7 +1,7 @@
 <template>
   <section id="expertize" class="wrapper expertize">
     <div class="container text-center">
-      <h2 class="subheading mb-4">Our Industry Expertise</h2>
+      <h2 class="subheading">Our Industry Expertise</h2>
       <div class="expertises">
         <div class="expertise">
           <img

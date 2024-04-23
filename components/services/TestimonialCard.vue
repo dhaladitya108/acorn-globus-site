@@ -2,16 +2,20 @@
   <div class="card">
     <img class="card__rating" :src="fiveStar" alt="Five Star Rating" />
     <h6 class="card__heading">
-      “The best Webflow Templates”
+      “{{ title }}”
     </h6>
     <p class="card__text">
-      I love SARK. The market is slow in some locations and booming in the big cities.It is very professional and made you feel appreciated for the work you were doing.
+      {{ content }}
     </p>
     <div class="card__user">
-      <img class="card__user-image" src="https://imgs.search.brave.com/uPSlvBEU0rYntBNfRATkh_KUbu3teQ7F8HIP4PvvKPM/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWd2/My5mb3Rvci5jb20v/aW1hZ2VzL2NvdmVy/LXBob3RvLWltYWdl/L0ZlbWFsZS1wb3J0/cmFpdC13aXRoLWEt/dHJhbnNwYXJlbnQt/UE5HLWJhY2tncm91/bmQtZWRpdGVkLXVz/aW5nLUZvdG9yLXBo/b3RvLWVkaXRvci5q/cGc" alt="User" />
+      <img
+          class="card__user-image"
+          :src="avatar"
+          :alt="name"
+      />
       <div class="card__user-info">
-        <p class="card__user-info-name">John Doe</p>
-        <p class="card__user-info-position">CEO, Acorn Globus</p>
+        <p class="card__user-info-name">{{ name }}</p>
+        <p class="card__user-info-position">{{ position }}</p>
       </div>
     </div>
   </div>
@@ -19,6 +23,8 @@
 
 <script setup lang="ts">
 import fiveStar from '~/assets/images/services/five-star.svg'
+
+const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
 </script>
 
 <style scoped>

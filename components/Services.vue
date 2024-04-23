@@ -11,8 +11,8 @@
           >
             <div class="icon">
               <img
-                  src="./test.svg"
-                  alt="Paint Brush"
+                  :src="card.icon"
+                  :alt="card.title"
               />
             </div>
             <h3 class="service__title">{{ card.title }}</h3>
@@ -27,54 +27,63 @@
 </template>
 
 <script setup lang="ts">
+import webDevIcon from "~/assets/images/services/web-dev.png";
+import appDevIcon from "~/assets/images/services/app-dev.png";
+import enterpriseIcon from "~/assets/images/services/enterprise.png";
+import apiDevIcon from "~/assets/images/services/api-dev.png";
+import cloudIcon from "~/assets/images/services/cloud.png";
+import devopsIcon from "~/assets/images/services/devops.png";
+import maintainanceIcon from "~/assets/images/services/maintainance.png";
+import uiUxIcon from "~/assets/images/services/ui-ux.png";
+
 const cards = [
   {
     title: "Web Application Development",
     description:
         "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+    icon: webDevIcon,
   },
   {
-    title: "Web Application Development",
+    title: "Mobile Application Development",
     description:
-        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+        "Develop feature-rich and engaging mobile applications for iOS and Android that bring your ideas to life and connect you with your audience on the go.",
+    icon: appDevIcon,
   },
   {
-    title: "Web Application Development",
+    title: "Enterprise Software Development",
     description:
-        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+        "Development: Design and develop custom enterprise software solutions to automate workflows, manage data efficiently, and empower your organization for growth.",
+    icon: enterpriseIcon,
   },
   {
-    title: "Web Application Development",
+    title: "API Development",
     description:
-        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+        "Integrate with existing systems and data sources through secure and efficient API development, channeling new functionalities and fostering collaboration.",
+    icon: apiDevIcon,
   },
   {
-    title: "Web Application Development",
+    title: "UI/UX Design",
     description:
-        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+        "Design intuitive and user-friendly interfaces (UI) and user experiences (UX) that not only look great but also provide a smooth and engaging interaction for your users.",
+    icon: uiUxIcon,
   },
   {
-    title: "Web Application Development",
+    title: "Cloud Integration",
     description:
-        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+        "Leverage the scalability and security of cloud-based solutions by seamlessly integrating your applications with leading cloud platforms.",
+    icon: cloudIcon,
   },
   {
-    title: "Web Application Development",
+    title: "DevOps",
     description:
-        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+        "Implement DevOps practices to automate software delivery and maintenance processes, ensuring faster development cycles and improved efficiency.",
+    icon: devopsIcon,
   },
   {
-    title: "Web Application Development",
+    title: "Software Maintenance and Support",
     description:
-        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
-    icon: "./test.svg",
+        "Our comprehensive software maintenance and support plans ensure your applications stay up-to-date, secure, and functioning optimally. ",
+    icon: maintainanceIcon,
   },
 ]
 </script>
@@ -90,7 +99,7 @@ const cards = [
   gap: 8px;
 }
 .service__card {
-  max-width: 260px;
+  max-width: 264px;
   display: flex;
   padding: 24px;
   flex-direction: column;
@@ -99,7 +108,7 @@ const cards = [
 }
 .service__card:hover {
   border-radius: 8px;
-  border: 1px solid var(--Stroke, #E2E2E2);
+  border: 0.25px solid var(--Stroke, #E2E2E2);
   background: var(--White, #FFF);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
 }

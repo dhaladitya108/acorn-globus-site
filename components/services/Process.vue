@@ -100,11 +100,13 @@ const cards = [
 
 @media screen and (max-width: 400px) {
   .process__header > p {
-    font-size: 24px;
+    font-size: 32px;
     line-height: 32px; /* 133.333% */
+    padding: 0 12px;
   }
   .process__cards {
     padding: 0 24px;
+    gap: 32px;
   }
 }
 </style>

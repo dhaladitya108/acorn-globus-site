@@ -11,7 +11,8 @@
         </p>
         <div class="hero__btns">
           <a
-              href="#contact"
+              href="https://app.zencal.io/u/ankit/acorn-globus"
+              target="_blank"
               class="contact__btn d-flex align-items-center justify-content-center justify-content-md-start"
           >
             Book a Free Consultation
