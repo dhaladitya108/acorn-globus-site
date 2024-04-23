@@ -6,11 +6,19 @@
           <span class="subtext">our team</span>
           <h2 class="subheading">Get to know us closer</h2>
         </div>
-        <button @click="handleNext">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="23" viewBox="0 0 48 23" fill="none">
-            <path d="M47.0607 12.9762C47.6464 12.3904 47.6464 11.4407 47.0607 10.8549L37.5147 1.30893C36.9289 0.723139 35.9792 0.723139 35.3934 1.30893C34.8076 1.89471 34.8076 2.84446 35.3934 3.43025L43.8787 11.9155L35.3934 20.4008C34.8076 20.9866 34.8076 21.9363 35.3934 22.5221C35.9792 23.1079 36.9289 23.1079 37.5147 22.5221L47.0607 12.9762ZM0 13.4155H46V10.4155H0V13.4155Z" fill="#B3C8F8"/>
-          </svg>
-        </button>
+        <div class="team_btns">
+          <button @click="handlePrev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button @click="handleNext">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
       </div>
 
       <Carousel
@@ -29,7 +37,21 @@
             <p class="pr__role">{{ member.role }}</p>
           </div>
         </Slide>
+
       </Carousel>
+
+      <div class="team_btns2">
+        <button @click="handlePrev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M15 18L9 12L15 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button @click="handleNext">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M9 18L15 12L9 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
 </template>
@@ -39,8 +61,8 @@ import { teamMembers } from "~/constants/team";
 
 const breakPoints = {
   320: {
-    itemsToShow: 2,
-    itemsToScroll: 2,
+    itemsToShow: 1,
+    itemsToScroll: 1,
   },
   768: {
     itemsToShow: 3,
@@ -56,6 +78,9 @@ const teamsCarousel = ref(null);
 
 const handleNext = () => {
   teamsCarousel.value.next();
+};
+const handlePrev = () => {
+  teamsCarousel.value.prev();
 };
 
 
@@ -74,11 +99,24 @@ const getImageSource = (image) => {
 .head {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.head > button {
-  background: transparent;
-  border: none;
-  outline: none;
+.team_btns {
+  display: flex;
+  gap: 1rem;
+}
+.team_btns2 {
+  display: none;
+}
+.team_btns button,
+.team_btns2 button{
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid var(--Stroke, #E2E2E2);
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(4px);
 }
 
 .team__card {
@@ -130,6 +168,22 @@ const getImageSource = (image) => {
 @media screen and (max-width: 544px) {
   .team__card {
     margin: 0;
+  }
+  .team_btns {
+    display: none;
+  }
+  .team_btns2 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .subtext {
+    font-size: 0.75rem;
+  }
+  .subheading {
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 </style>

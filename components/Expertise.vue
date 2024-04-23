@@ -68,6 +68,11 @@
   align-items: center;
   gap: 24px;
 }
+.expertise:hover {
+  border-radius: 8px;
+  background: var(--White, #FFF);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+}
 .expertise img {
   width: 64px;
   height: 64px;

@@ -87,20 +87,21 @@ const cards = [
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 8px;
 }
-.services :hover {
-    border-radius: 8px;
-    border: 1px solid var(--Stroke, #E2E2E2);
-    background: var(--White, #FFF);
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
-  }
 .service__card {
-  max-width: 280px;
+  max-width: 260px;
   display: flex;
   padding: 24px;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
+}
+.service__card:hover {
+  border-radius: 8px;
+  border: 1px solid var(--Stroke, #E2E2E2);
+  background: var(--White, #FFF);
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
 }
 .service__title {
   color: var(--primary, #192A52);
