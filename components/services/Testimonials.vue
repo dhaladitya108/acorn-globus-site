@@ -74,4 +74,9 @@ import TestimonialCard from "~/components/services/TestimonialCard.vue";
     text-transform: capitalize;
   }
 }
+@media screen and (max-width: 400px) {
+  #testimonials {
+    padding: 32px 24px;
+  }
+}
 </style>

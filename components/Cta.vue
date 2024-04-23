@@ -49,7 +49,6 @@
   padding: 100px 64px;
   display: flex;
   gap: 64px;
-  z-index: 10;
   position: relative;
 }
 .cta__text {
@@ -57,6 +56,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  z-index: 10;
 }
 .cta__text > h2 {
   color: var(--White, #FFF);
@@ -89,6 +89,7 @@
   gap: 40px;
   border-radius: 8px;
   background: var(--White, #FFF);
+  z-index: 10;
 }
 .form-component {
   display: flex;

@@ -157,6 +157,8 @@
   position: relative;
   z-index: 10;
   background: hsla(222, 58%, 90%, 1);
+  padding-top: 48px;
+  padding-bottom: 12px;
 }
 
 .footer__desc {
@@ -187,31 +189,7 @@
   gap: 1em;
 }
 
-.footer-watermark-acorn {
-  left: -10%;
-  bottom: 0;
-}
 
-.footer-watermark-geometry {
-  top: 0;
-  right: 0;
-}
-
-@media screen and (max-width: 768px) {
-  .footer-watermark-acorn {
-    left: -20%;
-  }
-  .footer-watermark-geometry {
-    right: -20%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .footer-watermark-geometry,
-  .footer-watermark-acorn {
-    display: none;
-  }
-}
 
 .copyright {
   font-size: 12px;

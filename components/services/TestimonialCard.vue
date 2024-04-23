@@ -1,6 +1,9 @@
 <template>
   <div class="card">
     <img class="card__rating" :src="fiveStar" alt="Five Star Rating" />
+    <h6 class="card__heading">
+      “The best Webflow Templates”
+    </h6>
     <p class="card__text">
       I love SARK. The market is slow in some locations and booming in the big cities.It is very professional and made you feel appreciated for the work you were doing.
     </p>
@@ -26,18 +29,26 @@ import fiveStar from '~/assets/images/services/five-star.svg'
 }
 .card {
   width: 300px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  border: 2px solid rgba(18, 20, 29, 0.10);
+  border: 1px solid rgba(18, 20, 29, 0.10);
   background: var(--White, #FFF);
   display: flex;
+  padding: 24px;
   flex-direction: column;
-  padding: 18px 30px;
-  outline: none;
+  align-items: flex-start;
+  gap: 24px;
 }
 .card__rating {
   width: 96px;
-  height: 50px;
+  height: 42px;
+}
+.card__heading {
+  color: var(--Primary-Black, #12141D);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Aileron,sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 127.273% */
 }
 .card__user {
   display: flex;

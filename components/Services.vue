@@ -6,48 +6,18 @@
         <h2 class="subheading mb-4">What we offer</h2>
         <div class="row services">
           <div
+              v-for="card in cards"
               class="service__card col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start"
           >
             <div class="icon">
               <img
-                  src="~/assets/images/services/fluent_paint-brush-16-regular.svg"
+                  src="./test.svg"
                   alt="Paint Brush"
               />
             </div>
-            <h3 class="sub__subheading">UI & UX Design</h3>
+            <h3 class="service__title">{{ card.title }}</h3>
             <p class="service__description">
-              A user interface is like a joke. If you have to explain it, it’s
-              not that good.” - that's what we believe in.
-            </p>
-          </div>
-          <div
-              class="service__card col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start"
-          >
-            <div class="icon">
-              <img
-                  src="~/assets/images/services/carbon_application-web.svg"
-                  alt="Computer"
-              />
-            </div>
-            <h3 class="sub__subheading">Web Development</h3>
-            <p class="service__description">
-              Web development as a whole is an essential component for success,
-              and our team of experts make it look simple.
-            </p>
-          </div>
-          <div
-              class="service__card col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start"
-          >
-            <div class="icon">
-              <img
-                  src="~/assets/images/services/carbon_application-mobile.svg"
-                  alt="Mobile"
-              />
-            </div>
-            <h3 class="sub__subheading">Mobile Development</h3>
-            <p class="service__description">
-              We know precisely how to build highly responsive apps for iOS and
-              Android.
+              {{ card.description }}
             </p>
           </div>
         </div>
@@ -57,20 +27,97 @@
 </template>
 
 <script setup lang="ts">
-
+const cards = [
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+  {
+    title: "Web Application Development",
+    description:
+        "Build robust and user-friendly web applications that streamline your business processes and enhance user experience.",
+    icon: "./test.svg",
+  },
+]
 </script>
 
 <style scoped>
 .services {
   margin-top: 36px;
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
+.services :hover {
+    border-radius: 8px;
+    border: 1px solid var(--Stroke, #E2E2E2);
+    background: var(--White, #FFF);
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
+  }
+.service__card {
+  max-width: 280px;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.service__title {
+  color: var(--primary, #192A52);
+  font-family: Aileron,sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+  text-transform: capitalize;
+}
 .service__description {
-  margin-top: 16px;
-  /* letter-spacing: 0.6px; */
-  color: #000000c4;
+  color: var(--Secondary-Black, #363636);
+  font-family: Aileron,sans-serif;
+  font-size: 16px;
+  font-style: normal;
   font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 .icon {
   background-color: #f0f4ff;
@@ -80,8 +127,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .services__card {
-    max-width: 400px;
-  }
+
 }
 </style>

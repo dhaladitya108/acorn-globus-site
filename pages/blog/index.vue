@@ -19,8 +19,8 @@
       />
     </div>
     <div class="bg__primary position-relative overflow-hidden">
-<!--      <Cta />-->
-      <Footer />
+      <Cta />
+
       <img
           src="@/assets/images/acorn-watermark.png"
           alt="Acorn Globus Symbol Watermark"
@@ -33,6 +33,8 @@
           class="footer-watermark-geometry position-absolute"
       />
     </div>
+
+    <Footer />
   </div>
 </template>
 

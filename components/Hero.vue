@@ -4,14 +4,17 @@
     <div class="hero">
       <div class="container">
         <h1 class="hero__heading text-center text-md-start">
-          Building innovative software for industry leaders
+          Software Development Agency
         </h1>
+        <p class="hero__subheading my-5">
+          Spearheaded by a team of talented individuals, we provide scalable and reliable software development solutions to our clients globally.
+        </p>
         <div class="hero__btns">
           <a
               href="#contact"
               class="contact__btn d-flex align-items-center justify-content-center justify-content-md-start"
           >
-            Contact Us
+            Book a Free Consultation
           </a>
           <a
               href="#projects"
@@ -50,19 +53,27 @@
 <style>
 .hero {
   padding-top: 6.5rem;
-  padding-bottom: 8.75rem;
-
+  padding-bottom: 4rem;
   position: relative;
   z-index: 10;
 }
 
 .hero__heading {
-  font-size: 4.5rem;
-  line-height: 86px;
+  color: var(--White, #FFF);
+  font-family: Aileron,sans-serif;
+  font-size: 72px;
+  font-style: normal;
   font-weight: 900;
+  line-height: 86px; /* 119.444% */
   text-transform: capitalize;
-  color: white;
-  margin-bottom: 2.5rem;
+}
+.hero__subheading {
+  color: var(--White, #FFF);
+  font-family: Aileron,sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 144.444% */
 }
 .hero__btns {
   display: flex;
@@ -126,16 +137,36 @@
   .hero-watermark {
     display: none;
   }
+  .hero__subheading {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 540px) {
   .hero__heading {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 62px;
   }
-
+  .hero__subheading {
+    font-size: 12px;
+    line-height: 22px;
+  }
   .hero {
     z-index: 1;
+  }
+  .hero__btns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .contact__btn {
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .projects__btn {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 </style>

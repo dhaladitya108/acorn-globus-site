@@ -75,6 +75,8 @@
     --Gray-600: #475467;
     --Primary-Dark-Green: #071E0C;
     --Primary-Black: #12141D;
+    --Secondary-Black: #363636;
+    --Stroke: #E2E2E2;
   }
   
   * {
@@ -121,6 +123,32 @@
   .bg__primary {
     background-color: var(--clr-primary);
   }
+
+.footer-watermark-acorn {
+    left: -1%;
+    bottom: -24px;
+}
+
+.footer-watermark-geometry {
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-watermark-acorn {
+        left: -20%;
+    }
+    .footer-watermark-geometry {
+        right: -20%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-watermark-geometry,
+    .footer-watermark-acorn {
+        display: none;
+    }
+}
 
 .carousel__slide {
     justify-content: start;
