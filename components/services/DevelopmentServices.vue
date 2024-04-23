@@ -67,6 +67,7 @@ const cards = [
   justify-content: center;
   gap: 24px;
   width: 35%;
+  position: sticky;
 }
 .development-services__header > p {
   color: var(--Black, #12141D);

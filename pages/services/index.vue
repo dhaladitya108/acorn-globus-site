@@ -24,9 +24,11 @@
 
   <DevelopmentServices />
 
+  <Process />
+
   <Technologies />
 
-  <Process />
+  <Expertise />
 
   <div class="bg__primary position-relative overflow-hidden">
     <Cta />

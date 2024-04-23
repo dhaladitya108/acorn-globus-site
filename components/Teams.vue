@@ -175,7 +175,6 @@ const getImageSource = (image) => {
   .team_btns2 {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
   }
 
   .subtext {

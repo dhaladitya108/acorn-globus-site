@@ -56,4 +56,22 @@ const props = defineProps(["number", "title", "content"]);
   line-height: 27px; /* 168.75% */
   letter-spacing: 0;
 }
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+    gap: 16px;
+    padding: 24px;
+  }
+  .card__number {
+    font-size: 32px;
+  }
+  .card__title {
+    font-size: 16px;
+  }
+  .card__content {
+    font-size: 14px;
+  }
+
+}
 </style>

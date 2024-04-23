@@ -97,4 +97,14 @@ const cards = [
     line-height: 40px; /* 116.667% */
   }
 }
+
+@media screen and (max-width: 400px) {
+  .process__header > p {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+  }
+  .process__cards {
+    padding: 0 24px;
+  }
+}
 </style>
