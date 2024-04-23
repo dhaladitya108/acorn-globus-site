@@ -28,33 +28,33 @@
                   alt="Linkedin"
               />
             </a>
-            <a
-                href="https://www.linkedin.com/company/acornglobus/about/"
-                target="_blank"
-            >
-              <img
-                  src="~/assets/images/socials/dribbble.svg"
-                  alt="Linkedin"
-              />
-            </a>
-            <a
-                href="https://www.linkedin.com/company/acornglobus/about/"
-                target="_blank"
-            >
-              <img
-                  src="~/assets/images/socials/twitter.svg"
-                  alt="Linkedin"
-              />
-            </a>
-            <a
-                href="https://www.linkedin.com/company/acornglobus/about/"
-                target="_blank"
-            >
-              <img
-                  src="~/assets/images/socials/instagram.svg"
-                  alt="Linkedin"
-              />
-            </a>
+<!--            <a-->
+<!--                href="https://www.linkedin.com/company/acornglobus/about/"-->
+<!--                target="_blank"-->
+<!--            >-->
+<!--              <img-->
+<!--                  src="~/assets/images/socials/dribbble.svg"-->
+<!--                  alt="Linkedin"-->
+<!--              />-->
+<!--            </a>-->
+<!--            <a-->
+<!--                href="https://www.linkedin.com/company/acornglobus/about/"-->
+<!--                target="_blank"-->
+<!--            >-->
+<!--              <img-->
+<!--                  src="~/assets/images/socials/twitter.svg"-->
+<!--                  alt="Linkedin"-->
+<!--              />-->
+<!--            </a>-->
+<!--            <a-->
+<!--                href="https://www.linkedin.com/company/acornglobus/about/"-->
+<!--                target="_blank"-->
+<!--            >-->
+<!--              <img-->
+<!--                  src="~/assets/images/socials/instagram.svg"-->
+<!--                  alt="Linkedin"-->
+<!--              />-->
+<!--            </a>-->
           </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
