@@ -5,38 +5,38 @@
       <div class="expertises">
         <div class="expertise">
           <img
-            src="~/assets/images/tech-stack/vue.png"
+            src="~/assets/images/expertise/healthcare.png"
             alt="healthcare"
           />
           <span>Healthcare</span>
         </div>
         <div class="expertise">
           <img
-              src="~/assets/images/tech-stack/vue.png"
-              alt="healthcare"
+              src="~/assets/images/expertise/finance.png"
+              alt="finance"
           />
-          <span>Healthcare</span>
+          <span>Finance</span>
         </div>
         <div class="expertise">
           <img
-              src="~/assets/images/tech-stack/vue.png"
-              alt="healthcare"
+              src="~/assets/images/expertise/hrm.png"
+              alt="HRM"
           />
-          <span>Healthcare</span>
+          <span>HRM</span>
         </div>
         <div class="expertise">
           <img
-              src="~/assets/images/tech-stack/vue.png"
-              alt="healthcare"
+              src="~/assets/images/expertise/travel.png"
+              alt="travel"
           />
-          <span>Healthcare</span>
+          <span>Travel</span>
         </div>
         <div class="expertise">
           <img
-              src="~/assets/images/tech-stack/vue.png"
-              alt="healthcare"
+              src="~/assets/images/expertise/logistics.png"
+              alt="logistics"
           />
-          <span>Healthcare</span>
+          <span>Logistics</span>
         </div>
       </div>
     </div>
@@ -68,10 +68,23 @@
   align-items: center;
   gap: 24px;
 }
-
+.expertise img {
+  width: 64px;
+  height: 64px;
+}
 @media screen and (max-width: 768px) {
   .expertises {
     gap: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .expertises {
+    gap: 8px;
+  }
+  .expertise {
+    padding: 0;
+    gap: 8px;
   }
 }
 </style>

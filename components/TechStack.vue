@@ -4,50 +4,14 @@
       <span class="subtext text-uppercase">Our Expertize</span>
       <h2 class="subheading mb-4">Our Technology Stack</h2>
       <div class="tech-stacks">
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/rails.png" alt="rails logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/vue.png" alt="vue logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/react.png" alt="react logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/python.png" alt="python logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/node.png" alt="nodejs logo" />
-        </div>
-        <div class="technology">
-          <img
-              src="~/assets/images/tech-stack/docker.png"
-              alt="kubernetes logo"
-          />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/figma.png" alt="figma logo" />
-        </div>
-        <div class="technology">
-          <img
-              src="~/assets/images/tech-stack/postgresql.png"
-              alt="postgresql logo"
-          />
-        </div>
-        <div class="technology">
-          <img
-              src="~/assets/images/tech-stack/github.png"
-              alt="version control logo"
-          />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/golang.png" alt="golang logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/android.png" alt="android logo" />
-        </div>
-        <div class="technology">
-          <img src="~/assets/images/tech-stack/flutter.png" alt="flutter logo" />
+        <div
+            v-for="tech in technologies"
+            class="technology"
+        >
+          <div class="technology__image">
+            <img :src="tech.icon" :alt="tech.name" />
+          </div>
+          <span>{{ tech.name }}</span>
         </div>
       </div>
     </div>
@@ -55,34 +19,88 @@
 </template>
 
 <script setup lang="ts">
+import vueIcon from '~/assets/images/tech-stack/vue.png'
+import reactIcon from '~/assets/images/tech-stack/react.png'
+import railsIcon from '~/assets/images/tech-stack/rails.png'
+import pythonIcon from '~/assets/images/tech-stack/python.png'
+import nodeIcon from '~/assets/images/tech-stack/node.png'
+import dockerIcon from '~/assets/images/tech-stack/docker.png'
+import figmaIcon from '~/assets/images/tech-stack/figma.png'
+import postgresqlIcon from '~/assets/images/tech-stack/postgresql.png'
+import githubIcon from '~/assets/images/tech-stack/github.png'
+import golangIcon from '~/assets/images/tech-stack/golang.png'
+import androidIcon from '~/assets/images/tech-stack/android.png'
+import flutterIcon from '~/assets/images/tech-stack/flutter.png'
+import mongoIcon from '~/assets/images/tech-stack/mongo.png'
+import htmlIcon from '~/assets/images/tech-stack/html.png'
+import cssIcon from '~/assets/images/tech-stack/css.png'
 
+const technologies = [
+  { name: 'Vue', icon: vueIcon },
+  { name: 'React', icon: reactIcon },
+  { name: 'Rails', icon: railsIcon },
+  { name: 'Python', icon: pythonIcon },
+  { name: 'Node', icon: nodeIcon },
+  { name: 'Docker', icon: dockerIcon },
+  { name: 'Figma', icon: figmaIcon },
+  { name: 'PostgreSQL', icon: postgresqlIcon },
+  { name: 'Github', icon: githubIcon },
+  { name: 'Golang', icon: golangIcon },
+  { name: 'Android', icon: androidIcon },
+  { name: 'Flutter', icon: flutterIcon },
+  { name: 'MongoDB', icon: mongoIcon },
+  { name: 'HTML', icon: htmlIcon },
+  { name: 'CSS', icon: cssIcon },
+]
 </script>
 
 <style>
 
 .tech-stacks {
-  max-width: 900px;
   width: 100%;
   margin: 0 auto 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
 }
 .technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.technology__image {
   width: 100px;
-  margin: 30px 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+}
+.technology span {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--Black, #000);
+  margin-bottom: 8px;
 }
 
+.technology:hover {
+  border-radius: 8px;
+  background: var(--White, #FFF);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.07);
+}
 @media screen and (max-width: 540px) {
-  .technology {
-    width: 250px;
-    margin: 10px auto;
-  }
-
   .tech-stacks {
-    margin-top: 2em;
-    gap: 2em;
+    gap: 32px;
+  }
+  .technology {
+    margin: 2px 30px;
+  }
+  .technology__image {
+    width: 80px;
+    height: 80px;
   }
 }
 </style>
