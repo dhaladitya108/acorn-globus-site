@@ -103,14 +103,18 @@ const technologies = [
 }
 @media screen and (max-width: 540px) {
   .tech-stacks {
-    gap: 32px;
+    gap: 24px;
   }
   .technology {
     margin: 2px 30px;
+    height: 100px;
+    width: 100px;
+    padding: 16px;
   }
   .technology__image {
-    width: 80px;
-    height: 80px;
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
   }
 }
 </style>
