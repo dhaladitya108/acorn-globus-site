@@ -69,21 +69,31 @@ const technologies = [
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  gap: 8px;
+  //padding: 16px;
+  height: 140px;
+  width: 140px;
 }
 .technology__image {
-  width: 100px;
-  height: 100px;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 20px;
+}
+.technology__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .technology span {
   font-size: 14px;
   font-weight: 500;
   color: var(--Black, #000);
   margin-bottom: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .technology:hover {

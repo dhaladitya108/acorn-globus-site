@@ -56,10 +56,22 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
   font-weight: 700;
   line-height: 28px; /* 127.273% */
 }
+.card__text {
+  color: var(--Secondary-Black, #363636);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: "DM Sans",sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+
+}
 .card__user {
   display: flex;
+  width: 100%;
   gap: 12px;
   margin-top: 24px;
+  align-items: flex-start;
 }
 .card__user-image {
   width: 40px;

@@ -137,6 +137,9 @@ const cards = [
 }
 
 @media screen and (max-width: 768px) {
-
+  .service__title,
+  .service__description {
+    font-family: Inter, sans-serif;
+  }
 }
 </style>

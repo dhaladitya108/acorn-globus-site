@@ -8,9 +8,10 @@
           <div class="row1__content">
             <div class="heading row1_heading">
               <img
-                src="~/assets/images/projects/cayzen-logo.png"
+                src="~/assets/images/projects/cayzen-logo.svg"
                 alt="cayzen-logo"
               />
+              <h3>Cayzen</h3>
             </div>
             <p class="text">
               Cayzen is a communication tool for managers and frontline workers. It builds on the concept of Kaizen and help companies build product that are driven by the people who are on the frontline.
@@ -153,8 +154,9 @@
   margin-right: 1rem;
 }
 .row1_heading > img {
-  width: 200px;
+  width: 42px;
   height: auto;
+  margin-right: 1rem;
 }
 .heading h3 {
   font-size: 2.5rem;
