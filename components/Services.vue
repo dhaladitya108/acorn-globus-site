@@ -135,6 +135,9 @@ const cards = [
   border-radius: 50%;
   margin-bottom: 1.5em;
 }
+.icon > img {
+  aspect-ratio: 1/1;
+}
 
 @media screen and (max-width: 768px) {
   .service__title,

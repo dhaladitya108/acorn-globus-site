@@ -18,21 +18,20 @@
 </template>
 
 <script setup lang="ts">
-import vueIcon from '~/assets/images/tech-stack/vue.png'
-import reactIcon from '~/assets/images/tech-stack/react.png'
-import railsIcon from '~/assets/images/tech-stack/rails.png'
-import pythonIcon from '~/assets/images/tech-stack/python.png'
-import nodeIcon from '~/assets/images/tech-stack/node.png'
-import dockerIcon from '~/assets/images/tech-stack/docker.png'
-import figmaIcon from '~/assets/images/tech-stack/figma.png'
-import postgresqlIcon from '~/assets/images/tech-stack/postgresql.png'
-import githubIcon from '~/assets/images/tech-stack/github.png'
-import golangIcon from '~/assets/images/tech-stack/golang.png'
-import androidIcon from '~/assets/images/tech-stack/android.png'
-import flutterIcon from '~/assets/images/tech-stack/flutter.png'
-import mongoIcon from '~/assets/images/tech-stack/mongo.png'
-import htmlIcon from '~/assets/images/tech-stack/html.png'
-import cssIcon from '~/assets/images/tech-stack/css.png'
+import vueIcon from '~/assets/images/tech-stack/vue.svg'
+import reactIcon from '~/assets/images/tech-stack/react.svg'
+import railsIcon from '~/assets/images/tech-stack/rails.svg'
+import pythonIcon from '~/assets/images/tech-stack/python.svg'
+import nodeIcon from '~/assets/images/tech-stack/node.svg'
+import dockerIcon from '~/assets/images/tech-stack/docker.svg'
+import figmaIcon from '~/assets/images/tech-stack/figma.svg'
+import postgresqlIcon from '~/assets/images/tech-stack/postgresql.svg'
+import githubIcon from '~/assets/images/tech-stack/github.svg'
+import androidIcon from '~/assets/images/tech-stack/android.svg'
+import flutterIcon from '~/assets/images/tech-stack/flutter.svg'
+import mongoIcon from '~/assets/images/tech-stack/mongodb.svg'
+import htmlIcon from '~/assets/images/tech-stack/html.svg'
+import cssIcon from '~/assets/images/tech-stack/css.svg'
 
 const technologies = [
   { name: 'Vue', icon: vueIcon },
@@ -44,7 +43,6 @@ const technologies = [
   { name: 'Figma', icon: figmaIcon },
   { name: 'PostgreSQL', icon: postgresqlIcon },
   { name: 'Github', icon: githubIcon },
-  { name: 'Golang', icon: golangIcon },
   { name: 'Android', icon: androidIcon },
   { name: 'Flutter', icon: flutterIcon },
   { name: 'MongoDB', icon: mongoIcon },

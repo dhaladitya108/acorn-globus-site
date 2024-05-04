@@ -34,14 +34,15 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
   box-sizing: border-box;
 }
 .card {
-  width: 300px;
+  width: 354px;
   border: 1px solid rgba(18, 20, 29, 0.10);
   background: var(--White, #FFF);
   display: flex;
-  padding: 24px;
+  padding: 16px 24px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 4px;
+  align-self: stretch;
 }
 .card__rating {
   width: 96px;
@@ -55,6 +56,8 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
   font-style: normal;
   font-weight: 700;
   line-height: 28px; /* 127.273% */
+  margin: 8px 0;
+  height: 56px;
 }
 .card__text {
   color: var(--Secondary-Black, #363636);
@@ -64,13 +67,13 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
   font-style: normal;
   font-weight: 400;
   line-height: 30px; /* 166.667% */
-
+  height: 150px;
 }
 .card__user {
   display: flex;
   width: 100%;
   gap: 12px;
-  margin-top: 24px;
+  margin-top: 48px;
   align-items: flex-start;
 }
 .card__user-image {
@@ -85,20 +88,59 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
   gap: 0;
 }
 .card__user-info-name {
-  color: var(--Black, #12141D);
-  font-family: Inter,sans-serif;
+  color: var(--Primary-Black, #12141D);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Aileron,sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 24px; /* 150% */
+  font-weight: 700;
+  line-height: 20px; /* 111.111% */
 }
 .card__user-info-position {
-  color: var(--Black, #12141D);
-  font-family: Inter,sans-serif;
+  color: var(--Secondary-Black, #363636);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Aileron,sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  opacity: 0.7;
+  line-height: 30px; /* 166.667% */
+  align-self: stretch;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+    padding: 12px 16px;
+    gap: 0;
+  }
+  .card__rating {
+    width: 72px;
+    height: 32px;
+  }
+  .card__heading {
+    font-size: 18px;
+    line-height: 24px; /* 133.333% */
+    height: auto;
+  }
+  .card__text {
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
+    height: auto;
+    margin-top: 8px;
+  }
+  .card__user {
+    margin-top: 24px;
+  }
+  .card__user-info {
+    gap: 4px;
+  }
+  .card__user-info-name {
+    font-size: 14px;
+    line-height: 18px; /* 128.571% */
+  }
+  .card__user-info-position {
+    font-size: 14px;
+    line-height: 20px; /* 200% */
+  }
 }
 </style>

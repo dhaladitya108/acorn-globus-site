@@ -19,21 +19,20 @@
 </template>
 
 <script setup lang="ts">
-import vueIcon from '~/assets/images/tech-stack/vue.png'
-import reactIcon from '~/assets/images/tech-stack/react.png'
-import railsIcon from '~/assets/images/tech-stack/rails.png'
-import pythonIcon from '~/assets/images/tech-stack/python.png'
-import nodeIcon from '~/assets/images/tech-stack/node.png'
-import dockerIcon from '~/assets/images/tech-stack/docker.png'
-import figmaIcon from '~/assets/images/tech-stack/figma.png'
-import postgresqlIcon from '~/assets/images/tech-stack/postgresql.png'
-import githubIcon from '~/assets/images/tech-stack/github.png'
-import golangIcon from '~/assets/images/tech-stack/golang.png'
-import androidIcon from '~/assets/images/tech-stack/android.png'
-import flutterIcon from '~/assets/images/tech-stack/flutter.png'
-import mongoIcon from '~/assets/images/tech-stack/mongo.png'
-import htmlIcon from '~/assets/images/tech-stack/html.png'
-import cssIcon from '~/assets/images/tech-stack/css.png'
+import vueIcon from '~/assets/images/tech-stack/vue.svg'
+import reactIcon from '~/assets/images/tech-stack/react.svg'
+import railsIcon from '~/assets/images/tech-stack/rails.svg'
+import pythonIcon from '~/assets/images/tech-stack/python.svg'
+import nodeIcon from '~/assets/images/tech-stack/node.svg'
+import dockerIcon from '~/assets/images/tech-stack/docker.svg'
+import figmaIcon from '~/assets/images/tech-stack/figma.svg'
+import postgresqlIcon from '~/assets/images/tech-stack/postgresql.svg'
+import githubIcon from '~/assets/images/tech-stack/github.svg'
+import androidIcon from '~/assets/images/tech-stack/android.svg'
+import flutterIcon from '~/assets/images/tech-stack/flutter.svg'
+import mongoIcon from '~/assets/images/tech-stack/mongodb.svg'
+import htmlIcon from '~/assets/images/tech-stack/html.svg'
+import cssIcon from '~/assets/images/tech-stack/css.svg'
 
 const technologies = [
   { name: 'Vue', icon: vueIcon },
@@ -45,7 +44,6 @@ const technologies = [
   { name: 'Figma', icon: figmaIcon },
   { name: 'PostgreSQL', icon: postgresqlIcon },
   { name: 'Github', icon: githubIcon },
-  { name: 'Golang', icon: golangIcon },
   { name: 'Android', icon: androidIcon },
   { name: 'Flutter', icon: flutterIcon },
   { name: 'MongoDB', icon: mongoIcon },
@@ -70,7 +68,7 @@ const technologies = [
   align-items: center;
   justify-content: center;
   gap: 8px;
-  //padding: 16px;
+  padding: 16px;
   height: 140px;
   width: 140px;
 }
@@ -80,11 +78,15 @@ const technologies = [
   align-items: center;
   justify-content: center;
   margin: 0 20px;
+  padding: 16px;
 }
 .technology__image img {
-  width: 100%;
-  height: 100%;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
 }
 .technology span {
   font-size: 14px;
@@ -103,18 +105,21 @@ const technologies = [
 }
 @media screen and (max-width: 540px) {
   .tech-stacks {
-    gap: 24px;
+    gap: 8px;
   }
   .technology {
-    margin: 2px 30px;
-    height: 100px;
-    width: 100px;
+    margin: 4px 30px;
     padding: 16px;
+    gap: 4px;
+    height: 120px;
+    width: 120px;
   }
   .technology__image {
     margin: 0 10px;
-    width: 60px;
-    height: 60px;
+  }
+  .technology__image img {
+    width: 40px;
+    height: 40px;
   }
 }
 </style>

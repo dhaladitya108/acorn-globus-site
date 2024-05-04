@@ -45,7 +45,7 @@
             <img
                 src="~/assets/images/companies/hacker-rank.png"
                 alt="HackerRank logo"
-                class="company__img"
+                class="company__img hacker-rank"
             />
           </a>
         </div>
@@ -88,17 +88,15 @@
 }
 
 .company__img {
-  height: 48px;
+  //height: 48px;
+  aspect-ratio: 16/4;
 }
 
-.rumie,
-.equipment-connect,
-.mayple {
-  height: 42px;
+.cayzen {
+  aspect-ratio: 16/7;
 }
-
-.box .company__img.rumie {
-  opacity: 0.6;
+.hacker-rank {
+  aspect-ratio: 16/6;
 }
 
 .box .company__img:hover {
@@ -121,12 +119,18 @@
     opacity: 1;
     transition: 0.2s ease;
   }
+
+  .company__img,
+  .cayzen,
+  .hacker-rank {
+    aspect-ratio: auto;
+  }
 }
 
 @media screen and (max-width: 575.5px) {
   .all__companies {
-    margin-top: 2em;
-    gap: 3.5em;
+    //margin-top: 2em;
+    gap: 3em;
   }
 }
 </style>

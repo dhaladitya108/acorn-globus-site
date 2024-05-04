@@ -4,7 +4,7 @@
     <div class="hero">
       <div class="text-center">
         <img
-            src="~/assets/images/tech-stack/react.png"
+            src="~/assets/images/tech-stack/react.svg"
             alt="React"
             height="80px"
             width="80px"

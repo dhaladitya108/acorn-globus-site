@@ -1,9 +1,9 @@
 <template>
   <section id="testimonials">
-    <div class="testimonials__header">
-      <p>What our satisfied clients say about Acorn Globus</p>
-      <button>Book a free consultation</button>
-    </div>
+<!--    <div class="testimonials__header">-->
+<!--      <p>What our satisfied clients say about Acorn Globus</p>-->
+<!--      <button>Book a free consultation</button>-->
+<!--    </div>-->
     <div class="testimonials__cards">
       <TestimonialCard
         v-for="testimonial in testimonials"
@@ -82,7 +82,7 @@ const testimonials = [
 .testimonials__cards {
   max-width: 100%;
   display: flex;
-  gap: 24px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
