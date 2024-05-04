@@ -27,14 +27,14 @@
 </template>
 
 <script setup lang="ts">
-import webDevIcon from "~/assets/images/services/web-dev.png";
-import appDevIcon from "~/assets/images/services/app-dev.png";
-import enterpriseIcon from "~/assets/images/services/enterprise.png";
-import apiDevIcon from "~/assets/images/services/api-dev.png";
-import cloudIcon from "~/assets/images/services/cloud.png";
-import devopsIcon from "~/assets/images/services/devops.png";
-import maintainanceIcon from "~/assets/images/services/maintainance.png";
-import uiUxIcon from "~/assets/images/services/ui-ux.png";
+import webDevIcon from "~/assets/images/services/web-dev.svg";
+import appDevIcon from "~/assets/images/services/app-dev.svg";
+import enterpriseIcon from "~/assets/images/services/enterprise.svg";
+import apiDevIcon from "~/assets/images/services/api-dev.svg";
+import cloudIcon from "~/assets/images/services/cloud.svg";
+import devopsIcon from "~/assets/images/services/devops.svg";
+import maintainanceIcon from "~/assets/images/services/maintainance.svg";
+import uiUxIcon from "~/assets/images/services/ui-ux.svg";
 
 const cards = [
   {
@@ -96,15 +96,15 @@ const cards = [
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 4px;
 }
 .service__card {
-  max-width: 264px;
+  max-width: 280px;
   display: flex;
-  padding: 24px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 8px;
+  padding: 24px 20px 12px;
 }
 .service__card:hover {
   border-radius: 8px;
@@ -143,6 +143,18 @@ const cards = [
   .service__title,
   .service__description {
     font-family: Inter, sans-serif;
+  }
+  .services {
+    gap: 0;
+  }
+  .service__card {
+    max-width: 100%;
+    gap: 4px;
+  }
+  .service__card:hover {
+    border-radius: 8px;
+    border: none;
+    box-shadow: none;
   }
 }
 </style>
