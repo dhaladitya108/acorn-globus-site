@@ -120,7 +120,7 @@
   gap: 4px;
 }
 .form-component__element > label {
-  color: var(--Black, var(--Primary-Black, #12141D));
+  color: var(--Black, #000);
   font-family: Inter,sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -222,8 +222,7 @@
   .cta__form {
     width: 100%;
     gap: 16px;
-    padding: 0;
-    padding-bottom: 64px;
+    padding: 0 0 64px;
   }
 }
 </style>
