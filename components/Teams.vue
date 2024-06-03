@@ -25,6 +25,7 @@
           :breakpoints="breakPoints"
           snap-align="start"
           ref="teamsCarousel"
+          style="padding: 0"
       >
         <Slide v-for="member in teamMembers" :key="member.name">
           <div class="team__card">
@@ -37,7 +38,6 @@
             <p class="pr__role">{{ member.role }}</p>
           </div>
         </Slide>
-
       </Carousel>
 
       <div class="team_btns2">
@@ -174,7 +174,11 @@ const getImageSource = (image) => {
   }
   .team_btns2 {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
+  }
+  .team_btns2 button {
+    height: 48px;
+    width: 48px;
   }
 
   .subtext {

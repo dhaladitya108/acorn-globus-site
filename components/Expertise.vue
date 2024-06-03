@@ -1,5 +1,5 @@
 <template>
-  <section id="expertize" class="wrapper expertize">
+  <section id="expertize" class="expertize">
     <div class="container text-center">
       <h2 class="subheading">Our Industry Expertise</h2>
       <div class="expertises">
@@ -54,9 +54,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 48px;
   align-self: stretch;
   flex-wrap: wrap;
+  padding: 0;
 }
 .expertise {
   display: flex;
@@ -76,6 +77,7 @@
 .expertise img {
   width: 64px;
   height: 64px;
+  aspect-ratio: 1/1;
 }
 @media screen and (max-width: 768px) {
   .expertises {
@@ -86,10 +88,18 @@
 @media screen and (max-width: 576px) {
   .expertises {
     gap: 8px;
+    margin: 32px auto 0;
+    padding: 0 32px;
   }
   .expertise {
     padding: 0;
     gap: 8px;
+    width: 120px;
+    height: 120px;
+  }
+  .expertise img {
+    width: 48px;
+    height: 48px;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="cta">
     <div class="cta__text">
-      <h2 class="subheading">Get in touch</h2>
+      <h2 class="subheading">Get in touch with us</h2>
       <div></div>
       <p class="mt-2">
         When you objectively analyze your business, you are likely to get a
@@ -188,10 +188,42 @@
   .cta__text > h2 {
     font-size: 32px;
     line-height: 40px;
+    align-self: stretch;
   }
   .cta__text > p {
     font-size: 16px;
-    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    align-self: stretch;
+  }
+}
+@media screen and (max-width: 480px) {
+  #cta {
+    padding: 0;
+  }
+  .cta__text {
+    gap: 16px;
+    padding: 64px 24px 24px;
+  }
+  .cta__text > div {
+    width: 80px;
+    height: 6px;
+  }
+  .cta__text > h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .cta__text > p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .cta__form {
+    width: 100%;
+    gap: 16px;
+    padding: 0;
+    padding-bottom: 64px;
   }
 }
 </style>

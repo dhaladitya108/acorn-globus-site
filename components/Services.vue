@@ -7,7 +7,7 @@
         <div class="row services">
           <div
               v-for="card in cards"
-              class="service__card col-lg-4 mt-4 mt-lg-0 d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start"
+              class="service__card"
           >
             <div class="icon">
               <img
@@ -91,7 +91,6 @@ const cards = [
 <style scoped>
 .services {
   margin-top: 36px;
-  margin-bottom: 24px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -133,7 +132,7 @@ const cards = [
   background-color: #f0f4ff;
   padding: 1rem;
   border-radius: 50%;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
 }
 .icon > img {
   aspect-ratio: 1/1;
@@ -155,6 +154,30 @@ const cards = [
     border-radius: 8px;
     border: none;
     box-shadow: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+  }
+  .service__card {
+    margin-top: 0;
+    padding: 16px 24px 8px;
+  }
+  .service__title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .service__description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .icon {
+    padding: 0.75rem;
+  }
+  .icon > img {
+    width: 32px;
+    height: 32px;
   }
 }
 </style>

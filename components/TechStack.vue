@@ -1,5 +1,5 @@
 <template>
-  <section id="expertize" class="wrapper">
+  <section id="expertize">
     <div class="container text-center">
       <span class="subtext text-uppercase">Our Expertize</span>
       <h2 class="subheading mb-4">Our Technology Stack</h2>
@@ -83,6 +83,7 @@ const technologies = [
 .technology__image img {
   width: 60px;
   height: 60px;
+  aspect-ratio: 1/1;
   object-fit: contain;
   object-position: center;
   display: block;
@@ -105,7 +106,7 @@ const technologies = [
 }
 @media screen and (max-width: 540px) {
   .tech-stacks {
-    gap: 8px;
+    gap: 20px;
   }
   .technology {
     margin: 4px 30px;
@@ -118,8 +119,7 @@ const technologies = [
     margin: 0 10px;
   }
   .technology__image img {
-    width: 40px;
-    height: 40px;
+
   }
 }
 </style>
