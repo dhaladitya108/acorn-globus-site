@@ -1,18 +1,18 @@
 <template>
-  <nav id="nav-bar" class="header py-5">
+  <nav id="nav-bar" class="header py-12">
     <div
-        class="container d-flex align-items-center justify-content-between w-100"
+      class="container mx-auto px-4 flex items-center justify-between w-full"
     >
       <NuxtLink to="/" id="logo" c lass="logo">
         <img
-            src="@/assets/images/acorn-globus-logo.svg"
-            alt="Company Logo"
-            width="150px"
+          src="@/assets/images/acorn-globus-logo.svg"
+          alt="Company Logo"
+          width="150px"
         />
       </NuxtLink>
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"
-      ><span class="navicon"></span
+        ><span class="navicon"></span
       ></label>
       <ul class="nav-items menu">
         <li class="nav-list-item">
@@ -38,9 +38,7 @@
   </nav>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup></script>
 
 <style>
 #nav-bar {

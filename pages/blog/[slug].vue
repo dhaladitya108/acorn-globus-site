@@ -1,31 +1,31 @@
 <template>
   <div>
-    <div class="container position-relative">
+    <div class="container mx-auto px-4 relative">
       <article
-          class="container mw-840 mt-8rem"
-          :class="{ 'mb-3rem': !(article.cta && article.cta.hidden) }"
+        class="container mx-auto px-4 mw-840 mt-8rem"
+        :class="{ 'mb-3rem': !(article.cta && article.cta.hidden) }"
       >
         <NuxtLink
-            :to="`/blog/`"
-            class="blog__back"
-            :class="article.toc.length ? 'blog__back__margin' : ''"
+          :to="`/blog/`"
+          class="blog__back"
+          :class="article.toc.length ? 'blog__back__margin' : ''"
         >
           <span>← Back</span>
         </NuxtLink>
         <nav
-            v-if="article.toc.length"
-            class="navbar navbar-expand bg-white sticky-top py-3"
+          v-if="article.toc.length"
+          class="navbar navbar-expand bg-white sticky-top py-3"
         >
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a
-                    class="dropdown-toggle"
-                    href="#"
-                    id="tocMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
+                  class="dropdown-toggle"
+                  href="#"
+                  id="tocMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
                   Table of Contents
                 </a>
@@ -41,22 +41,20 @@
           </div>
         </nav>
         <h1 class="mb-1 article__heading">{{ article.title }}</h1>
-        <div class="d-flex sm-text my-2 datentimeToRead">
+        <div class="flex sm-text my-2 datentimeToRead">
           <span>{{ formatDate(article.createdAt) }}</span>
           <span>|</span>
-          <div
-              class="d-flex align-items-center justify-content-center timeToRead"
-          >
+          <div class="flex items-center justify-center timeToRead">
             <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="17"
+              viewBox="0 0 16 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                  d="M8.00016 2.02344C11.6802 2.02344 14.6668 5.0101 14.6668 8.6901C14.6668 12.3701 11.6802 15.3568 8.00016 15.3568C4.32016 15.3568 1.3335 12.3701 1.3335 8.6901C1.3335 5.0101 4.32016 2.02344 8.00016 2.02344ZM8.00016 14.0234C10.9468 14.0234 13.3335 11.6368 13.3335 8.6901C13.3335 5.74344 10.9468 3.35677 8.00016 3.35677C5.0535 3.35677 2.66683 5.74344 2.66683 8.6901C2.66683 11.6368 5.0535 14.0234 8.00016 14.0234ZM10.3575 5.3901L11.3002 6.33277L8.00016 9.63277L7.0575 8.6901L10.3575 5.3901V5.3901Z"
-                  fill="#8c8c8c"
+                d="M8.00016 2.02344C11.6802 2.02344 14.6668 5.0101 14.6668 8.6901C14.6668 12.3701 11.6802 15.3568 8.00016 15.3568C4.32016 15.3568 1.3335 12.3701 1.3335 8.6901C1.3335 5.0101 4.32016 2.02344 8.00016 2.02344ZM8.00016 14.0234C10.9468 14.0234 13.3335 11.6368 13.3335 8.6901C13.3335 5.74344 10.9468 3.35677 8.00016 3.35677C5.0535 3.35677 2.66683 5.74344 2.66683 8.6901C2.66683 11.6368 5.0535 14.0234 8.00016 14.0234ZM10.3575 5.3901L11.3002 6.33277L8.00016 9.63277L7.0575 8.6901L10.3575 5.3901V5.3901Z"
+                fill="#8c8c8c"
               ></path>
             </svg>
             <span>{{ article.readingStats.text }}</span>
@@ -70,32 +68,33 @@
         <nuxt-content :document="article" />
       </article>
     </div>
-    <div class="bg__primary position-relative overflow-hidden">
-<!--      <Cta />-->
+    <div class="bg__primary relative overflow-hidden">
+      <!--      <Cta />-->
       <Footer />
       <img
-          src="~/assets/images/acorn-watermark.png"
-          alt="Acorn Globus Symbol Watermark"
-          class="footer-watermark-acorn position-absolute"
-          height="500"
+        src="~/assets/images/acorn-watermark.png"
+        alt="Acorn Globus Symbol Watermark"
+        class="footer-watermark-acorn absolute"
+        height="500"
       />
       <img
-          src="~/assets/images/footer-watermark.png"
-          alt="Footer Watermark"
-          class="footer-watermark-geometry position-absolute"
+        src="~/assets/images/footer-watermark.png"
+        alt="Footer Watermark"
+        class="footer-watermark-geometry absolute"
       />
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const route = useRoute();
 
-let article = await useAsyncData(
-    'articles-list',
-    () => queryContent('blog').where({
+let article = await useAsyncData("articles-list", () =>
+  queryContent("blog")
+    .where({
       _path: { $eq: `/blog/${route.params.slug}` },
-    }).findOne()
+    })
+    .findOne()
 ).data.value;
 console.log(article);
 
@@ -104,7 +103,7 @@ const formatDate = (date) => {
   return new Date(date).toLocaleDateString("en", options);
 };
 const to = () => {
-  route.push('/blog/')
+  route.push("/blog/");
 };
 
 import getSiteMeta from "~/utils/getSiteMeta";
@@ -115,11 +114,11 @@ const metaData = {
   title: article.metaTitle,
   description: article.metaDescription,
   mainImage: article.coverImg
-      ? `https://acornglobus.com/${article.coverImg}`
-      : "https://acornglobus.com/acorn-globus.png",
+    ? `https://acornglobus.com/${article.coverImg}`
+    : "https://acornglobus.com/acorn-globus.png",
   mainImageAlt:
-      this.article.coverImgAlt ||
-      "Building Innovative Software For Industry Leaders",
+    this.article.coverImgAlt ||
+    "Building Innovative Software For Industry Leaders",
   keywords: this.article.keywords,
 };
 const meta = getSiteMeta(metaData);

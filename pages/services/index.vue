@@ -1,20 +1,25 @@
 <template>
-  <section class="bg__primary position-relative overflow-hidden" id="hero">
+  <section class="bg__primary relative overflow-hidden" id="hero">
     <Nav />
     <div class="hero">
-      <div class="container text-center">
+      <div class="container mx-auto px-4 text-center">
         <h1 class="hero__heading text-center">
           Web Application Development Services
         </h1>
         <p class="hero__subheading">
-          Scale your business to new heights with Acorn Globus. Our dedicated web app development services seamlessly grow your user base, no matter the size or type of your company. Create purpose based custom solutions to help you stand out in the market and satisfy customer needs. - What are the needs? Desires the project is done on time and is affordable?
+          Scale your business to new heights with Acorn Globus. Our dedicated
+          web app development services seamlessly grow your user base, no matter
+          the size or type of your company. Create purpose based custom
+          solutions to help you stand out in the market and satisfy customer
+          needs. - What are the needs? Desires the project is done on time and
+          is affordable?
         </p>
       </div>
     </div>
     <img
-        src="~/assets/images/acorn-watermark.png"
-        alt="Acorn Globus Logo Watermark"
-        class="hero-watermark"
+      src="~/assets/images/acorn-watermark.png"
+      alt="Acorn Globus Logo Watermark"
+      class="hero-watermark"
     />
   </section>
 
@@ -30,25 +35,25 @@
 
   <Expertise />
 
-  <div class="bg__primary position-relative overflow-hidden">
+  <div class="bg__primary relative overflow-hidden">
     <Cta />
     <img
-        src="~/assets/images/acorn-watermark.png"
-        alt="Acorn Globus Symbol Watermark"
-        class="footer-watermark-acorn position-absolute"
-        height="500"
+      src="~/assets/images/acorn-watermark.png"
+      alt="Acorn Globus Symbol Watermark"
+      class="footer-watermark-acorn absolute"
+      height="500"
     />
     <img
-        src="~/assets/images/footer-watermark.png"
-        alt="Footer Watermark"
-        class="footer-watermark-geometry position-absolute"
+      src="~/assets/images/footer-watermark.png"
+      alt="Footer Watermark"
+      class="footer-watermark-geometry absolute"
     />
   </div>
 
   <Footer />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import Testimonials from "~/components/services/Testimonials.vue";
 import WhyChooseUs from "~/components/services/WhyChooseUs.vue";
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
@@ -72,9 +77,9 @@ import Process from "~/components/services/Process.vue";
   margin-bottom: 2.5rem;
 }
 .hero__subheading {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   text-align: center;
-  font-family: Aileron,sans-serif;
+  font-family: Aileron, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;

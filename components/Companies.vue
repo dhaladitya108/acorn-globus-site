@@ -1,60 +1,60 @@
 <template>
   <section id="companies" class="companies">
-    <div class="container">
+    <div class="container mx-auto px-4">
       <div
-          class="all__companies d-flex flex-column flex-sm-row align-items-center justify-content-between flex-wrap"
+        class="all__companies flex flex-col sm:flex-row items-center justify-between flex-wrap"
       >
         <div class="box">
           <a href="https://formester.com/" target="_blank">
             <img
-                src="~/assets/images/companies/formester.png"
-                alt="Formester logo"
-                class="company__img"
+              src="~/assets/images/companies/formester.png"
+              alt="Formester logo"
+              class="company__img"
             />
           </a>
         </div>
         <div class="box">
           <a href="https://about.rumie.org/" target="_blank">
             <img
-                src="~/assets/images/companies/rumie.png"
-                alt="Rumie logo"
-                class="company__img rumie"
+              src="~/assets/images/companies/rumie.png"
+              alt="Rumie logo"
+              class="company__img rumie"
             />
           </a>
         </div>
         <div class="box">
           <a href="https://www.mayple.com/main/b" target="_blank">
             <img
-                src="~/assets/images/companies/mayple.png"
-                alt="Mayple logo"
-                class="company__img mayple"
+              src="~/assets/images/companies/mayple.png"
+              alt="Mayple logo"
+              class="company__img mayple"
             />
           </a>
         </div>
         <div class="box">
           <a href="https://eitoss.com/" target="_blank">
             <img
-                src="~/assets/images/companies/cayzen.png"
-                alt="Cayzen logo"
-                class="company__img cayzen"
+              src="~/assets/images/companies/cayzen.png"
+              alt="Cayzen logo"
+              class="company__img cayzen"
             />
           </a>
         </div>
         <div class="box">
           <a href="https://www.hackerrank.com/" target="_blank">
             <img
-                src="~/assets/images/companies/hacker-rank.png"
-                alt="HackerRank logo"
-                class="company__img hacker-rank"
+              src="~/assets/images/companies/hacker-rank.png"
+              alt="HackerRank logo"
+              class="company__img hacker-rank"
             />
           </a>
         </div>
         <div class="box">
           <a href="https://equipmentconnect.co.uk/" target="_blank">
             <img
-                src="~/assets/images/companies/equipment-connect.png"
-                alt="Equipment connect logo"
-                class="company__img equipment-connect"
+              src="~/assets/images/companies/equipment-connect.png"
+              alt="Equipment connect logo"
+              class="company__img equipment-connect"
             />
           </a>
         </div>
@@ -63,9 +63,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup></script>
 
 <style>
 .companies {
@@ -88,7 +86,7 @@
 }
 
 .company__img {
-  //height: 48px;
+  /* //height: 48px; */
   aspect-ratio: 16/4;
 }
 
@@ -129,7 +127,7 @@
 
 @media screen and (max-width: 575.5px) {
   .all__companies {
-    //margin-top: 2em;
+    /* //margin-top: 2em; */
     gap: 3em;
   }
 }

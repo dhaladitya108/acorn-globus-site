@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const props = defineProps(["title", "description", "icon"]);
 </script>
 
@@ -38,8 +38,8 @@ const props = defineProps(["title", "description", "icon"]);
   justify-content: center;
   align-items: center;
   border-radius: 28px;
-  border: 8px solid #ECF1FC;
-  background: #ECF1FC;
+  border: 8px solid #ecf1fc;
+  background: #ecf1fc;
 }
 .card__content {
   display: flex;
@@ -47,8 +47,8 @@ const props = defineProps(["title", "description", "icon"]);
   gap: 6px;
 }
 .card__content-title {
-  color: var(--primary, #192A52);
-  font-family: Inter,sans-serif;
+  color: var(--primary, #192a52);
+  font-family: Inter, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -57,7 +57,7 @@ const props = defineProps(["title", "description", "icon"]);
 }
 .card__content-description {
   color: var(--Gray-600, #475467);
-  font-family: Inter,sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

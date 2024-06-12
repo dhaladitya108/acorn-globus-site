@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mx-auto px-4">
     <h1>Privacy Policy</h1>
     <h3 class="mt-3"><strong>General Information</strong></h3>
     <p>
@@ -129,7 +129,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import getSiteMeta from "~/utils/getSiteMeta";
 
 const metaData = {

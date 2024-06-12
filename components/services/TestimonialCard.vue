@@ -1,18 +1,12 @@
 <template>
   <div class="card">
     <img class="card__rating" :src="fiveStar" alt="Five Star Rating" />
-    <h6 class="card__heading">
-      “{{ title }}”
-    </h6>
+    <h6 class="card__heading">“{{ title }}”</h6>
     <p class="card__text">
       {{ content }}
     </p>
     <div class="card__user">
-      <img
-          class="card__user-image"
-          :src="avatar"
-          :alt="name"
-      />
+      <img class="card__user-image" :src="avatar" :alt="name" />
       <div class="card__user-info">
         <p class="card__user-info-name">{{ name }}</p>
         <p class="card__user-info-position">{{ position }}</p>
@@ -21,10 +15,10 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import fiveStar from '~/assets/images/services/five-star.svg'
+<script setup>
+import fiveStar from "~/assets/images/services/five-star.svg";
 
-const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
+const props = defineProps(["name", "position", "avatar", "title", "content"]);
 </script>
 
 <style scoped>
@@ -35,8 +29,8 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
 }
 .card {
   width: 354px;
-  border: 1px solid rgba(18, 20, 29, 0.10);
-  background: var(--White, #FFF);
+  border: 1px solid rgba(18, 20, 29, 0.1);
+  background: var(--White, #fff);
   display: flex;
   padding: 16px 24px;
   flex-direction: column;
@@ -49,9 +43,9 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
   height: 42px;
 }
 .card__heading {
-  color: var(--Primary-Black, #12141D);
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: Aileron,sans-serif;
+  color: var(--Primary-Black, #12141d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Aileron, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -61,8 +55,8 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
 }
 .card__text {
   color: var(--Secondary-Black, #363636);
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: "DM Sans",sans-serif;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -88,9 +82,9 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
   gap: 0;
 }
 .card__user-info-name {
-  color: var(--Primary-Black, #12141D);
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: Aileron,sans-serif;
+  color: var(--Primary-Black, #12141d);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Aileron, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -98,8 +92,8 @@ const props = defineProps(['name', 'position', 'avatar', 'title', 'content'])
 }
 .card__user-info-position {
   color: var(--Secondary-Black, #363636);
-  font-feature-settings: 'clig' off, 'liga' off;
-  font-family: Aileron,sans-serif;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: Aileron, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

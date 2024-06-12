@@ -1,6 +1,6 @@
 <template>
   <section id="our-team" class="wrapper">
-    <div class="container">
+    <div class="container mx-auto px-4">
       <div class="head">
         <div>
           <span class="subtext">our team</span>
@@ -8,31 +8,54 @@
         </div>
         <div class="team_btns">
           <button @click="handlePrev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M15 18L9 12L15 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M15 18L9 12L15 6"
+                stroke="#192A52"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </button>
           <button @click="handleNext">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M9 18L15 12L9 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="#192A52"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </button>
         </div>
-
       </div>
 
       <Carousel
-          :breakpoints="breakPoints"
-          snap-align="start"
-          ref="teamsCarousel"
-          style="padding: 0"
+        :breakpoints="breakPoints"
+        snap-align="start"
+        ref="teamsCarousel"
+        style="padding: 0"
       >
         <Slide v-for="member in teamMembers" :key="member.name">
           <div class="team__card">
             <img
-                :src="getImageSource(member.profileImage)"
-                :alt="member.name"
-                class="pr__img"
+              :src="getImageSource(member.profileImage)"
+              :alt="member.name"
+              class="pr__img"
             />
             <h4 class="pr__name mt-4">{{ member.name }}</h4>
             <p class="pr__role">{{ member.role }}</p>
@@ -42,13 +65,37 @@
 
       <div class="team_btns2">
         <button @click="handlePrev">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18L9 12L15 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M15 18L9 12L15 6"
+              stroke="#192A52"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </button>
         <button @click="handleNext">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18L15 12L9 6" stroke="#192A52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M9 18L15 12L9 6"
+              stroke="#192A52"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </button>
       </div>
@@ -56,7 +103,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { teamMembers } from "~/constants/team";
 
 const breakPoints = {
@@ -71,23 +118,21 @@ const breakPoints = {
   1024: {
     itemsToShow: 4,
     itemsToScroll: 4,
-  }
+  },
 };
 
 const teamsCarousel = ref(null);
 
 const handleNext = () => {
-  teamsCarousel.value.next();
+  teamsCarousel.value?.next();
 };
 const handlePrev = () => {
-  teamsCarousel.value.prev();
+  teamsCarousel.value?.prev();
 };
-
 
 const getImageSource = (image) => {
-  return new URL(`../assets/images/team/${image}.webp`, import.meta.url).href
+  return new URL(`../assets/images/team/${image}.webp`, import.meta.url).href;
 };
-
 </script>
 
 <style>
@@ -109,13 +154,13 @@ const getImageSource = (image) => {
   display: none;
 }
 .team_btns button,
-.team_btns2 button{
+.team_btns2 button {
   height: 56px;
   width: 56px;
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid var(--Stroke, #E2E2E2);
-  background: rgba(255, 255, 255, 0.90);
+  border: 1px solid var(--Stroke, #e2e2e2);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(4px);
 }
 

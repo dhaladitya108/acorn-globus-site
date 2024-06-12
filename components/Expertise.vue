@@ -1,6 +1,6 @@
 <template>
   <section id="expertize" class="expertize">
-    <div class="container text-center">
+    <div class="container mx-auto px-4 text-center">
       <h2 class="subheading">Our Industry Expertise</h2>
       <div class="expertises">
         <div class="expertise">
@@ -11,31 +11,19 @@
           <span>Healthcare</span>
         </div>
         <div class="expertise">
-          <img
-              src="~/assets/images/expertise/finance.png"
-              alt="finance"
-          />
+          <img src="~/assets/images/expertise/finance.png" alt="finance" />
           <span>Finance</span>
         </div>
         <div class="expertise">
-          <img
-              src="~/assets/images/expertise/hrm.png"
-              alt="HRM"
-          />
+          <img src="~/assets/images/expertise/hrm.png" alt="HRM" />
           <span>HRM</span>
         </div>
         <div class="expertise">
-          <img
-              src="~/assets/images/expertise/travel.png"
-              alt="travel"
-          />
+          <img src="~/assets/images/expertise/travel.png" alt="travel" />
           <span>Travel</span>
         </div>
         <div class="expertise">
-          <img
-              src="~/assets/images/expertise/logistics.png"
-              alt="logistics"
-          />
+          <img src="~/assets/images/expertise/logistics.png" alt="logistics" />
           <span>Logistics</span>
         </div>
       </div>
@@ -43,9 +31,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup></script>
 
 <style scoped>
 .expertises {
@@ -71,7 +57,7 @@
 }
 .expertise:hover {
   border-radius: 8px;
-  background: var(--White, #FFF);
+  background: var(--White, #fff);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 }
 .expertise img {

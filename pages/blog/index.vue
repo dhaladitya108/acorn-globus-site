@@ -3,34 +3,34 @@
     <div class="bg__primary">
       <Nav />
     </div>
-    <div class="position-relative overflow-hidden mb-5 pb-5">
+    <div class="relative overflow-hidden mb-5 pb-5">
       <h1 class="big__heading my-20 text-center">Our Blog</h1>
-      <div class="d-flex flex-column gap-16 container">
+      <div class="flex flex-col gap-16 container mx-auto px-4">
         <BlogCard
-            v-for="article in articles"
-            :key="article.title"
-            :article="article"
+          v-for="article in articles"
+          :key="article.title"
+          :article="article"
         />
       </div>
       <img
-          src="@/assets/images/acorn-light-watermark.png"
-          alt="Acorn Watermark"
-          class="position-absolute acorn-light-watermark"
+        src="@/assets/images/acorn-light-watermark.png"
+        alt="Acorn Watermark"
+        class="absolute acorn-light-watermark"
       />
     </div>
-    <div class="bg__primary position-relative overflow-hidden">
+    <div class="bg__primary relative overflow-hidden">
       <Cta />
 
       <img
-          src="@/assets/images/acorn-watermark.png"
-          alt="Acorn Globus Symbol Watermark"
-          class="footer-watermark-acorn position-absolute"
-          height="500"
+        src="@/assets/images/acorn-watermark.png"
+        alt="Acorn Globus Symbol Watermark"
+        class="footer-watermark-acorn absolute"
+        height="500"
       />
       <img
-          src="@/assets/images/footer-watermark.png"
-          alt="Footer Watermark"
-          class="footer-watermark-geometry position-absolute"
+        src="@/assets/images/footer-watermark.png"
+        alt="Footer Watermark"
+        class="footer-watermark-geometry absolute"
       />
     </div>
 
@@ -38,17 +38,16 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import BlogCard from "~/components/blog/BlogCard.vue";
 
-let {data: articles} = await useAsyncData(
-    'articles-list',
-    () => queryContent('blog').find()
+let { data: articles } = await useAsyncData("articles-list", () =>
+  queryContent("blog").find()
 );
-articles = articles.value
+articles = articles.value;
 
 articles.forEach((article) => {
-  article.slug = article._path.replace('/blog/', '');
+  article.slug = article._path.replace("/blog/", "");
 });
 </script>
 

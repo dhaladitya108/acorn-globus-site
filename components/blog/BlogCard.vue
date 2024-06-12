@@ -1,15 +1,15 @@
 <template>
   <NuxtLink
-      :to="`/blog/${article.slug}`"
-      class="d-flex flex-column flex-md-row gap-md-4 gap-3 blog__card"
+    :to="`/blog/${article.slug}`"
+    class="flex flex-col flex-md-row gap-md-4 gap-3 blog__card"
   >
     <img
-        :src="article.coverImg"
-        :alt="article.coverImgAlt"
-        :title="article.coverImgAlt"
+      :src="article.coverImg"
+      :alt="article.coverImgAlt"
+      :title="article.coverImgAlt"
     />
-    <div class="d-flex flex-column overflow-hidden">
-      <div class="d-flex align-items-baseline gap-2">
+    <div class="flex flex-col overflow-hidden">
+      <div class="flex align-items-baseline gap-2">
         <span class="sm__text">{{ article.topic }}</span>
         <span class="text-gray">•</span>
         <span class="sm__text">{{ article?.readingStats?.text }}</span>
@@ -23,7 +23,7 @@
   </NuxtLink>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const props = defineProps(["article"]);
 console.log(props.article);
 

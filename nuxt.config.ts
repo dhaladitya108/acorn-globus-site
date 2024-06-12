@@ -21,12 +21,15 @@ export default defineNuxtConfig({
   },
   components: true,
   css: [
-    "~/assets/css/bootstrap.min.css",
+    // "~/assets/css/bootstrap.min.css",
     "vue-slick-carousel/dist/vue-slick-carousel.css",
     "vue-slick-carousel/dist/vue-slick-carousel-theme.css",
     "~/assets/css/main.css",
   ],
-  modules: ["@nuxt/content", "vue3-carousel-nuxt"],
+  modules: ["@nuxt/content", "vue3-carousel-nuxt", "@nuxtjs/tailwindcss"],
+  tailwindcss: {
+    cssPath: "~/assets/css/tailwind.css",
+  },
   // hooks: {
   //     'content:file:beforeInsert': (document) => {
   //         if (document.extension === '.md') {

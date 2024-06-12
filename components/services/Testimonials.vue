@@ -1,9 +1,9 @@
 <template>
   <section id="testimonials">
-<!--    <div class="testimonials__header">-->
-<!--      <p>What our satisfied clients say about Acorn Globus</p>-->
-<!--      <button>Book a free consultation</button>-->
-<!--    </div>-->
+    <!--    <div class="testimonials__header">-->
+    <!--      <p>What our satisfied clients say about Acorn Globus</p>-->
+    <!--      <button>Book a free consultation</button>-->
+    <!--    </div>-->
     <div class="testimonials__cards">
       <TestimonialCard
         v-for="testimonial in testimonials"
@@ -18,7 +18,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import TestimonialCard from "~/components/services/TestimonialCard.vue";
 
 import enzo from "~/assets/images/testimonials/enzo.jpeg";
@@ -31,23 +31,26 @@ const testimonials = [
     position: "CTO, Selectom",
     avatar: alon,
     title: "Ankit is a very proficient developer",
-    content: "Ankit is a very proficient developer, who is very quick to learn new technologies and concepts. He quickly dove in deep and generated impressive results of high quality, that are still operational to this day."
+    content:
+      "Ankit is a very proficient developer, who is very quick to learn new technologies and concepts. He quickly dove in deep and generated impressive results of high quality, that are still operational to this day.",
   },
   {
     name: "Enzo Zadrima",
     position: "Co-Founder & CTO, EquipmentConnect",
     avatar: enzo,
     title: "He is a gifted developer",
-    content: "He is a gifted developer with a rare combination of attention to detail and overall sense for the big picture. He is very passionate about what he does and comes up proactively with improvements ideas."
+    content:
+      "He is a gifted developer with a rare combination of attention to detail and overall sense for the big picture. He is very passionate about what he does and comes up proactively with improvements ideas.",
   },
   {
     name: "Bogdan Arsenie",
     position: "Founder, OrganizedEffort",
     avatar: bogdan,
     title: "Ankit is my go to person",
-    content: "Ankit is my go to person when I need somebody I can trust to execute any front-end project. He's super attentive, communicates effectively and he will accurately manage your expectations for his time and involvement."
-  }
-]
+    content:
+      "Ankit is my go to person when I need somebody I can trust to execute any front-end project. He's super attentive, communicates effectively and he will accurately manage your expectations for his time and involvement.",
+  },
+];
 </script>
 
 <style scoped>
@@ -68,9 +71,9 @@ const testimonials = [
   gap: 24px;
 }
 .testimonials__header > p {
-  color: var(--Black, #12141D);
+  color: var(--Black, #12141d);
   text-align: center;
-  font-family: Aileron,sans-serif;
+  font-family: Aileron, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -98,9 +101,9 @@ const testimonials = [
     align-items: flex-start;
     gap: 12px;
     border-radius: 4px;
-    background: var(--primary, #192A52);
-    color: var(--White, #FFF);
-    font-family: Aileron,sans-serif;
+    background: var(--primary, #192a52);
+    color: var(--White, #fff);
+    font-family: Aileron, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;

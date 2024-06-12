@@ -15,41 +15,41 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import ProcessCard from "~/components/services/ProcessCard.vue";
 const cards = [
   {
     number: "01",
     title: "Define & Plan",
     content: [
-        "Create low-fidelity wireframes to visualize website layout and user flow.",
-        "Develop interactive prototypes to demonstrate core functionalities and interactions."
-    ]
+      "Create low-fidelity wireframes to visualize website layout and user flow.",
+      "Develop interactive prototypes to demonstrate core functionalities and interactions.",
+    ],
   },
   {
     number: "02",
     title: "Design & Prototype",
     content: [
       "Create low-fidelity wireframes to visualize website layout and user flow.",
-      "Develop interactive prototypes to demonstrate core functionalities and interactions."
-    ]
+      "Develop interactive prototypes to demonstrate core functionalities and interactions.",
+    ],
   },
   {
     number: "03",
     title: "Development & Testing",
     content: [
       "Skilled developers bring your web app to life using the latest technologies.",
-      "Rigorous manual and automated testing ensure flawless functionality across devices and browsers."
-    ]
+      "Rigorous manual and automated testing ensure flawless functionality across devices and browsers.",
+    ],
   },
   {
     number: "04",
     title: "Launch & Support",
     content: [
       "Meticulous launch ensures a smooth transition to the live environment.",
-      "Ongoing support addresses issues and implements updates based on user feedback."
-    ]
-  }
+      "Ongoing support addresses issues and implements updates based on user feedback.",
+    ],
+  },
 ];
 </script>
 
@@ -70,9 +70,9 @@ const cards = [
   gap: 24px;
 }
 .process__header > p {
-  color: var(--Black, #12141D);
+  color: var(--Black, #12141d);
   text-align: center;
-  font-family: Aileron,sans-serif;
+  font-family: Aileron, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;

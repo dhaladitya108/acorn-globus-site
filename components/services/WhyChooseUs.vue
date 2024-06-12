@@ -15,7 +15,7 @@
   </section>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import WhyChooseUsCard from "~/components/services/WhyChooseUsCard.vue";
 import lineChartUpIcon from "~/assets/images/services/why-choose-us__line-chart-up.svg";
 import phoneIcon from "~/assets/images/services/why-choose-us__phone.svg";
@@ -51,13 +51,13 @@ const cards = [
     icon: shieldTickIcon,
     title: "Scalability and Security",
     description:
-        "Our solutions are built to grow with your business and prioritize robust security measures.",
+      "Our solutions are built to grow with your business and prioritize robust security measures.",
   },
   {
     icon: phoneIcon,
     title: "Skilled Talent",
     description:
-        "Our most prized possession is the talented group of hard working individuals that could be working for you.",
+      "Our most prized possession is the talented group of hard working individuals that could be working for you.",
   },
 ];
 </script>
@@ -70,7 +70,7 @@ const cards = [
   align-items: center;
   gap: 32px;
   align-self: stretch;
-  background: #FAFBFF;
+  background: #fafbff;
 }
 .why-choose-us__header {
   display: flex;
@@ -80,9 +80,9 @@ const cards = [
   gap: 24px;
 }
 .why-choose-us__header > p {
-  color: var(--Black, #12141D);
+  color: var(--Black, #12141d);
   text-align: center;
-  font-family: Aileron,sans-serif;
+  font-family: Aileron, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;

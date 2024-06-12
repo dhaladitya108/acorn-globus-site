@@ -1,29 +1,28 @@
 <template>
-  <section class="bg__primary position-relative overflow-hidden" id="hero">
+  <section class="bg__primary relative overflow-hidden" id="hero">
     <Nav />
     <div class="hero">
       <div class="text-center">
         <img
-            src="~/assets/images/tech-stack/react.svg"
-            alt="React"
-            height="80px"
-            width="80px"
+          src="~/assets/images/tech-stack/react.svg"
+          alt="React"
+          height="80px"
+          width="80px"
         />
       </div>
-      <div class="container text-center mt-4">
-        <h1 class="hero__heading text-center">
-          ReactJS Development Company
-        </h1>
+      <div class="container mx-auto px-4 text-center mt-4">
+        <h1 class="hero__heading text-center">ReactJS Development Company</h1>
         <p class="hero__subheading">
-          Need a development partner for your next web project? Our ReactJS proficient developers ensure modern, standards-compliant apps.
+          Need a development partner for your next web project? Our ReactJS
+          proficient developers ensure modern, standards-compliant apps.
         </p>
       </div>
       <button class="hero__btn mt-4">Get Started</button>
     </div>
     <img
-        src="~/assets/images/acorn-watermark.png"
-        alt="Acorn Globus Logo Watermark"
-        class="hero-watermark"
+      src="~/assets/images/acorn-watermark.png"
+      alt="Acorn Globus Logo Watermark"
+      class="hero-watermark"
     />
   </section>
 
@@ -35,26 +34,25 @@
 
   <Expertise />
 
-  <div class="bg__primary position-relative overflow-hidden">
+  <div class="bg__primary relative overflow-hidden">
     <Cta />
     <img
-        src="~/assets/images/acorn-watermark.png"
-        alt="Acorn Globus Symbol Watermark"
-        class="footer-watermark-acorn position-absolute"
-        height="500"
+      src="~/assets/images/acorn-watermark.png"
+      alt="Acorn Globus Symbol Watermark"
+      class="footer-watermark-acorn absolute"
+      height="500"
     />
     <img
-        src="~/assets/images/footer-watermark.png"
-        alt="Footer Watermark"
-        class="footer-watermark-geometry position-absolute"
+      src="~/assets/images/footer-watermark.png"
+      alt="Footer Watermark"
+      class="footer-watermark-geometry absolute"
     />
   </div>
 
   <Footer />
 </template>
 
-<script setup lang="ts">
-
+<script setup>
 import Testimonials from "~/components/services/Testimonials.vue";
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
 import Benefits from "~/components/technology/Benefits.vue";
@@ -76,9 +74,9 @@ import Benefits from "~/components/technology/Benefits.vue";
   margin-bottom: 2.5rem;
 }
 .hero__subheading {
-  color: var(--White, #FFF);
+  color: var(--White, #fff);
   text-align: center;
-  font-family: Aileron,sans-serif;
+  font-family: Aileron, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -91,10 +89,10 @@ import Benefits from "~/components/technology/Benefits.vue";
   align-items: flex-start;
   gap: 12px;
   border-radius: 4px;
-  background: var(--White, #FFF);
+  background: var(--White, #fff);
 
-  color: #192A52;
-  font-family: Aileron,sans-serif;
+  color: #192a52;
+  font-family: Aileron, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;

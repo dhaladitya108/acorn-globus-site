@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const props = defineProps(["number", "title", "content"]);
 </script>
 
@@ -22,16 +22,16 @@ const props = defineProps(["number", "title", "content"]);
   align-items: flex-start;
   gap: 18px;
   border-radius: 8px;
-  border: 1px solid #E2E2E2;
-  background: var(--White, #FFF);
+  border: 1px solid #e2e2e2;
+  background: var(--White, #fff);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
   width: 400px;
   max-width: 1200px;
   outline: none;
 }
 .card__number {
-  color: var(--primary, #192A52);
-  font-family: PolySans,sans-serif;
+  color: var(--primary, #192a52);
+  font-family: PolySans, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -39,8 +39,8 @@ const props = defineProps(["number", "title", "content"]);
   letter-spacing: 1px;
 }
 .card__title {
-  color: var(--Primary-Dark-Green, #071E0C);
-  font-family: Inter,sans-serif;
+  color: var(--Primary-Dark-Green, #071e0c);
+  font-family: Inter, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -48,8 +48,8 @@ const props = defineProps(["number", "title", "content"]);
   letter-spacing: 0;
 }
 .card__content {
-  color: var(--Primary-Dark-Green, #071E0C);
-  font-family: Inter,sans-serif;
+  color: var(--Primary-Dark-Green, #071e0c);
+  font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -72,6 +72,5 @@ const props = defineProps(["number", "title", "content"]);
   .card__content {
     font-size: 14px;
   }
-
 }
 </style>

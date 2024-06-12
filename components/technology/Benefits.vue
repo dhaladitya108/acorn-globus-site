@@ -4,14 +4,12 @@
 
     <div class="body">
       <div></div>
-      <img src="~/assets/images/content.png" alt="Content">
+      <img src="~/assets/images/content.png" alt="Content" />
     </div>
   </section>
 </template>
 
-<script setup lang="ts">
-
-</script>
+<script setup></script>
 
 <style scoped>
 #benefits {

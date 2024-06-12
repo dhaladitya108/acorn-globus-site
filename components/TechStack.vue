@@ -1,13 +1,10 @@
 <template>
   <section id="expertize">
-    <div class="container text-center">
+    <div class="container mx-auto px-4 text-center">
       <span class="subtext text-uppercase">Our Expertize</span>
       <h2 class="subheading mb-4">Our Technology Stack</h2>
       <div class="tech-stacks">
-        <div
-            v-for="tech in technologies"
-            class="technology"
-        >
+        <div v-for="tech in technologies" class="technology">
           <div class="technology__image">
             <img :src="tech.icon" :alt="tech.name" />
           </div>
@@ -18,42 +15,41 @@
   </section>
 </template>
 
-<script setup lang="ts">
-import vueIcon from '~/assets/images/tech-stack/vue.svg'
-import reactIcon from '~/assets/images/tech-stack/react.svg'
-import railsIcon from '~/assets/images/tech-stack/rails.svg'
-import pythonIcon from '~/assets/images/tech-stack/python.svg'
-import nodeIcon from '~/assets/images/tech-stack/node.svg'
-import dockerIcon from '~/assets/images/tech-stack/docker.svg'
-import figmaIcon from '~/assets/images/tech-stack/figma.svg'
-import postgresqlIcon from '~/assets/images/tech-stack/postgresql.svg'
-import githubIcon from '~/assets/images/tech-stack/github.svg'
-import androidIcon from '~/assets/images/tech-stack/android.svg'
-import flutterIcon from '~/assets/images/tech-stack/flutter.svg'
-import mongoIcon from '~/assets/images/tech-stack/mongodb.svg'
-import htmlIcon from '~/assets/images/tech-stack/html.svg'
-import cssIcon from '~/assets/images/tech-stack/css.svg'
+<script setup>
+import vueIcon from "~/assets/images/tech-stack/vue.svg";
+import reactIcon from "~/assets/images/tech-stack/react.svg";
+import railsIcon from "~/assets/images/tech-stack/rails.svg";
+import pythonIcon from "~/assets/images/tech-stack/python.svg";
+import nodeIcon from "~/assets/images/tech-stack/node.svg";
+import dockerIcon from "~/assets/images/tech-stack/docker.svg";
+import figmaIcon from "~/assets/images/tech-stack/figma.svg";
+import postgresqlIcon from "~/assets/images/tech-stack/postgresql.svg";
+import githubIcon from "~/assets/images/tech-stack/github.svg";
+import androidIcon from "~/assets/images/tech-stack/android.svg";
+import flutterIcon from "~/assets/images/tech-stack/flutter.svg";
+import mongoIcon from "~/assets/images/tech-stack/mongodb.svg";
+import htmlIcon from "~/assets/images/tech-stack/html.svg";
+import cssIcon from "~/assets/images/tech-stack/css.svg";
 
 const technologies = [
-  { name: 'Vue', icon: vueIcon },
-  { name: 'React', icon: reactIcon },
-  { name: 'Rails', icon: railsIcon },
-  { name: 'Python', icon: pythonIcon },
-  { name: 'Node', icon: nodeIcon },
-  { name: 'Docker', icon: dockerIcon },
-  { name: 'Figma', icon: figmaIcon },
-  { name: 'PostgreSQL', icon: postgresqlIcon },
-  { name: 'Github', icon: githubIcon },
-  { name: 'Android', icon: androidIcon },
-  { name: 'Flutter', icon: flutterIcon },
-  { name: 'MongoDB', icon: mongoIcon },
-  { name: 'HTML', icon: htmlIcon },
-  { name: 'CSS', icon: cssIcon },
-]
+  { name: "Vue", icon: vueIcon },
+  { name: "React", icon: reactIcon },
+  { name: "Rails", icon: railsIcon },
+  { name: "Python", icon: pythonIcon },
+  { name: "Node", icon: nodeIcon },
+  { name: "Docker", icon: dockerIcon },
+  { name: "Figma", icon: figmaIcon },
+  { name: "PostgreSQL", icon: postgresqlIcon },
+  { name: "Github", icon: githubIcon },
+  { name: "Android", icon: androidIcon },
+  { name: "Flutter", icon: flutterIcon },
+  { name: "MongoDB", icon: mongoIcon },
+  { name: "HTML", icon: htmlIcon },
+  { name: "CSS", icon: cssIcon },
+];
 </script>
 
 <style>
-
 .tech-stacks {
   width: 100%;
   margin: 0 auto 20px;
@@ -101,7 +97,7 @@ const technologies = [
 
 .technology:hover {
   border-radius: 8px;
-  background: var(--White, #FFF);
+  background: var(--White, #fff);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 }
 @media screen and (max-width: 540px) {
@@ -119,7 +115,6 @@ const technologies = [
     margin: 0 10px;
   }
   .technology__image img {
-
   }
 }
 </style>
