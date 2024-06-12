@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="container mx-auto px-4 relative">
+    <div class="container mx-auto px-4 md:px-12 relative">
       <article
-        class="container mx-auto px-4 mw-840 mt-8rem"
+        class="container mx-auto px-4 md:px-12 mw-840 mt-8rem"
         :class="{ 'mb-3rem': !(article.cta && article.cta.hidden) }"
       >
         <NuxtLink

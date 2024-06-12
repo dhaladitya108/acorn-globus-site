@@ -1,6 +1,6 @@
 <template>
   <footer class="footer__container text-white text-center text-lg-start">
-    <div class="container mx-auto px-4 p-4">
+    <div class="container mx-auto px-4 md:px-12 p-4">
       <div class="row">
         <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
           <div class="logo">

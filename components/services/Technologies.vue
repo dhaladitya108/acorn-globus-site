@@ -1,6 +1,6 @@
 <template>
   <section id="expertize" class="wrapper">
-    <div class="container mx-auto px-4 text-center">
+    <div class="container mx-auto px-4 md:px-12 text-center">
       <h2 class="subheading mb-4">
         Technologies Used for Website Application Development
       </h2>

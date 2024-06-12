@@ -1,6 +1,6 @@
 <template>
   <section id="expertize">
-    <div class="container mx-auto px-4 text-center">
+    <div class="container mx-auto px-4 md:px-12 text-center">
       <span class="subtext text-uppercase">Our Expertize</span>
       <h2 class="subheading mb-4">Our Technology Stack</h2>
       <div class="tech-stacks">

@@ -5,7 +5,7 @@
     </div>
     <div class="relative overflow-hidden mb-5 pb-5">
       <h1 class="big__heading my-20 text-center">Our Blog</h1>
-      <div class="flex flex-col gap-16 container mx-auto px-4">
+      <div class="flex flex-col gap-16 container mx-auto px-4 md:px-12">
         <BlogCard
           v-for="article in articles"
           :key="article.title"

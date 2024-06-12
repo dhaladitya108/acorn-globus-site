@@ -10,7 +10,7 @@
           width="80px"
         />
       </div>
-      <div class="container mx-auto px-4 text-center mt-4">
+      <div class="container mx-auto px-4 md:px-12 text-center mt-4">
         <h1 class="hero__heading text-center">ReactJS Development Company</h1>
         <p class="hero__subheading">
           Need a development partner for your next web project? Our ReactJS
