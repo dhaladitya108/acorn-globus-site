@@ -64,7 +64,7 @@
 .hero__subheading {
   color: white;
   font-size: 18px;
-  line-height: 26px; 
+  line-height: 26px;
 }
 
 .hero__btns {
@@ -126,12 +126,21 @@
     font-size: 54px;
     line-height: 78px;
   }
+  
   .hero-watermark {
     display: none;
   }
+
   .hero__subheading {
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
+  }
+
+  .hero__btns {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }
 
@@ -140,22 +149,17 @@
     font-size: 40px;
     line-height: 62px;
   }
-  .hero__subheading {
-    font-size: 12px;
-    line-height: 22px;
-  }
+
   .hero {
     z-index: 1;
   }
-  .hero__btns {
-    flex-direction: column;
-    gap: 1rem;
-  }
+
   .contact__btn {
     padding: 12px 16px;
     font-size: 18px;
     line-height: 24px;
   }
+
   .projects__btn {
     font-size: 18px;
     line-height: 24px;
