@@ -10,43 +10,27 @@
       </p>
     </div>
     <div class="cta__form">
-      <!--      <div class="form-component">-->
-      <!--        <div class="form-component__element">-->
-      <!--          <label for="first-name">First Name <span>*</span></label>-->
-      <!--          <input type="text" id="first-name" required />-->
-      <!--        </div>-->
-      <!--        <div class="form-component__element">-->
-      <!--          <label for="last-name">Last Name <span>*</span></label>-->
-      <!--          <input type="text" id="last-name" required />-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <!--      <div class="form-component">-->
-      <!--        <div class="form-component__element">-->
-      <!--          <label for="email">Email <span>*</span></label>-->
-      <!--          <input type="email" id="email" required />-->
-      <!--        </div>-->
-      <!--        <div class="form-component__element">-->
-      <!--          <label for="phone">Company Name <span>*</span></label>-->
-      <!--          <input type="text" id="phone" required />-->
-      <!--        </div>-->
-      <!--      </div>-->
-      <!--      <div class="form-component form-component__element">-->
-      <!--        <label for="message">Your Inquiry <span>*</span></label>-->
-      <!--        <textarea id="message" required></textarea>-->
-      <!--      </div>-->
-      <!--      <button class="form-button">Contact Now</button>-->
-
-      <iframe
-        height="768px"
-        src="https://app.formester.com/f/efd1648b-1621-41ff-ade9-59630c129567"
-        frameborder="0"
-        sandbox="allow-scripts allow-same-origin allow-top-navigation allow-forms"
-      ></iframe>
+      <formester-standard-form
+        set-auto-height="true"
+        height="100%"
+        class="w-full"
+        id="442dee1d-f871-48b9-80c5-9fcf3e76deaa"
+        url="https://app.formester.com/f/efd1648b-1621-41ff-ade9-59630c129567"
+      ></formester-standard-form>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  script: [
+    {
+      src: "https://app.formester.com/widget/standard.js",
+      type: "module",
+    },
+  ],
+});
+</script>
 
 <style scoped>
 #cta {
