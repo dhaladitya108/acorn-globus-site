@@ -64,7 +64,7 @@
 .hero__subheading {
   color: white;
   font-size: 18px;
-  line-height: 26px; /* 144.444% */
+  line-height: 26px; 
 }
 
 .hero__btns {
