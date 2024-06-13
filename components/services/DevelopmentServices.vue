@@ -1,22 +1,25 @@
 <template>
-  <section id="development-services">
-    <div class="development-services__header">
-      <p>Our End-to-end Web Application Development Services</p>
-    </div>
-    <div class="development-services__cards">
-      <DevelopmentServicesCard
-        v-for="card in cards"
-        :key="card.title"
-        :title="card.title"
-        :description="card.description"
-        :icon="card.icon"
-      />
+  <section id="development-services" class="wrapper">
+    <div class="container__wrapper flex flex-col gap-10 lg:flex-row lg:gap-24">
+      <div class="lg:w-1/2">
+        <h2
+          class="section__heading text-center mx-auto max-w-lg sticky top-8 left-0 lg:text-start"
+        >
+          Our End-to-end Web Application Development Services
+        </h2>
+      </div>
+      <div class="development-services__cards lg:w-1/2">
+        <Services.DevelopmentServicesCard
+          v-for="card in cards"
+          :key="card.title"
+          v-bind="card"
+        />
+      </div>
     </div>
   </section>
 </template>
 
-<script lang="ts" setup>
-import DevelopmentServicesCard from "~/components/services/DevelopmentServicesCard.vue";
+<script setup>
 import codeBrowserIcon from "~/assets/images/services/development-services__code-browser.svg";
 import databaseIcon from "~/assets/images/services/development-services__database.svg";
 import settingsIcon from "~/assets/images/services/development-services__settings.svg";
@@ -58,52 +61,9 @@ const cards = [
 </script>
 
 <style scoped>
-#development-services {
-  display: flex;
-  padding: 64px 80px;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 64px;
-}
-.development-services__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  width: 35%;
-  position: sticky;
-}
-.development-services__header > p {
-  color: var(--Black, #12141d);
-  text-align: start;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 56px; /* 116.667% */
-}
 .development-services__cards {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 65%;
-}
-@media screen and (max-width: 600px) {
-  #development-services {
-    flex-direction: column;
-    padding: 64px 24px;
-    gap: 32px;
-  }
-  .development-services__header {
-    width: 100%;
-  }
-  .development-services__header > p {
-    text-align: center;
-    font-size: 32px;
-    line-height: 40px; /* 116.667% */
-  }
-  .development-services__cards {
-    width: 100%;
-  }
 }
 </style>
