@@ -3,39 +3,41 @@
     <Nav />
     <div class="py-20 relative z-10">
       <div class="container mx-auto px-4 md:px-12">
-        <h1 class="hero__heading text-center md:text-left">
-          Software Development Agency
-        </h1>
-        <p class="hero__subheading my-5">
-          Spearheaded by a team of talented individuals, we provide scalable and
-          reliable software development solutions to our clients globally.
-        </p>
-        <div class="hero__btns">
-          <a
-            href="https://app.zencal.io/u/ankit/acorn-globus"
-            target="_blank"
-            class="contact__btn flex items-center justify-center justify-content-md-start"
-          >
-            Book a Free Consultation
-          </a>
-          <a
-            href="#projects"
-            class="projects__btn flex items-center justify-center justify-content-md-start"
-          >
-            Our Projects
-            <svg
-              width="38"
-              height="20"
-              viewBox="0 0 38 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+        <div class="flex flex-col gap-6 max-w-4xl">
+          <h1 class="hero__heading text-center md:text-left">
+            Software Development Agency
+          </h1>
+          <p class="hero__subheading">
+            Spearheaded by a team of talented individuals, we provide scalable
+            and reliable software development solutions to our clients globally.
+          </p>
+          <div class="hero__btns mt-4">
+            <a
+              href="https://app.zencal.io/u/ankit/acorn-globus"
+              target="_blank"
+              class="contact__btn flex items-center justify-center justify-content-md-start"
             >
-              <path
-                d="M36.9247 10.9247C37.4353 10.414 37.4353 9.58601 36.9247 9.07534L28.6027 0.753379C28.092 0.242702 27.2641 0.242702 26.7534 0.753379C26.2427 1.26406 26.2427 2.09203 26.7534 2.6027L34.1507 10L26.7534 17.3973C26.2427 17.908 26.2427 18.7359 26.7534 19.2466C27.2641 19.7573 28.092 19.7573 28.6027 19.2466L36.9247 10.9247ZM0 11.3077H36V8.69233H0V11.3077Z"
-                fill="white"
-              />
-            </svg>
-          </a>
+              Book a Free Consultation
+            </a>
+            <a
+              href="#projects"
+              class="projects__btn flex items-center justify-center justify-content-md-start"
+            >
+              Our Projects
+              <svg
+                width="38"
+                height="20"
+                viewBox="0 0 38 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M36.9247 10.9247C37.4353 10.414 37.4353 9.58601 36.9247 9.07534L28.6027 0.753379C28.092 0.242702 27.2641 0.242702 26.7534 0.753379C26.2427 1.26406 26.2427 2.09203 26.7534 2.6027L34.1507 10L26.7534 17.3973C26.2427 17.908 26.2427 18.7359 26.7534 19.2466C27.2641 19.7573 28.092 19.7573 28.6027 19.2466L36.9247 10.9247ZM0 11.3077H36V8.69233H0V11.3077Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -52,25 +54,25 @@
 
 <style>
 .hero__heading {
-  color: var(--White, #fff);
+  color: white;
   font-size: 72px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 86px; /* 119.444% */
+  font-weight: 600;
+  line-height: 86px;
   text-transform: capitalize;
 }
+
 .hero__subheading {
-  color: var(--White, #fff);
+  color: white;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 26px; /* 144.444% */
 }
+
 .hero__btns {
   display: flex;
   justify-content: flex-start;
   gap: 1.5rem;
 }
+
 .contact__btn {
   text-decoration: none;
   display: flex;
@@ -78,23 +80,24 @@
   align-items: flex-start;
   gap: 12px;
   border-radius: 4px;
-  background: var(--White, #fff);
+  background: white;
   color: #192a52;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
-  line-height: 30px; /* 136.364% */
+  line-height: 30px;
   text-transform: capitalize;
 }
+
 .projects__btn {
   text-decoration: none;
   gap: 1rem;
   transition: all ease-in-out 300ms;
-  color: var(--White, #fff);
+  color: white;
   font-size: 22px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 30px; /* 136.364% */
+  font-weight: 500;
+  line-height: 30px;
   text-transform: capitalize;
 }
 
