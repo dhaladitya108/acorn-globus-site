@@ -49,7 +49,6 @@ const props = defineProps(["icon", "title", "description"]);
 .card__content-title {
   color: var(--primary, #192a52);
   text-align: center;
-  font-family: Inter, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -59,7 +58,6 @@ const props = defineProps(["icon", "title", "description"]);
 .card__content-description {
   color: var(--Gray-600, #475467);
   text-align: center;
-  font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

@@ -76,7 +76,6 @@ import Benefits from "~/components/technology/Benefits.vue";
 .hero__subheading {
   color: var(--White, #fff);
   text-align: center;
-  font-family: Aileron, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -92,7 +91,6 @@ import Benefits from "~/components/technology/Benefits.vue";
   background: var(--White, #fff);
 
   color: #192a52;
-  font-family: Aileron, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;

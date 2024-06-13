@@ -5,11 +5,11 @@
     </div>
     <div class="development-services__cards">
       <DevelopmentServicesCard
-          v-for="card in cards"
-          :key="card.title"
-          :title="card.title"
-          :description="card.description"
-          :icon="card.icon"
+        v-for="card in cards"
+        :key="card.title"
+        :title="card.title"
+        :description="card.description"
+        :icon="card.icon"
       />
     </div>
   </section>
@@ -27,29 +27,34 @@ const cards = [
   {
     icon: codeBrowserIcon,
     title: "Custom Website Design & Development",
-    description: "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
+    description:
+      "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
   },
   {
     icon: shoppingBagIcon,
     title: "e-Commerce Development",
-    description: "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
+    description:
+      "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
   },
   {
     icon: databaseIcon,
     title: "Content Management Systems (CMS)",
-    description: "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
+    description:
+      "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
   },
   {
     icon: brushIcon,
     title: "UI/UX Web Design",
-    description: "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
+    description:
+      "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
   },
   {
     icon: settingsIcon,
     title: "Ongoing Maintenance & Support",
-    description: "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
+    description:
+      "Don't settle for a web app based on generic templates. Our team creates unique, pixel-perfect websites that reflect your brand identity and resonate with your target audience. We combine stunning design with functionality to deliver an exceptional user experience that keeps visitors engaged and coming back for more.",
   },
-]
+];
 </script>
 
 <style scoped>
@@ -70,9 +75,8 @@ const cards = [
   position: sticky;
 }
 .development-services__header > p {
-  color: var(--Black, #12141D);
+  color: var(--Black, #12141d);
   text-align: start;
-  font-family: Aileron, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;

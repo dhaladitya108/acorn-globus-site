@@ -72,7 +72,6 @@ const cards = [
 .process__header > p {
   color: var(--Black, #12141d);
   text-align: center;
-  font-family: Aileron, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;

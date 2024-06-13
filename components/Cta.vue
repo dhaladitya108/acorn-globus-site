@@ -65,7 +65,6 @@
 }
 .cta__text > h2 {
   color: var(--White, #fff);
-  font-family: Aileron, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -79,7 +78,6 @@
 }
 .cta__text > p {
   color: var(--White, #fff);
-  font-family: Inter, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -119,7 +117,6 @@
 }
 .form-component__element > label {
   color: var(--Black, #000);
-  font-family: Inter, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -152,7 +149,6 @@
   border-radius: 4px;
   background: #192a52;
   color: var(--White, #fff);
-  font-family: Aileron, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;

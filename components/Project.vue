@@ -156,7 +156,6 @@
   flex-direction: row;
   align-items: flex-start;
   color: var(--primary, #192a52);
-  font-family: Aileron, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -246,7 +245,6 @@
   align-items: flex-start;
   gap: 0.5rem;
   color: var(--primary, #192a52);
-  font-family: Aileron, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;

@@ -107,7 +107,6 @@ const cards = [
 }
 .service__title {
   color: var(--primary, #192a52);
-  font-family: Aileron, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -116,7 +115,6 @@ const cards = [
 }
 .service__description {
   color: var(--Secondary-Black, #363636);
-  font-family: Aileron, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -135,7 +133,6 @@ const cards = [
 @media screen and (max-width: 768px) {
   .service__title,
   .service__description {
-    font-family: Inter, sans-serif;
   }
   .services {
     gap: 0;

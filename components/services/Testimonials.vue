@@ -73,7 +73,6 @@ const testimonials = [
 .testimonials__header > p {
   color: var(--Black, #12141d);
   text-align: center;
-  font-family: Aileron, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -103,7 +102,6 @@ const testimonials = [
     border-radius: 4px;
     background: var(--primary, #192a52);
     color: var(--White, #fff);
-    font-family: Aileron, sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;

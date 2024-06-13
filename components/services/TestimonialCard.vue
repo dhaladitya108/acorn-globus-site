@@ -45,7 +45,6 @@ const props = defineProps(["name", "position", "avatar", "title", "content"]);
 .card__heading {
   color: var(--Primary-Black, #12141d);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Aileron, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -56,7 +55,6 @@ const props = defineProps(["name", "position", "avatar", "title", "content"]);
 .card__text {
   color: var(--Secondary-Black, #363636);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: "DM Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -84,7 +82,6 @@ const props = defineProps(["name", "position", "avatar", "title", "content"]);
 .card__user-info-name {
   color: var(--Primary-Black, #12141d);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Aileron, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -93,7 +90,6 @@ const props = defineProps(["name", "position", "avatar", "title", "content"]);
 .card__user-info-position {
   color: var(--Secondary-Black, #363636);
   font-feature-settings: "clig" off, "liga" off;
-  font-family: Aileron, sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

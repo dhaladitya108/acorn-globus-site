@@ -1,7 +1,7 @@
 <template>
   <section class="bg__primary relative overflow-hidden" id="hero">
     <Nav />
-    <div class="hero">
+    <div class="py-20 relative z-10">
       <div class="container mx-auto px-4 md:px-12">
         <h1 class="hero__heading text-center md:text-left">
           Software Development Agency
@@ -51,16 +51,8 @@
 <script setup></script>
 
 <style>
-.hero {
-  padding-top: 6.5rem;
-  padding-bottom: 4rem;
-  position: relative;
-  z-index: 10;
-}
-
 .hero__heading {
   color: var(--White, #fff);
-  font-family: Aileron, sans-serif;
   font-size: 72px;
   font-style: normal;
   font-weight: 900;
@@ -69,7 +61,6 @@
 }
 .hero__subheading {
   color: var(--White, #fff);
-  font-family: Aileron, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -89,7 +80,6 @@
   border-radius: 4px;
   background: var(--White, #fff);
   color: #192a52;
-  font-family: Aileron, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -101,7 +91,6 @@
   gap: 1rem;
   transition: all ease-in-out 300ms;
   color: var(--White, #fff);
-  font-family: Aileron, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;

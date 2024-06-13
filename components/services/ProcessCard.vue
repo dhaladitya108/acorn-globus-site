@@ -31,7 +31,6 @@ const props = defineProps(["number", "title", "content"]);
 }
 .card__number {
   color: var(--primary, #192a52);
-  font-family: PolySans, sans-serif;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -40,7 +39,6 @@ const props = defineProps(["number", "title", "content"]);
 }
 .card__title {
   color: var(--Primary-Dark-Green, #071e0c);
-  font-family: Inter, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -49,7 +47,6 @@ const props = defineProps(["number", "title", "content"]);
 }
 .card__content {
   color: var(--Primary-Dark-Green, #071e0c);
-  font-family: Inter, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
