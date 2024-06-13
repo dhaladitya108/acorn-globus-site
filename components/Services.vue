@@ -5,7 +5,7 @@
         <span class="subtext">our services</span>
         <h2 class="section__heading mb-4">What we offer</h2>
         <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-2 md:mt-8"
         >
           <div v-for="card in cards" class="service__card">
             <div class="icon">
