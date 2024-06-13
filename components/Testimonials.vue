@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="testimonials"
-    class="testimonials container mx-auto px-4 md:px-12"
-  >
+  <section id="testimonials" class="testimonials container__wrapper">
     <h2 class="section__heading text-center max-w-screen-lg">
       What our satisfied clients say about Acorn Globus
     </h2>

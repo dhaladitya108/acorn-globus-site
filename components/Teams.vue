@@ -1,6 +1,6 @@
 <template>
   <section id="our-team" class="wrapper">
-    <div class="container mx-auto px-4 md:px-12">
+    <div class="container__wrapper">
       <div class="head">
         <div>
           <span class="subtext">our team</span>

@@ -1,6 +1,6 @@
 <template>
   <footer class="footer__container text-center md:text-start">
-    <div class="container mx-auto px-4 md:px-12 p-4">
+    <div class="container__wrapper p-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <div
           class="md:col-span-2 mb-4 mb-lg-0 flex flex-col items-center md:items-start"

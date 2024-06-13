@@ -1,6 +1,6 @@
 <template>
   <section id="services" class="wrapper">
-    <div class="container mx-auto px-4 md:px-12">
+    <div class="container__wrapper">
       <div class="flex flex-col items-center justify-center">
         <span class="subtext">our services</span>
         <h2 class="section__heading mb-4">What we offer</h2>

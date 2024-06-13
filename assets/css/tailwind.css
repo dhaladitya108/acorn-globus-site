@@ -5,3 +5,7 @@
 .section__heading {
   @apply text-3xl md:text-5xl font-semibold leading-tight md:leading-tight;
 }
+
+.container__wrapper {
+  @apply container mx-auto px-4 md:px-8 xl:px-24;
+}
