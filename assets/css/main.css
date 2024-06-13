@@ -177,7 +177,7 @@ body {
 }
 
 .wrapper {
-  padding-block: 4rem;
+  padding-block: 40px;
 }
 
 .subtext {
@@ -225,6 +225,7 @@ body {
   .footer-watermark-acorn {
     left: -20%;
   }
+
   .footer-watermark-geometry {
     right: -20%;
   }
