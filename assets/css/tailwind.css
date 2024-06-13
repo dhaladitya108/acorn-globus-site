@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.section__heading {
+  @apply text-3xl md:text-5xl font-semibold leading-tight md:leading-tight;
+}

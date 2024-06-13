@@ -1,10 +1,12 @@
 <template>
-  <section id="testimonials">
-    <!--    <div class="testimonials__header">-->
-    <!--      <p>What our satisfied clients say about Acorn Globus</p>-->
-    <!--      <button>Book a free consultation</button>-->
-    <!--    </div>-->
-    <div class="testimonials__cards">
+  <section
+    id="testimonials"
+    class="testimonials container mx-auto px-4 md:px-12"
+  >
+    <h2 class="section__heading text-center max-w-screen-lg">
+      What our satisfied clients say about Acorn Globus
+    </h2>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <TestimonialCard
         v-for="testimonial in testimonials"
         :key="testimonial.name"
@@ -20,7 +22,6 @@
 
 <script setup>
 import TestimonialCard from "~/components/services/TestimonialCard.vue";
-
 import enzo from "~/assets/images/testimonials/enzo.jpeg";
 import bogdan from "~/assets/images/testimonials/bogdan.jpeg";
 import alon from "~/assets/images/testimonials/alon.jpeg";
@@ -54,15 +55,16 @@ const testimonials = [
 </script>
 
 <style scoped>
-#testimonials {
+.testimonials {
   display: flex;
-  padding: 64px 80px;
+  padding-block: 80px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 64px;
   align-self: stretch;
 }
+
 .testimonials__header {
   display: flex;
   max-width: 640px;
@@ -70,30 +72,31 @@ const testimonials = [
   align-items: center;
   gap: 24px;
 }
+
 .testimonials__header > p {
   color: var(--Black, #12141d);
   text-align: center;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 56px; /* 116.667% */
+  line-height: 56px;
 }
+
 .testimonials__header > button {
   display: none;
 }
-.testimonials__cards {
-  max-width: 100%;
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding-block: 64px 40px;
+    gap: 48px;
+  }
+
   .testimonials__header > p {
     font-size: 32px;
-    line-height: 40px; /* 116.667% */
+    line-height: 40px;
   }
+
   .testimonials__header > button {
     display: flex;
     padding: 16px 20px;
@@ -105,13 +108,8 @@ const testimonials = [
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
-    line-height: 30px; /* 136.364% */
+    line-height: 30px;
     text-transform: capitalize;
-  }
-}
-@media screen and (max-width: 400px) {
-  #testimonials {
-    padding: 32px 24px;
   }
 }
 </style>
