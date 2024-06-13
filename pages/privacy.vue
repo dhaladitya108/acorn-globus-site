@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 md:px-12 ">
+  <div class="container__wrapper ">
     <h1>Privacy Policy</h1>
     <h3 class="mt-3"><strong>General Information</strong></h3>
     <p>

@@ -1,6 +1,6 @@
 <template>
   <section id="companies" class="companies">
-    <div class="container mx-auto px-4 md:px-12">
+    <div class="container__wrapper">
       <div
         class="flex flex-col sm:flex-row items-center justify-between flex-wrap"
       >

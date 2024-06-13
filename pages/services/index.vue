@@ -2,7 +2,7 @@
   <section class="bg__primary relative overflow-hidden" id="hero">
     <Nav />
     <div class="hero">
-      <div class="container mx-auto px-4 md:px-12 text-center">
+      <div class="container__wrapper text-center">
         <h1 class="hero__heading text-center">
           Web Application Development Services
         </h1>

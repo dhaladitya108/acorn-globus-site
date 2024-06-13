@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <div class="container mx-auto px-4 md:px-12 pb-3">
+    <div class="container__wrapper pb-3">
       <span class="subtext">our projects</span>
       <h2 class="subheading mb-5">Few Projects we worked on</h2>
       <div class="projects">

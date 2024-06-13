@@ -1,8 +1,6 @@
 <template>
   <nav id="nav-bar" class="header py-12">
-    <div
-      class="container mx-auto px-4 md:px-12 flex items-center justify-between w-full"
-    >
+    <div class="container__wrapper flex items-center justify-between w-full">
       <NuxtLink to="/" id="logo" c lass="logo">
         <img
           src="@/assets/images/acorn-globus-logo.svg"
