@@ -30,7 +30,7 @@ const props = defineProps(["number", "title", "content"]);
   outline: none;
 }
 .card__number {
-  color: var(--primary, #192a52);
+  color: var(--clr-primary #192a52);
   font-size: 48px;
   font-style: normal;
   font-weight: 600;

@@ -155,7 +155,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  color: var(--primary, #192a52);
+  color: var(--clr-primary #192a52);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -244,7 +244,7 @@
   flex-direction: row;
   align-items: flex-start;
   gap: 0.5rem;
-  color: var(--primary, #192a52);
+  color: var(--clr-primary #192a52);
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -255,7 +255,7 @@
 }
 .row2__project__content__cta:hover {
   gap: 1rem;
-  color: var(--primary, #192a52);
+  color: var(--clr-primary #192a52);
 }
 .row2__project__content h3 {
   font-size: 2rem;

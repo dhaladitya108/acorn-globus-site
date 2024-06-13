@@ -156,9 +156,6 @@
 <script setup></script>
 
 <style>
-* {
-  color: black;
-}
 .footer__container {
   position: relative;
   z-index: 10;

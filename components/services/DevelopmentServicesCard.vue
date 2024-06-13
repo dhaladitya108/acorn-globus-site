@@ -47,7 +47,7 @@ const props = defineProps(["title", "description", "icon"]);
   gap: 6px;
 }
 .card__content-title {
-  color: var(--primary, #192a52);
+  color: var(--clr-primary #192a52);
   font-size: 24px;
   font-style: normal;
   font-weight: 600;

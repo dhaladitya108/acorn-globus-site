@@ -158,7 +158,6 @@
   --clr-primary: hsla(222, 53%, 21%, 1);
   --White: #fff;
   --Black: #12141d;
-  --primary: #192a52;
   --Gray-600: #475467;
   --Primary-Dark-Green: #071e0c;
   --Primary-Black: #12141d;
@@ -182,10 +181,11 @@ body {
 }
 
 .subtext {
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 22px;
+  letter-spacing: 0.28px;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
 }
 
 .subheading {

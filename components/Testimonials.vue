@@ -102,7 +102,7 @@ const testimonials = [
     align-items: flex-start;
     gap: 12px;
     border-radius: 4px;
-    background: var(--primary, #192a52);
+    background: var(--clr-primary #192a52);
     color: white;
     font-size: 22px;
     font-style: normal;
