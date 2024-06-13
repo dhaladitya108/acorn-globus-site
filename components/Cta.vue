@@ -1,23 +1,37 @@
 <template>
-  <div id="cta">
-    <div class="cta__text">
-      <h2 class="subheading">Get in touch with us</h2>
-      <div></div>
-      <p class="mt-2">
-        When you objectively analyze your business, you are likely to get a new
-        perspective. These new perspectives propel your business up by infusing
-        fresh strategy. We can support whenever new strategy is needed.
-      </p>
+  <div class="bg__primary relative overflow-hidden" id="cta">
+    <div class="cta">
+      <div class="cta__text">
+        <h2 class="subheading">Get in touch with us</h2>
+        <div></div>
+        <p class="mt-2">
+          When you objectively analyze your business, you are likely to get a
+          new perspective. These new perspectives propel your business up by
+          infusing fresh strategy. We can support whenever new strategy is
+          needed.
+        </p>
+      </div>
+      <div class="cta__form">
+        <formester-standard-form
+          set-auto-height="true"
+          height="100%"
+          class="w-full"
+          id="442dee1d-f871-48b9-80c5-9fcf3e76deaa"
+          url="https://app.formester.com/f/efd1648b-1621-41ff-ade9-59630c129567"
+        ></formester-standard-form>
+      </div>
     </div>
-    <div class="cta__form">
-      <formester-standard-form
-        set-auto-height="true"
-        height="100%"
-        class="w-full"
-        id="442dee1d-f871-48b9-80c5-9fcf3e76deaa"
-        url="https://app.formester.com/f/efd1648b-1621-41ff-ade9-59630c129567"
-      ></formester-standard-form>
-    </div>
+    <img
+      src="~/assets/images/acorn-watermark.png"
+      alt="Acorn Globus Symbol Watermark"
+      class="footer-watermark-acorn absolute"
+      height="500"
+    />
+    <img
+      src="~/assets/images/footer-watermark.png"
+      alt="Footer Watermark"
+      class="footer-watermark-geometry absolute"
+    />
   </div>
 </template>
 
@@ -33,7 +47,7 @@ useHead({
 </script>
 
 <style scoped>
-#cta {
+.cta {
   background-color: var(--clr-primary);
   padding: 100px 64px;
   display: flex;
@@ -140,7 +154,7 @@ useHead({
 }
 
 @media screen and (max-width: 768px) {
-  #cta {
+  .cta {
     flex-direction: column;
     gap: 32px;
     padding: 64px 32px;
@@ -177,7 +191,7 @@ useHead({
   }
 }
 @media screen and (max-width: 480px) {
-  #cta {
+  .cta {
     padding: 0;
   }
   .cta__text {
