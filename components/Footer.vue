@@ -1,7 +1,7 @@
 <template>
   <footer class="footer__container text-center md:text-start">
     <div class="container__wrapper p-4">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
         <div
           class="md:col-span-2 mb-4 mb-lg-0 flex flex-col items-center md:items-start"
         >
@@ -74,7 +74,7 @@
                   <span class="ml-2">+91 55555555555</span>
                 </a>
               </li>
-              <li class="footer__link flex items-center">
+              <li class="footer__link flex items-start">
                 <img src="~/assets/images/icons/location.svg" alt="Location" />
                 <span class="ml-2">49/D, Naya Bazar, Jamshedpur</span>
               </li>
