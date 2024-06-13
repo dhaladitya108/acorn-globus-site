@@ -12,15 +12,15 @@
             and reliable software development solutions to our clients globally.
           </p>
           <div class="hero__btns mt-4">
-            <a
+            <nuxt-link
               href="https://app.zencal.io/u/ankit/acorn-globus"
               target="_blank"
               class="contact__btn flex items-center justify-center justify-content-md-start"
             >
               Book a Free Consultation
-            </a>
-            <a
-              href="#projects"
+            </nuxt-link>
+            <nuxt-link
+              to="/#projects"
               class="projects__btn flex items-center justify-center justify-content-md-start"
             >
               Our Projects
@@ -36,7 +36,7 @@
                   fill="white"
                 />
               </svg>
-            </a>
+            </nuxt-link>
           </div>
         </div>
       </div>
