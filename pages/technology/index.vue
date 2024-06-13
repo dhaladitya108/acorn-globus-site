@@ -53,7 +53,7 @@
 </template>
 
 <script setup>
-import Testimonials from "~/components/services/Testimonials.vue";
+import Testimonials from "~/components/Testimonials.vue";
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
 import Benefits from "~/components/technology/Benefits.vue";
 </script>

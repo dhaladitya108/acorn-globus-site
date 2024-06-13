@@ -54,7 +54,7 @@
 </template>
 
 <script setup>
-import Testimonials from "~/components/services/Testimonials.vue";
+import Testimonials from "~/components/Testimonials.vue";
 import WhyChooseUs from "~/components/services/WhyChooseUs.vue";
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
 import Technologies from "~/components/services/Technologies.vue";

@@ -21,7 +21,6 @@
 </template>
 
 <script setup>
-import TestimonialCard from "~/components/services/TestimonialCard.vue";
 import enzo from "~/assets/images/testimonials/enzo.jpeg";
 import bogdan from "~/assets/images/testimonials/bogdan.jpeg";
 import alon from "~/assets/images/testimonials/alon.jpeg";

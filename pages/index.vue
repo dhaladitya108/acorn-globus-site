@@ -1,9 +1,7 @@
 <template>
   <Hero />
   <Testimonials />
-
   <Services />
-
   <Project />
   <TechStack />
   <Expertise />
@@ -27,8 +25,6 @@
   <Footer />
 </template>
 
-<script setup>
-import Testimonials from "~/components/services/Testimonials.vue";
-</script>
+<script setup></script>
 
 <style scoped></style>
