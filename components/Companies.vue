@@ -2,7 +2,7 @@
   <section id="companies" class="companies">
     <div class="container mx-auto px-4 md:px-12">
       <div
-        class="all__companies flex flex-col sm:flex-row items-center justify-between flex-wrap"
+        class="flex flex-col sm:flex-row items-center justify-between flex-wrap"
       >
         <div class="box">
           <a href="https://formester.com/" target="_blank">
@@ -74,10 +74,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-inline: 16px;
 }
 
-.box .company__img {
-  width: 150px;
+.company__img {
   filter: grayscale(1);
   opacity: 0.5;
   transition: 0.2s ease;
@@ -85,50 +85,21 @@
   position: relative;
 }
 
-.company__img {
-  /* //height: 48px; */
-  aspect-ratio: 16/4;
-}
-
-.cayzen {
-  aspect-ratio: 16/7;
-}
-.hacker-rank {
-  aspect-ratio: 16/6;
-}
-
-.box .company__img:hover {
+.company__img:hover {
   filter: none;
   opacity: 1;
   cursor: pointer;
 }
 
 @media screen and (max-width: 992px) {
-  .all__companies {
-    gap: 1rem;
-  }
-
   .box {
     width: 30%;
   }
 
-  .box .company__img {
+  .company__img {
     filter: none;
     opacity: 1;
     transition: 0.2s ease;
-  }
-
-  .company__img,
-  .cayzen,
-  .hacker-rank {
-    aspect-ratio: auto;
-  }
-}
-
-@media screen and (max-width: 575.5px) {
-  .all__companies {
-    /* //margin-top: 2em; */
-    gap: 3em;
   }
 }
 </style>
