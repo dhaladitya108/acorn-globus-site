@@ -5,7 +5,6 @@
   <Project />
   <TechStack />
   <Expertise />
-  <Teams />
 
   <div class="bg__primary relative overflow-hidden">
     <Cta />
