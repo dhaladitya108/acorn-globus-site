@@ -6,7 +6,7 @@
     <h2 class="section__heading text-center max-w-screen-lg">
       What our satisfied clients say about Acorn Globus
     </h2>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg-gap-6">
       <TestimonialCard
         v-for="testimonial in testimonials"
         :key="testimonial.name"
