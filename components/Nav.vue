@@ -1,125 +1,64 @@
 <template>
-  <nav id="nav-bar" class="header py-12">
-    <div class="container__wrapper flex items-center justify-between w-full">
-      <NuxtLink to="/" id="logo" c lass="logo">
-        <img
-          src="@/assets/images/acorn-globus-logo.svg"
-          alt="Company Logo"
-          width="150px"
-        />
-      </NuxtLink>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"
-        ><span class="navicon"></span
-      ></label>
-      <ul class="nav-items menu">
-        <li class="nav-list-item">
-          <a href="#hero" class="nav-item-link current-active">Home</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#services" class="nav-item-link">Services</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#projects" class="nav-item-link">Projects</a>
-        </li>
-        <li class="nav-list-item">
-          <NuxtLink to="/blog" class="nav-item-link">Blog</NuxtLink>
-        </li>
-        <li class="nav-list-item">
-          <a href="#our-team" class="nav-item-link">Team</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#cta" class="nav-item-link">Contact</a>
-        </li>
-      </ul>
+  <nav class="p-6 transition-all relative z-50">
+    <div class="container__wrapper flex items-center justify-between flex-wrap">
+      <div class="flex items-center flex-shrink-0 text-white mr-8">
+        <NuxtLink to="/" id="logo" c lass="logo">
+          <img
+            src="@/assets/images/acorn-globus-logo.svg"
+            alt="Company Logo"
+            width="150px"
+          />
+        </NuxtLink>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center"
+          @click="navMobileVisible = !navMobileVisible"
+        >
+          <img
+            src="~/assets/images/icons/menu.svg"
+            alt="mobile navigation toggle"
+            class="h-7 w-7"
+          />
+        </button>
+      </div>
+      <div
+        class="w-full lg:flex lg:items-center lg:w-auto"
+        :class="navMobileVisible ? 'block' : 'hidden'"
+      >
+        <div class="text-md lg:flex-grow">
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
+          >
+            Home
+          </a>
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
+          >
+            Services
+          </a>
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
+          >
+            Projects
+          </a>
+          <a
+            href="#"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
     </div>
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+const navMobileVisible = ref(false);
+</script>
 
-<style>
-#nav-bar {
-  height: 40px;
-  width: 100%;
-  padding: 5px 2px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  position: relative;
-  z-index: 10;
-}
-#logo:hover {
-  cursor: pointer;
-}
-.nav-items {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 0;
-}
-.nav-list-item {
-  list-style-type: none;
-}
-.nav-item-link {
-  color: white;
-  margin: 0px 10px;
-  font-size: 1rem;
-  line-height: 24px;
-  text-decoration: none;
-}
-.current-active {
-  color: red;
-}
-.nav-item-link:hover {
-  transition: 0.3s ease-in-out;
-  color: red;
-}
-#social-connect {
-  width: 15%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: white;
-  align-items: center;
-  cursor: pointer;
-  font-size: 18px;
-}
-#social-connect i:hover {
-  transition: 0.3s ease-out;
-  color: red;
-}
-.header .menu-icon,
-.header .menu-btn {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  #nav-bar {
-    background-color: var(--clr-primary);
-  }
-
-  .nav-items {
-    width: 56%;
-  }
-
-  .nav-item-link {
-    font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .nav-items {
-    display: none;
-  }
-  #social-connect {
-    display: none;
-  }
-}
-</style>
+<style scoped></style>
