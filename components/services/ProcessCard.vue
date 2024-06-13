@@ -23,7 +23,7 @@ const props = defineProps(["number", "title", "content"]);
   gap: 18px;
   border-radius: 8px;
   border: 1px solid #e2e2e2;
-  background: var(--White, #fff);
+  background: white;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
   width: 400px;
   max-width: 1200px;

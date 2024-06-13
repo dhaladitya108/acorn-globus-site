@@ -77,7 +77,7 @@ import Process from "~/components/services/Process.vue";
   margin-bottom: 2.5rem;
 }
 .hero__subheading {
-  color: var(--White, #fff);
+  color: white;
   text-align: center;
   font-size: 18px;
   font-style: normal;

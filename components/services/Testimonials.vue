@@ -101,7 +101,7 @@ const testimonials = [
     gap: 12px;
     border-radius: 4px;
     background: var(--primary, #192a52);
-    color: var(--White, #fff);
+    color: white;
     font-size: 22px;
     font-style: normal;
     font-weight: 600;

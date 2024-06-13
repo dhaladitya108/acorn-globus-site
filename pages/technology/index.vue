@@ -74,7 +74,7 @@ import Benefits from "~/components/technology/Benefits.vue";
   margin-bottom: 2.5rem;
 }
 .hero__subheading {
-  color: var(--White, #fff);
+  color: white;
   text-align: center;
   font-size: 18px;
   font-style: normal;
@@ -88,7 +88,7 @@ import Benefits from "~/components/technology/Benefits.vue";
   align-items: flex-start;
   gap: 12px;
   border-radius: 4px;
-  background: var(--White, #fff);
+  background: white;
 
   color: #192a52;
   font-size: 22px;

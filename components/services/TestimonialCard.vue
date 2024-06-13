@@ -30,7 +30,7 @@ const props = defineProps(["name", "position", "avatar", "title", "content"]);
 .card {
   width: 354px;
   border: 1px solid rgba(18, 20, 29, 0.1);
-  background: var(--White, #fff);
+  background: white;
   display: flex;
   padding: 16px 24px;
   flex-direction: column;

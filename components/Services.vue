@@ -102,7 +102,7 @@ const cards = [
 .service__card:hover {
   border-radius: 8px;
   border: 0.25px solid var(--Stroke, #e2e2e2);
-  background: var(--White, #fff);
+  background: white;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
 }
 .service__title {

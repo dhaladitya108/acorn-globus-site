@@ -64,7 +64,7 @@
   z-index: 10;
 }
 .cta__text > h2 {
-  color: var(--White, #fff);
+  color: white;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -73,11 +73,11 @@
 .cta__text > div {
   width: 119px;
   height: 9px;
-  background: var(--White, #fff);
+  background: white;
   border-radius: 5px;
 }
 .cta__text > p {
-  color: var(--White, #fff);
+  color: white;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -130,14 +130,14 @@
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #dde1e0;
-  background: var(--White, #fff);
+  background: white;
 }
 .form-component__element > textarea {
   height: 80px;
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid #dde1e0;
-  background: var(--White, #fff);
+  background: white;
 }
 .form-button {
   display: flex;
@@ -148,7 +148,7 @@
   align-self: stretch;
   border-radius: 4px;
   background: #192a52;
-  color: var(--White, #fff);
+  color: white;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
