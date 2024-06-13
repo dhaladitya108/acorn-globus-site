@@ -4,7 +4,9 @@
       <div class="flex flex-col items-center justify-center">
         <span class="subtext">our services</span>
         <h2 class="section__heading mb-4">What we offer</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        >
           <div v-for="card in cards" class="service__card">
             <div class="icon">
               <img :src="card.icon" :alt="card.title" />
@@ -131,12 +133,6 @@ const cards = [
   .service__card {
     max-width: 100%;
     gap: 4px;
-  }
-
-  .service__card:hover {
-    border-radius: 8px;
-    border: none;
-    box-shadow: none;
   }
 }
 @media screen and (max-width: 480px) {
