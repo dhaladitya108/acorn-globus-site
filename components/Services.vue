@@ -3,8 +3,8 @@
     <div class="container mx-auto px-4 md:px-12">
       <div class="flex flex-col items-center justify-center">
         <span class="subtext">our services</span>
-        <h2 class="subheading mb-4">What we offer</h2>
-        <div class="row services">
+        <h2 class="section__heading mb-4">What we offer</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           <div v-for="card in cards" class="service__card">
             <div class="icon">
               <img :src="card.icon" :alt="card.title" />
@@ -83,36 +83,32 @@ const cards = [
 </script>
 
 <style scoped>
-.services {
-  margin-top: 36px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
-}
 .service__card {
-  max-width: 280px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  padding: 24px 20px 12px;
+  padding: 16px;
+  border: 0.25px solid transparent;
+  transition: all 0.3s ease;
 }
+
 .service__card:hover {
   border-radius: 8px;
   border: 0.25px solid var(--Stroke, #e2e2e2);
   background: white;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
 }
+
 .service__title {
-  color: var(--primary, #192a52);
+  color: var(--clr-primary #192a52);
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px; /* 160% */
   text-transform: capitalize;
 }
+
 .service__description {
   color: var(--Secondary-Black, #363636);
   font-size: 16px;
@@ -126,21 +122,17 @@ const cards = [
   border-radius: 50%;
   margin-bottom: 0.5em;
 }
+
 .icon > img {
   aspect-ratio: 1/1;
 }
 
 @media screen and (max-width: 768px) {
-  .service__title,
-  .service__description {
-  }
-  .services {
-    gap: 0;
-  }
   .service__card {
     max-width: 100%;
     gap: 4px;
   }
+
   .service__card:hover {
     border-radius: 8px;
     border: none;
@@ -148,24 +140,25 @@ const cards = [
   }
 }
 @media screen and (max-width: 480px) {
-  .services {
-    margin-top: 0;
-  }
   .service__card {
     margin-top: 0;
     padding: 16px 24px 8px;
   }
+
   .service__title {
     font-size: 18px;
     line-height: 28px;
   }
+
   .service__description {
     font-size: 14px;
     line-height: 22px;
   }
+
   .icon {
     padding: 0.75rem;
   }
+
   .icon > img {
     width: 32px;
     height: 32px;
