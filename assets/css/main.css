@@ -155,7 +155,7 @@
 }
 
 :root {
-  --clr-primary: hsla(222, 53%, 21%, 1);
+  --clr-primary: #192a52;
   --White: #fff;
   --Black: #12141d;
   --Gray-600: #475467;
