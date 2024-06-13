@@ -1,24 +1,23 @@
 <template>
-  <footer class="footer__container text-white text-center text-lg-start">
+  <footer class="footer__container text-center md:text-start">
     <div class="container mx-auto px-4 md:px-12 p-4">
-      <div class="row">
-        <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
-          <div class="logo">
-            <img
-              src="~/assets/images/acorn-globus-logo-dark.svg"
-              alt="Company Logo"
-              width="150px"
-            />
-          </div>
-          <p class="mt-4 footer__desc mx-auto mx-lg-0">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div
+          class="md:col-span-2 mb-4 mb-lg-0 flex flex-col items-center md:items-start"
+        >
+          <img
+            src="~/assets/images/acorn-globus-logo-dark.svg"
+            alt="Company Logo"
+            width="150px"
+          />
+
+          <p class="mt-4 max-w-96 mx-auto md:mx-0">
             We do more than just develop software for our partners - we help
             build their businesses. Our experience working with Fortune 500
             companies will help you meet your objectives and reach your goals
             faster than you ever thought possible.
           </p>
-          <div
-            class="social__icons flex justify-content-lg-start justify-center"
-          >
+          <div class="social__icons flex md:justify-start justify-center mt-4">
             <a
               href="https://www.linkedin.com/company/acornglobus/about/"
               target="_blank"
@@ -27,7 +26,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+        <div class="mb-4 mb-lg-0">
           <h5 class="footer__subheading mb-4">Quick Links</h5>
           <ul class="footer__items list-unstyled mb-0">
             <li>
@@ -54,25 +53,28 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <div class="mb-4 mb-lg-0">
           <h5 class="footer__subheading mb-4">Reach Us</h5>
-          <div class="flex justify-content-lg-start justify-center">
+          <div class="flex md:justify-start justify-center">
             <ul
               class="footer__items list-unstyled flex flex-col align-items-start justify-center"
             >
-              <li class="text-white flex items-center">
-                <a class="footer__link" href="mailto:business@acornglobus.com">
+              <li class="flex items-center">
+                <a
+                  class="footer__link flex items-center"
+                  href="mailto:business@acornglobus.com"
+                >
                   <img src="~/assets/images/icons/mail.svg" alt="E-Mail" />
                   <span class="ml-2">business@acornglobus.com</span>
                 </a>
               </li>
-              <li class="text-white flex items-center">
-                <a class="footer__link" href="#">
+              <li class="flex items-center">
+                <a class="footer__link flex items-center" href="#">
                   <img src="~/assets/images/icons/phone.svg" alt="Phone" />
                   <span class="ml-2">+91 55555555555</span>
                 </a>
               </li>
-              <li class="footer__link text-white flex items-center">
+              <li class="footer__link flex items-center">
                 <img src="~/assets/images/icons/location.svg" alt="Location" />
                 <span class="ml-2">49/D, Naya Bazar, Jamshedpur</span>
               </li>
@@ -98,12 +100,6 @@
   padding-bottom: 12px;
 }
 
-.footer__desc {
-  max-width: 400px;
-  font-weight: 200;
-  letter-spacing: 0.5px;
-}
-
 .footer__subheading {
   font-size: 1.5rem;
   line-height: 32px;
@@ -117,9 +113,15 @@
 }
 
 .footer__link {
+  color: var(--Secondary-Black);
+
+  /* Body/default */
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
   text-decoration: none;
-  font-weight: 300;
-  color: white;
 }
 
 .social__icons {
@@ -127,8 +129,7 @@
 }
 
 .copyright {
-  font-size: 12px;
-  font-weight: 200;
-  letter-spacing: 0.8px;
+  font-size: 14px;
+  line-height: 22px;
 }
 </style>
