@@ -1,8 +1,8 @@
 <template>
-  <section id="expertize">
+  <section id="expertize" class="wrapper">
     <div class="container mx-auto px-4 md:px-12 text-center">
       <span class="subtext text-uppercase">Our Expertize</span>
-      <h2 class="subheading mb-4">Our Technology Stack</h2>
+      <h2 class="section__heading mb-12">Our Technology Stack</h2>
       <div class="tech-stacks">
         <div v-for="tech in technologies" class="technology">
           <div class="technology__image">
@@ -58,6 +58,7 @@ const technologies = [
   justify-content: center;
   gap: 24px;
 }
+
 .technology {
   display: flex;
   flex-direction: column;
@@ -65,9 +66,11 @@ const technologies = [
   justify-content: center;
   gap: 8px;
   padding: 16px;
-  height: 140px;
-  width: 140px;
+  height: 160px;
+  width: 160px;
+  transition: all 0.3s ease;
 }
+
 .technology__image {
   width: auto;
   display: flex;
@@ -76,6 +79,7 @@ const technologies = [
   margin: 0 20px;
   padding: 16px;
 }
+
 .technology__image img {
   width: 60px;
   height: 60px;
@@ -85,6 +89,7 @@ const technologies = [
   display: block;
   margin: 0 auto;
 }
+
 .technology span {
   font-size: 14px;
   font-weight: 500;
@@ -100,10 +105,12 @@ const technologies = [
   background: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.07);
 }
+
 @media screen and (max-width: 540px) {
   .tech-stacks {
     gap: 20px;
   }
+
   .technology {
     margin: 4px 30px;
     padding: 16px;
@@ -111,10 +118,9 @@ const technologies = [
     height: 120px;
     width: 120px;
   }
+
   .technology__image {
     margin: 0 10px;
-  }
-  .technology__image img {
   }
 }
 </style>
