@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card flex flex-col items-center lg:items-start">
     <img class="card__img" :src="icon" :alt="title" />
     <div class="card__content">
       <p class="card__content-title">{{ title }}</p>
@@ -21,9 +21,6 @@ const props = defineProps(["title", "description", "icon"]);
   box-sizing: border-box;
 }
 .card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 12px;
   flex: 1 0 0;
   border: none;

@@ -1,14 +1,14 @@
 <template>
   <section id="development-services" class="wrapper md:mb-8">
-    <div class="container__wrapper flex flex-col gap-10 lg:flex-row lg:gap-24">
+    <div
+      class="container__wrapper flex flex-col gap-10 lg:flex-row lg:gap-24 text-center lg:text-start"
+    >
       <div class="lg:w-1/2">
-        <h2
-          class="section__heading text-center mx-auto max-w-lg sticky top-8 left-0 lg:text-start"
-        >
+        <h2 class="section__heading mx-auto max-w-lg sticky top-8 left-0">
           Our End-to-end Web Application Development Services
         </h2>
       </div>
-      <div class="development-services__cards lg:w-1/2">
+      <div class="flex flex-col gap-8 lg:w-1/2">
         <Services.DevelopmentServicesCard
           v-for="card in cards"
           :key="card.title"
@@ -60,10 +60,4 @@ const cards = [
 ];
 </script>
 
-<style scoped>
-.development-services__cards {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-</style>
+<style scoped></style>
