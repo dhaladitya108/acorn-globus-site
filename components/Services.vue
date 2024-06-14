@@ -7,7 +7,10 @@
         <div
           class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-2 md:mt-8"
         >
-          <div v-for="card in cards" class="service__card">
+          <div
+            v-for="card in cards"
+            class="service__card flex flex-col items-center text-center md:text-start md:items-start"
+          >
             <div class="icon">
               <img :src="card.icon" :alt="card.title" />
             </div>
@@ -86,9 +89,6 @@ const cards = [
 
 <style scoped>
 .service__card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
   padding: 16px;
   border: 0.25px solid transparent;
