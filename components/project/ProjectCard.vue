@@ -7,7 +7,7 @@
       <img :src="image" alt="Cayzen" class="rounded-xl" />
     </div>
     <div
-      class="flex flex-col justify-center items-center lg:items-start gap-4 p-12"
+      class="flex flex-col justify-center items-center pt-8 lg:items-start gap-4 lg:p-12"
     >
       <div class="flex gap-2 items-center">
         <img :src="logo" alt="cayzen-logo" />
