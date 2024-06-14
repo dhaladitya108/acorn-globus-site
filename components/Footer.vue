@@ -38,7 +38,7 @@
               >
             </li>
             <li>
-              <nuxt-link to="/project" class="footer__link text-black"
+              <nuxt-link to="/projects" class="footer__link text-black"
                 >Projects</nuxt-link
               >
             </li>
