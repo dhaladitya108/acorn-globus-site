@@ -5,36 +5,17 @@
         {{ title }}
       </h4>
       <button class="btn" @click="expanded = !expanded">
-        <svg
-          v-show="expanded"
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M20 12H4"
-          ></path>
-        </svg>
-        <svg
+        <img
           v-show="!expanded"
-          class="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-          ></path>
-        </svg>
+          src="~/assets/images/icons/chevron-down.svg"
+          alt="Chevron Arrow"
+        />
+        <img
+          v-show="expanded"
+          src="~/assets/images/icons/chevron-down.svg"
+          alt="Chevron Arrow"
+          class="rotate-180"
+        />
       </button>
     </header>
     <div :style="contentStyle" class="content">
