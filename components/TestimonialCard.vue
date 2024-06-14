@@ -1,10 +1,12 @@
 <template>
   <div class="card">
-    <img class="card__rating" :src="fiveStar" alt="Five Star Rating" />
-    <h6 class="card__heading">“{{ title }}”</h6>
-    <p class="card__text">
-      {{ content }}
-    </p>
+    <div>
+      <img class="card__rating" :src="fiveStar" alt="Five Star Rating" />
+      <h6 class="card__heading">“{{ title }}”</h6>
+      <p class="card__text">
+        {{ content }}
+      </p>
+    </div>
     <div class="card__user">
       <img class="card__user-image" :src="avatar" :alt="name" />
       <div class="card__user-info">
@@ -29,6 +31,7 @@ const props = defineProps(["name", "position", "avatar", "title", "content"]);
   padding: 16px 24px;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 4px;
   align-self: stretch;
 }
@@ -82,11 +85,12 @@ const props = defineProps(["name", "position", "avatar", "title", "content"]);
 }
 
 .card__user-info-position {
+  margin-top: 4px;
   color: var(--Secondary-Black, #363636);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 21px;
   align-self: stretch;
 }
 

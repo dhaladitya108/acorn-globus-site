@@ -7,11 +7,7 @@
       <TestimonialCard
         v-for="testimonial in testimonials"
         :key="testimonial.name"
-        :name="testimonial.name"
-        :position="testimonial.position"
-        :avatar="testimonial.avatar"
-        :title="testimonial.title"
-        :content="testimonial.content"
+        v-bind="testimonial"
       />
     </div>
   </section>
@@ -25,27 +21,27 @@ import alon from "~/assets/images/testimonials/alon.jpeg";
 const testimonials = [
   {
     name: "Alon Diamant",
-    position: "CTO, Selectom",
+    position: "CTO at Mayple",
     avatar: alon,
-    title: "Ankit is a very proficient developer",
+    title: "Proficient and Innovative Development Team",
     content:
-      "Ankit is a very proficient developer, who is very quick to learn new technologies and concepts. He quickly dove in deep and generated impressive results of high quality, that are still operational to this day.",
+      "Acorn Globus is a very proficient team, quick to learn new technologies and concepts. They quickly dove in deep and generated impressive results of high quality that are still operational to this day.",
   },
   {
     name: "Enzo Zadrima",
-    position: "Co-Founder & CTO, EquipmentConnect",
+    position: "Chief Technology Officer at Viewber",
     avatar: enzo,
-    title: "He is a gifted developer",
+    title: "Exceptional Development and Vision",
     content:
-      "He is a gifted developer with a rare combination of attention to detail and overall sense for the big picture. He is very passionate about what he does and comes up proactively with improvements ideas.",
+      "Acorn Globus is a gifted team with a rare combination of attention to detail and an overall sense for the big picture. They are very passionate about what they do and come up proactively with improvement ideas..",
   },
   {
     name: "Bogdan Arsenie",
-    position: "Founder, OrganizedEffort",
+    position: "CTO at PerformLine & Social Impact Advocate",
     avatar: bogdan,
-    title: "Ankit is my go to person",
+    title: "Reliable Front-End Solutions",
     content:
-      "Ankit is my go to person when I need somebody I can trust to execute any front-end project. He's super attentive, communicates effectively and he will accurately manage your expectations for his time and involvement.",
+      "Acorn Globus is my go-to team when I need a trusted partner to execute any front-end project. They are super attentive, communicate effectively, and accurately manage your expectations for their time and involvement.",
   },
 ];
 </script>
