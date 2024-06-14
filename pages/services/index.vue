@@ -12,6 +12,18 @@
 import Testimonials from "~/components/Testimonials.vue";
 import WhyChooseUs from "~/components/services/WhyChooseUs.vue";
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
+
+useHead({
+  title: "Web Application Development Company | Acorn Globus",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Acorn Globus is a well-recognized web application development company that offers tech-driven and modern web app solutions to businesses and startups.",
+    },
+  ],
+  link: [{ rel: "canonical", href: "https://www.acronglobus.com/services" }],
+});
 </script>
 
 <style scoped>

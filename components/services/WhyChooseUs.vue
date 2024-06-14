@@ -1,5 +1,5 @@
 <template>
-  <section id="why-choose-us" class="bg__secondary wrapper mb-8">
+  <section id="why-choose-us" class="bg__secondary wrapper my-8">
     <div class="container__wrapper">
       <h2 class="section__heading text-center mb-14">
         Why Choose Acorn Globus as Your Web Development Agency

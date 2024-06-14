@@ -1,5 +1,5 @@
-import getSiteMeta from "./utils/getSiteMeta";
-const meta = getSiteMeta();
+// import getSiteMeta from "./utils/getSiteMeta";
+// const meta = getSiteMeta();
 
 export default defineNuxtConfig({
   devtools: { enabled: false },

@@ -68,6 +68,18 @@
 
 <script setup>
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
+
+useHead({
+  title: "Best ReactJS Development Company | Acorn Globus",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Looking for the Best ReactJS development company? We offer end-to-end reactjs services, from concept to deployment, ensuring optimal performance.",
+    },
+  ],
+  link: [{ rel: "canonical", href: "https://www.acronglobus.com/technology" }],
+});
 </script>
 
 <style scoped></style>
