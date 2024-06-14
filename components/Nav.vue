@@ -27,30 +27,30 @@
         :class="navMobileVisible ? 'block' : 'hidden'"
       >
         <div class="text-md mt-6 lg:flex-grow lg:mt-0">
-          <a
-            href="#"
+          <nuxt-link
+            to="/"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
             Home
-          </a>
-          <a
-            href="#"
+          </nuxt-link>
+          <nuxt-link
+            to="/services"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
             Services
-          </a>
-          <a
-            href="#"
+          </nuxt-link>
+          <nuxt-link
+            to="/project"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
             Projects
-          </a>
-          <a
-            href="#"
-            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500"
+          </nuxt-link>
+          <nuxt-link
+            to="/technology"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
-            Contact
-          </a>
+            Technology
+          </nuxt-link>
         </div>
       </div>
     </div>
