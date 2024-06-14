@@ -3,6 +3,7 @@
   <Testimonials />
   <DevelopmentServices />
   <Benefits />
+  <Technology.OtherRelatedServices />
   <Expertise />
   <Cta />
   <Footer />
