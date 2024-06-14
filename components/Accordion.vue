@@ -66,14 +66,6 @@ const infoStyle = computed(() => {
 </script>
 
 <style scoped>
-.question {
-  padding: 1rem 1.5rem;
-  border: 2px solid var(--clr-grey-special);
-  margin-bottom: 1rem;
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
-}
-
 .question p {
   color: var(--clr-grey-3);
   margin-bottom: 0;
