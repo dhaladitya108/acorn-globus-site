@@ -19,7 +19,6 @@ export default defineNuxtConfig({
   //     ],
   //   },
   // },
-  components: true,
   css: [
     // "~/assets/css/bootstrap.min.css",
     "vue-slick-carousel/dist/vue-slick-carousel.css",
@@ -30,6 +29,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },
+  ignore: ["**/pages/blog/**"],
   // hooks: {
   //     'content:file:beforeInsert': (document) => {
   //         if (document.extension === '.md') {

@@ -1,7 +1,7 @@
 <template>
-  <div class="container__wrapper ">
-    <h1>Privacy Policy</h1>
-    <h3 class="mt-3"><strong>General Information</strong></h3>
+  <div class="container__wrapper my-12">
+    <h1 class="text-3xl font-bold">Privacy Policy</h1>
+    <h3 class="mt-6"><strong>General Information</strong></h3>
     <p>
       We collect the e-mail addresses of those who communicate with us via
       e-mail, aggregate information on what pages consumers access or visit, and
