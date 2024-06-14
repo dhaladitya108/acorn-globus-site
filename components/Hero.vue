@@ -140,7 +140,7 @@
   .hero__btns {
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 24px;
   }
 }
 
