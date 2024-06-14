@@ -34,22 +34,34 @@
             Home
           </nuxt-link>
           <nuxt-link
-            to="/services"
+            to="/#testimonials"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
+          >
+            Testimonials
+          </nuxt-link>
+          <nuxt-link
+            to="/#services"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
             Services
           </nuxt-link>
           <nuxt-link
-            to="/project"
+            to="/#projects"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
             Projects
           </nuxt-link>
           <nuxt-link
-            to="/technology"
+            to="/#expertise"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
-            Technology
+            Expertise
+          </nuxt-link>
+          <nuxt-link
+            to="/#cta"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
+          >
+            Contact
           </nuxt-link>
         </div>
       </div>

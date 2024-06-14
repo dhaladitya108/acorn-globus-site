@@ -30,19 +30,27 @@
           <h5 class="footer__subheading mb-4">Quick Links</h5>
           <ul class="footer__items list-unstyled mb-0">
             <li>
-              <a href="#hero" class="footer__link text-black">Home</a>
+              <nuxt-link to="/" class="footer__link text-black">Home</nuxt-link>
             </li>
             <li>
-              <a href="#services" class="footer__link text-black">Services</a>
+              <nuxt-link to="/services" class="footer__link text-black"
+                >Services</nuxt-link
+              >
             </li>
             <li>
-              <a href="#projects" class="footer__link text-black">Projects</a>
+              <nuxt-link to="/project" class="footer__link text-black"
+                >Projects</nuxt-link
+              >
             </li>
             <li>
-              <a href="#expertize" class="footer__link text-black">Expertise</a>
+              <nuxt-link to="/technology" class="footer__link text-black"
+                >Technology</nuxt-link
+              >
             </li>
             <li>
-              <a href="#cta" class="footer__link text-black">Contact</a>
+              <nuxt-link to="/#cta" class="footer__link text-black"
+                >Contact</nuxt-link
+              >
             </li>
             <li>
               <a

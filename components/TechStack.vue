@@ -1,5 +1,5 @@
 <template>
-  <section id="techstack" class="wrapper">
+  <section id="expertise" class="wrapper">
     <div class="container__wrapper text-center">
       <span class="subtext text-uppercase">Our Expertize</span>
       <h2 class="section__heading mb-12">Our Technology Stack</h2>
