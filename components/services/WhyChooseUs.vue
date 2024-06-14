@@ -23,6 +23,8 @@ import lineChartUpIcon from "~/assets/images/services/why-choose-us__line-chart-
 import phoneIcon from "~/assets/images/services/why-choose-us__phone.svg";
 import searchRefractionIcon from "~/assets/images/services/why-choose-us__search-refraction.svg";
 import shieldTickIcon from "~/assets/images/services/why-choose-us__shield-tick.svg";
+import lighteningIcon from "~/assets/images/services/lightening.svg";
+import brushIcon from "~/assets/images/services/brush.svg";
 
 const cards = [
   {
@@ -32,7 +34,7 @@ const cards = [
       "Our data-driven approach ensures your web app converts visitors into leads and customers.",
   },
   {
-    icon: lineChartUpIcon,
+    icon: brushIcon,
     title: "Enhanced User Experience",
     description:
       "We design user-friendly web apps that are a joy to navigate and interact.",
@@ -56,7 +58,7 @@ const cards = [
       "Our solutions are built to grow with your business and prioritize robust security measures.",
   },
   {
-    icon: phoneIcon,
+    icon: lighteningIcon,
     title: "Skilled Talent",
     description:
       "Our most prized possession is the talented group of hard working individuals that could be working for you.",

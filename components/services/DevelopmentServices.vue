@@ -23,7 +23,7 @@
 import codeBrowserIcon from "~/assets/images/services/development-services__code-browser.svg";
 import databaseIcon from "~/assets/images/services/development-services__database.svg";
 import settingsIcon from "~/assets/images/services/development-services__settings.svg";
-import brushIcon from "~/assets/images/services/development-services__brush.svg";
+import brushIcon from "~/assets/images/services/brush.svg";
 import shoppingBagIcon from "~/assets/images/services/development-services__shopping-bag.svg";
 
 const cards = [
