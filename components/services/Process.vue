@@ -1,16 +1,12 @@
 <template>
-  <section id="process">
-    <div class="process__header">
-      <p>Our process for Web App Development Services</p>
-    </div>
-    <div class="process__cards">
-      <ProcessCard
-        v-for="card in cards"
-        :key="card.number"
-        :number="card.number"
-        :title="card.title"
-        :content="card.content"
-      />
+  <section id="process" class="wrapper">
+    <div class="container__wrapper">
+      <h2 class="section__heading text-center">
+        Our process for Web App Development Services
+      </h2>
+      <div class="grid gap-8 grid-cols-1 md:grid-cols-2 mt-12">
+        <ProcessCard v-for="card in cards" :key="card.number" v-bind="card" />
+      </div>
     </div>
   </section>
 </template>
@@ -54,21 +50,6 @@ const cards = [
 </script>
 
 <style scoped>
-#process {
-  display: flex;
-  padding: 96px 0;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  align-self: stretch;
-}
-.process__header {
-  display: flex;
-  max-width: 640px;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
 .process__header > p {
   color: var(--Black, #12141d);
   text-align: center;
@@ -76,15 +57,6 @@ const cards = [
   font-style: normal;
   font-weight: 700;
   line-height: 56px; /* 116.667% */
-}
-
-.process__cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 64px;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
 }
 
 @media screen and (max-width: 600px) {
@@ -102,10 +74,6 @@ const cards = [
     font-size: 32px;
     line-height: 32px; /* 133.333% */
     padding: 0 12px;
-  }
-  .process__cards {
-    padding: 0 24px;
-    gap: 32px;
   }
 }
 </style>

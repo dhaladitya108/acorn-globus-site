@@ -1,55 +1,12 @@
 <template>
-  <section class="bg__primary relative overflow-hidden" id="hero">
-    <Nav />
-    <div class="hero">
-      <div class="container__wrapper text-center">
-        <h1 class="hero__heading text-center">
-          Web Application Development Services
-        </h1>
-        <p class="hero__subheading">
-          Scale your business to new heights with Acorn Globus. Our dedicated
-          web app development services seamlessly grow your user base, no matter
-          the size or type of your company. Create purpose based custom
-          solutions to help you stand out in the market and satisfy customer
-          needs. - What are the needs? Desires the project is done on time and
-          is affordable?
-        </p>
-      </div>
-    </div>
-    <img
-      src="~/assets/images/acorn-watermark.png"
-      alt="Acorn Globus Logo Watermark"
-      class="hero-watermark"
-    />
-  </section>
-
+  <ServicesHero />
   <Testimonials />
-
   <WhyChooseUs />
-
   <DevelopmentServices />
-
-  <Process />
-
-  <Technologies />
-
+  <ServicesProcess />
+  <TechStack />
   <Expertise />
-
-  <div class="bg__primary relative overflow-hidden">
-    <Cta />
-    <img
-      src="~/assets/images/acorn-watermark.png"
-      alt="Acorn Globus Symbol Watermark"
-      class="footer-watermark-acorn absolute"
-      height="500"
-    />
-    <img
-      src="~/assets/images/footer-watermark.png"
-      alt="Footer Watermark"
-      class="footer-watermark-geometry absolute"
-    />
-  </div>
-
+  <Cta />
   <Footer />
 </template>
 
@@ -57,8 +14,6 @@
 import Testimonials from "~/components/Testimonials.vue";
 import WhyChooseUs from "~/components/services/WhyChooseUs.vue";
 import DevelopmentServices from "~/components/services/DevelopmentServices.vue";
-import Technologies from "~/components/services/Technologies.vue";
-import Process from "~/components/services/Process.vue";
 </script>
 
 <style scoped>

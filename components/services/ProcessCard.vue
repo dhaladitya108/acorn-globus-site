@@ -25,8 +25,6 @@ const props = defineProps(["number", "title", "content"]);
   border: 1px solid #e2e2e2;
   background: white;
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.03);
-  width: 400px;
-  max-width: 1200px;
   outline: none;
 }
 .card__number {
@@ -34,7 +32,7 @@ const props = defineProps(["number", "title", "content"]);
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
-  line-height: 26px; /* 54.167% */
+  line-height: 26px;
   letter-spacing: 1px;
 }
 .card__title {
@@ -42,7 +40,7 @@ const props = defineProps(["number", "title", "content"]);
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  line-height: 36px; /* 200% */
+  line-height: 36px;
   letter-spacing: 0;
 }
 .card__content {
@@ -50,7 +48,7 @@ const props = defineProps(["number", "title", "content"]);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px; /* 168.75% */
+  line-height: 27px;
   letter-spacing: 0;
 }
 

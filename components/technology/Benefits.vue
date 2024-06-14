@@ -1,5 +1,5 @@
 <template>
-  <section id="benefits" class="wrapper mt-8">
+  <section id="benefits" class="wrapper">
     <div class="container__wrapper flex flex-col gap-16">
       <h2 class="section__heading">Benefits of ReactJS Web Development</h2>
       <div class="flex flex-col gap-4 lg:flex-row xl:gap-8">

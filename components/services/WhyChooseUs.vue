@@ -1,16 +1,18 @@
 <template>
-  <section id="why-choose-us" class="bg__secondary">
-    <div class="why-choose-us__header">
-      <p>Why Choose Acorn Globus as Your Web Development Agency</p>
-    </div>
-    <div class="why-choose-us__cards">
-      <WhyChooseUsCard
-        v-for="card in cards"
-        :key="card.title"
-        :icon="card.icon"
-        :title="card.title"
-        :description="card.description"
-      />
+  <section id="why-choose-us" class="bg__secondary wrapper mb-8">
+    <div class="container__wrapper">
+      <h2 class="section__heading text-center mb-14">
+        Why Choose Acorn Globus as Your Web Development Agency
+      </h2>
+      <div class="why-choose-us__cards">
+        <WhyChooseUsCard
+          v-for="card in cards"
+          :key="card.title"
+          :icon="card.icon"
+          :title="card.title"
+          :description="card.description"
+        />
+      </div>
     </div>
   </section>
 </template>
@@ -39,7 +41,7 @@ const cards = [
     icon: phoneIcon,
     title: "Mobile-Responsive Design",
     description:
-      "Your web app will look flawless on all devices, from desktops to smartphones/",
+      "Your web app will look flawless on all devices, from desktops to smartphones",
   },
   {
     icon: searchRefractionIcon,
@@ -68,7 +70,7 @@ const cards = [
   padding: 96px 0;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 48px;
   align-self: stretch;
   background: #fafbff;
 }
@@ -98,6 +100,12 @@ const cards = [
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .why-choose-us__cards {
+    gap: 56px;
+  }
 }
 
 @media screen and (max-width: 600px) {

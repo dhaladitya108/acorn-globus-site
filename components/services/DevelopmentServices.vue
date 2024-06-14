@@ -1,5 +1,5 @@
 <template>
-  <section id="development-services" class="wrapper">
+  <section id="development-services" class="wrapper mb-8">
     <div class="container__wrapper flex flex-col gap-10 lg:flex-row lg:gap-24">
       <div class="lg:w-1/2">
         <h2
