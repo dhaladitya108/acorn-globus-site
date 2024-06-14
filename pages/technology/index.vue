@@ -5,8 +5,6 @@
   <Benefits />
   <Technology.OtherRelatedServices />
   <Expertise />
-  <Cta />
-  <Footer />
 </template>
 
 <script setup>

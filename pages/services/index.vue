@@ -6,8 +6,6 @@
   <ServicesProcess />
   <TechStack />
   <Expertise />
-  <Cta />
-  <Footer />
 </template>
 
 <script setup>

@@ -5,8 +5,6 @@
   <Project />
   <TechStack />
   <Expertise />
-  <Cta />
-  <Footer />
 </template>
 
 <script setup></script>
