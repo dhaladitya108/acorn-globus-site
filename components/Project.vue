@@ -34,21 +34,13 @@ const projects = [
     tags: ["design services", "web development", "strategy"],
   },
   {
-    title: "Rumie",
-    description:
-      "Rumie is an open community of motivated learners, thousands of amazing volunteers, a technology ecosystem but also a nonprofit.",
-    image: rumieImage,
-    logo: rumieLogo,
-    tags: ["design services", "web development", "strategy"],
-    imgPosition: "right",
-  },
-  {
     title: "Formester",
     description:
       "A form backend as a service. It makes creating form endpoints for websites very easy. It requires zero programming knowledge. The user has the full control over the look and feel of the form. In Formester validation, spam protection and integration with different CRMs are few clicks away.",
     image: formesterImage,
     logo: formesterLogo,
     tags: ["design services", "web development", "strategy"],
+    imgPosition: "right",
   },
 ];
 </script>
