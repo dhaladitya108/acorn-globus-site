@@ -35,7 +35,7 @@ const props = defineProps({
 });
 const expanded = ref(props.isOpen);
 const contentStyle = computed(() => {
-  return { "max-height": expanded.value ? "100px" : 0 };
+  return { "max-height": expanded.value ? "300px" : 0 };
 });
 
 const infoStyle = computed(() => {
