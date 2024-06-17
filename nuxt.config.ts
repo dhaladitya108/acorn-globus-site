@@ -1,12 +1,5 @@
-// import getSiteMeta from "./utils/getSiteMeta";
-// const meta = getSiteMeta();
-
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  // ssr: false,
-  // generate: {
-  //     fallback: true
-  // },
   // app: {
   //   head: {
   //     title: "Acorn Globus",
@@ -20,7 +13,6 @@ export default defineNuxtConfig({
   //   },
   // },
   css: [
-    // "~/assets/css/bootstrap.min.css",
     "vue-slick-carousel/dist/vue-slick-carousel.css",
     "vue-slick-carousel/dist/vue-slick-carousel-theme.css",
     "~/assets/css/main.css",
