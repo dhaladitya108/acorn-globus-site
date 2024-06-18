@@ -12,7 +12,7 @@
         >
           <span>← Back</span>
         </NuxtLink>
-        <nav
+        <!-- <nav
           v-if="doc.toc && doc.toc.length"
           class="navbar navbar-expand bg-white sticky-top py-3"
         >
@@ -39,7 +39,7 @@
               </li>
             </ul>
           </div>
-        </nav>
+        </nav> -->
         <h1 class="mb-1 article__heading">{{ doc.title }}</h1>
         <div class="flex sm-text my-2 datentimeToRead">
           <span>{{ formatDate(doc.createdAt) }}</span>
