@@ -27,6 +27,23 @@ articles = articles.value;
 articles.forEach((article) => {
   article.slug = article._path.replace("/blog/", "");
 });
+
+useHead({
+  title: "Blog | Acorn Globus",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Explore articles on technology, innovation, and industry leadership.",
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: `https://www.acronglobus.com/blog`,
+    },
+  ],
+});
 </script>
 
 <style>
