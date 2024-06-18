@@ -1,142 +1,147 @@
 <template>
-  <ContentDoc>
-    <template v-slot="{ doc }">
-      <article
-        class="container__wrapper mw-840 mt-8rem"
-        :class="{ 'mb-3rem': !(doc.cta && doc.cta.hidden) }"
-      >
-        <NuxtLink
-          :to="`/blog/`"
-          class="blog__back"
-          :class="doc.toc && doc.toc.length ? 'blog__back__margin' : ''"
+  <div class="bg__primary">
+    <Nav />
+  </div>
+  <div class="container__wrapper">
+    <ContentDoc>
+      <template v-slot="{ doc }">
+        <article
+          class="max-w-4xl mt-32 mx-auto"
+          :class="{ 'mb-12': !(doc.cta && doc.cta.hidden) }"
         >
-          <span>← Back</span>
-        </NuxtLink>
-        <!-- <nav
-          v-if="doc.toc && doc.toc.length"
-          class="navbar navbar-expand bg-white sticky-top py-3"
-        >
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item dropdown">
-                <a
-                  class="dropdown-toggle"
-                  href="#"
-                  id="tocMenuLink"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Table of Contents
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="tocMenuLink">
-                  <li v-for="link of doc.toc" :key="link.id">
-                    <NuxtLink class="dropdown-link" :to="`#${link.id}`">
-                      {{ link.text }}
-                    </NuxtLink>
+          <NuxtLink
+            :to="`/blog/`"
+            class="blog__back"
+            :class="doc.toc && doc.toc.length ? 'blog__back__margin' : ''"
+          >
+            <span>← Back</span>
+          </NuxtLink>
+          <!-- <nav
+              v-if="doc.toc && doc.toc.length"
+              class="navbar navbar-expand bg-white sticky-top py-3"
+            >
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      href="#"
+                      id="tocMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Table of Contents
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="tocMenuLink">
+                      <li v-for="link of doc.toc" :key="link.id">
+                        <NuxtLink class="dropdown-link" :to="`#${link.id}`">
+                          {{ link.text }}
+                        </NuxtLink>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </nav> -->
+          <h1 class="mb-1 article__heading">{{ doc.title }}</h1>
+          <div class="flex sm-text my-2 datentimeToRead">
+            <span>{{ formatDate(doc.createdAt) }}</span>
+            <!-- <span>|</span>
+              <div class="flex items-center justify-center timeToRead">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00016 2.02344C11.6802 2.02344 14.6668 5.0101 14.6668 8.6901C14.6668 12.3701 11.6802 15.3568 8.00016 15.3568C4.32016 15.3568 1.3335 12.3701 1.3335 8.6901C1.3335 5.0101 4.32016 2.02344 8.00016 2.02344ZM8.00016 14.0234C10.9468 14.0234 13.3335 11.6368 13.3335 8.6901C13.3335 5.74344 10.9468 3.35677 8.00016 3.35677C5.0535 3.35677 2.66683 5.74344 2.66683 8.6901C2.66683 11.6368 5.0535 14.0234 8.00016 14.0234ZM10.3575 5.3901L11.3002 6.33277L8.00016 9.63277L7.0575 8.6901L10.3575 5.3901V5.3901Z"
+                    fill="#8c8c8c"
+                  ></path>
+                </svg>
+                <span>{{ doc.readingStats.text }}</span>
+              </div> -->
           </div>
-        </nav> -->
-        <h1 class="mb-1 article__heading">{{ doc.title }}</h1>
-        <div class="flex sm-text my-2 datentimeToRead">
-          <span>{{ formatDate(doc.createdAt) }}</span>
-          <!-- <span>|</span>
-          <div class="flex items-center justify-center timeToRead">
-            <svg
-              width="16"
-              height="17"
-              viewBox="0 0 16 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8.00016 2.02344C11.6802 2.02344 14.6668 5.0101 14.6668 8.6901C14.6668 12.3701 11.6802 15.3568 8.00016 15.3568C4.32016 15.3568 1.3335 12.3701 1.3335 8.6901C1.3335 5.0101 4.32016 2.02344 8.00016 2.02344ZM8.00016 14.0234C10.9468 14.0234 13.3335 11.6368 13.3335 8.6901C13.3335 5.74344 10.9468 3.35677 8.00016 3.35677C5.0535 3.35677 2.66683 5.74344 2.66683 8.6901C2.66683 11.6368 5.0535 14.0234 8.00016 14.0234ZM10.3575 5.3901L11.3002 6.33277L8.00016 9.63277L7.0575 8.6901L10.3575 5.3901V5.3901Z"
-                fill="#8c8c8c"
-              ></path>
-            </svg>
-            <span>{{ doc.readingStats.text }}</span>
-          </div> -->
-        </div>
-        <div class="sm-text mt-1">
-          by
-          <span class="article__author">{{ doc.author }}</span>
-        </div>
-        <p class="article__desc mt-4">{{ doc.description }}</p>
-        <ContentRenderer :value="doc" />
-      </article>
-    </template>
-  </ContentDoc>
-  <!-- <div class="container__wrapper relative">
-    <article
-      class="container__wrapper mw-840 mt-8rem"
-      :class="{ 'mb-3rem': !(article.cta && article.cta.hidden) }"
-    >
-      <NuxtLink
-        :to="`/blog/`"
-        class="blog__back"
-        :class="article.toc.length ? 'blog__back__margin' : ''"
-      >
-        <span>← Back</span>
-      </NuxtLink>
-      <nav
-        v-if="article.toc.length"
-        class="navbar navbar-expand bg-white sticky-top py-3"
-      >
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a
-                class="dropdown-toggle"
-                href="#"
-                id="tocMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Table of Contents
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="tocMenuLink">
-                <li v-for="link of article.toc" :key="link.id">
-                  <NuxtLink class="dropdown-link" :to="`#${link.id}`">
-                    {{ link.text }}
-                  </NuxtLink>
+          <div class="sm-text mt-1">
+            by
+            <span class="article__author">{{ doc.author }}</span>
+          </div>
+          <p class="article__desc mt-4">{{ doc.description }}</p>
+          <ContentRenderer :value="doc" />
+        </article>
+      </template>
+    </ContentDoc>
+    <!-- <div class="container__wrapper relative">
+        <article
+          class="container__wrapper mw-840 mt-32"
+          :class="{ 'mb-12': !(article.cta && article.cta.hidden) }"
+        >
+          <NuxtLink
+            :to="`/blog/`"
+            class="blog__back"
+            :class="article.toc.length ? 'blog__back__margin' : ''"
+          >
+            <span>← Back</span>
+          </NuxtLink>
+          <nav
+            v-if="article.toc.length"
+            class="navbar navbar-expand bg-white sticky-top py-3"
+          >
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    href="#"
+                    id="tocMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Table of Contents
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="tocMenuLink">
+                    <li v-for="link of article.toc" :key="link.id">
+                      <NuxtLink class="dropdown-link" :to="`#${link.id}`">
+                        {{ link.text }}
+                      </NuxtLink>
+                    </li>
+                  </ul>
                 </li>
               </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="mb-1 article__heading">{{ article.title }}</h1>
-      <div class="flex sm-text my-2 datentimeToRead">
-        <span>{{ formatDate(article.createdAt) }}</span>
-        <span>|</span>
-        <div class="flex items-center justify-center timeToRead">
-          <svg
-            width="16"
-            height="17"
-            viewBox="0 0 16 17"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8.00016 2.02344C11.6802 2.02344 14.6668 5.0101 14.6668 8.6901C14.6668 12.3701 11.6802 15.3568 8.00016 15.3568C4.32016 15.3568 1.3335 12.3701 1.3335 8.6901C1.3335 5.0101 4.32016 2.02344 8.00016 2.02344ZM8.00016 14.0234C10.9468 14.0234 13.3335 11.6368 13.3335 8.6901C13.3335 5.74344 10.9468 3.35677 8.00016 3.35677C5.0535 3.35677 2.66683 5.74344 2.66683 8.6901C2.66683 11.6368 5.0535 14.0234 8.00016 14.0234ZM10.3575 5.3901L11.3002 6.33277L8.00016 9.63277L7.0575 8.6901L10.3575 5.3901V5.3901Z"
-              fill="#8c8c8c"
-            ></path>
-          </svg>
-          <span>{{ article.readingStats.text }}</span>
-        </div>
-      </div>
-      <div class="sm-text mt-1">
-        by
-        <span class="article__author">{{ article.author }}</span>
-      </div>
-      <p class="article__desc mt-4">{{ article.description }}</p>
-      <nuxt-content :document="article" />
-    </article>
-  </div> -->
+            </div>
+          </nav>
+          <h1 class="mb-1 article__heading">{{ article.title }}</h1>
+          <div class="flex sm-text my-2 datentimeToRead">
+            <span>{{ formatDate(article.createdAt) }}</span>
+            <span>|</span>
+            <div class="flex items-center justify-center timeToRead">
+              <svg
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.00016 2.02344C11.6802 2.02344 14.6668 5.0101 14.6668 8.6901C14.6668 12.3701 11.6802 15.3568 8.00016 15.3568C4.32016 15.3568 1.3335 12.3701 1.3335 8.6901C1.3335 5.0101 4.32016 2.02344 8.00016 2.02344ZM8.00016 14.0234C10.9468 14.0234 13.3335 11.6368 13.3335 8.6901C13.3335 5.74344 10.9468 3.35677 8.00016 3.35677C5.0535 3.35677 2.66683 5.74344 2.66683 8.6901C2.66683 11.6368 5.0535 14.0234 8.00016 14.0234ZM10.3575 5.3901L11.3002 6.33277L8.00016 9.63277L7.0575 8.6901L10.3575 5.3901V5.3901Z"
+                  fill="#8c8c8c"
+                ></path>
+              </svg>
+              <span>{{ article.readingStats.text }}</span>
+            </div>
+          </div>
+          <div class="sm-text mt-1">
+            by
+            <span class="article__author">{{ article.author }}</span>
+          </div>
+          <p class="article__desc mt-4">{{ article.description }}</p>
+          <nuxt-content :document="article" />
+        </article>
+      </div> -->
+  </div>
 </template>
 
 <script setup>
@@ -228,18 +233,6 @@ useHead({
 
 .article__author {
   font-weight: 600;
-}
-
-.mw-840 {
-  max-width: 840px;
-}
-
-.mt-8rem {
-  margin-block: 8rem;
-}
-
-.mb-3rem {
-  margin-bottom: 3rem;
 }
 
 .datentimeToRead {
