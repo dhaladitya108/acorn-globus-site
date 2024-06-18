@@ -4,6 +4,7 @@
     class="flex flex-col flex-md-row gap-md-4 gap-3 blog__card"
   >
     <img
+      class="rounded"
       :src="article.coverImg"
       :alt="article.coverImgAlt"
       :title="article.coverImgAlt"
