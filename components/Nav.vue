@@ -58,6 +58,12 @@
             Expertise
           </nuxt-link>
           <nuxt-link
+            to="/blog"
+            class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
+          >
+            Blog
+          </nuxt-link>
+          <nuxt-link
             to="/#cta"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >

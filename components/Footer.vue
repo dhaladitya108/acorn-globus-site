@@ -50,6 +50,11 @@
               >
             </li>
             <li>
+              <nuxt-link to="/blog" class="footer__link text-black"
+                >Blog</nuxt-link
+              >
+            </li>
+            <li>
               <nuxt-link to="/#cta" class="footer__link text-black"
                 >Contact</nuxt-link
               >
