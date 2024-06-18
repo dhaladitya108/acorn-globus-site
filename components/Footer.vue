@@ -5,11 +5,13 @@
         <div
           class="md:col-span-2 mb-4 mb-lg-0 flex flex-col items-center md:items-start"
         >
-          <img
-            src="~/assets/images/acorn-globus-logo-dark.svg"
-            alt="Company Logo"
-            width="150px"
-          />
+          <nuxt-link to="/">
+            <img
+              src="~/assets/images/acorn-globus-logo-dark.svg"
+              alt="Company Logo"
+              width="150px"
+            />
+          </nuxt-link>
 
           <p class="mt-4 max-w-96 mx-auto md:mx-0">
             We do more than just develop software for our partners - we help

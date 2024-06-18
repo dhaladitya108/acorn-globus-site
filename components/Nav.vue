@@ -40,7 +40,7 @@
             Testimonials
           </nuxt-link>
           <nuxt-link
-            to="/#services"
+            to="/services"
             class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-red-500 mr-8"
           >
             Services
