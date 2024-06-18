@@ -159,6 +159,8 @@ useHead({
 }
 
 .nuxt-content img {
+  margin-block: 16px;
+  border-radius: 4px;
   height: auto;
   width: 100%;
 }
