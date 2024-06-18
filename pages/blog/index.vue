@@ -3,38 +3,16 @@
     <div class="bg__primary">
       <Nav />
     </div>
-    <div class="relative overflow-hidden mb-5 pb-5">
+    <div class="container__wrapper relative overflow-hidden mb-5 pb-5">
       <h1 class="big__heading my-20 text-center">Our Blog</h1>
-      <div class="flex flex-col gap-16 container__wrapper">
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-16">
         <BlogCard
           v-for="article in articles"
           :key="article.title"
           :article="article"
         />
       </div>
-      <img
-        src="@/assets/images/acorn-light-watermark.png"
-        alt="Acorn Watermark"
-        class="absolute acorn-light-watermark"
-      />
     </div>
-    <div class="bg__primary relative overflow-hidden">
-      <Cta />
-
-      <img
-        src="@/assets/images/acorn-watermark.png"
-        alt="Acorn Globus Symbol Watermark"
-        class="footer-watermark-acorn absolute"
-        height="500"
-      />
-      <img
-        src="@/assets/images/footer-watermark.png"
-        alt="Footer Watermark"
-        class="footer-watermark-geometry absolute"
-      />
-    </div>
-
-    <Footer />
   </div>
 </template>
 
