@@ -48,9 +48,9 @@ const formatDate = (date) => {
 }
 
 .blog__heading {
-  font-size: 28px;
-  line-height: 36px;
-  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
