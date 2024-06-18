@@ -21,7 +21,11 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
   },
-  ignore: ["**/pages/blog/**"],
+  content: {
+    markdown: {
+      anchorLinks: false,
+    },
+  },
   // hooks: {
   //     'content:file:beforeInsert': (document) => {
   //         if (document.extension === '.md') {

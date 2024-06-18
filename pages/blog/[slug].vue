@@ -134,7 +134,7 @@ useHead({
 
 .nuxt-content h3 {
   font-size: 1.25rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   color: hsla(0, 0%, 20%, 1);
 }
