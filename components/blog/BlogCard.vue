@@ -11,8 +11,8 @@
     <div class="flex flex-col overflow-hidden">
       <div class="flex align-items-baseline gap-2">
         <span class="sm__text">{{ article.topic }}</span>
-        <span class="text-gray">•</span>
-        <span class="sm__text">{{ article?.readingStats?.text }}</span>
+        <!-- <span class="text-gray">•</span>
+        <span class="sm__text">{{ article?.readingStats?.text }}</span> -->
       </div>
       <h2 class="blog__heading my-2">
         {{ article.title }}
