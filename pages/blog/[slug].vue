@@ -42,8 +42,8 @@
         </nav>
         <h1 class="mb-1 article__heading">{{ doc.title }}</h1>
         <div class="flex sm-text my-2 datentimeToRead">
-          <!-- <span>{{ formatDate(doc.createdAt) }}</span> -->
-          <span>|</span>
+          <span>{{ formatDate(doc.createdAt) }}</span>
+          <!-- <span>|</span>
           <div class="flex items-center justify-center timeToRead">
             <svg
               width="16"
@@ -57,8 +57,8 @@
                 fill="#8c8c8c"
               ></path>
             </svg>
-            <!-- <span>{{ doc.readingStats.text }}</span> -->
-          </div>
+            <span>{{ doc.readingStats.text }}</span>
+          </div> -->
         </div>
         <div class="sm-text mt-1">
           by
@@ -140,8 +140,6 @@
 </template>
 
 <script setup>
-// const route = useRoute();
-
 // let article = await useAsyncData("articles-list", () =>
 //   queryContent("blog")
 //     .where({
@@ -151,33 +149,22 @@
 // ).data.value;
 // console.log("article", article);
 
-// const formatDate = (date) => {
-//   const options = { year: "numeric", month: "long", day: "numeric" };
-//   return new Date(date).toLocaleDateString("en", options);
-// };
+const formatDate = (date) => {
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  return new Date(date).toLocaleDateString("en", options);
+};
 // const to = () => {
 //   route.push("/blog/");
 // };
 
-// const metaData = {
-//   type: "article",
-//   url: `https://acornglobus.com/blog/${route.params.slug}/`,
-//   title: article.metaTitle,
-//   description: article.metaDescription,
-//   mainImage: article.coverImg
-//     ? `https://acornglobus.com/${article.coverImg}`
-//     : "https://acornglobus.com/acorn-globus.png",
-//   mainImageAlt:
-//     this.article.coverImgAlt ||
-//     "Building Innovative Software For Industry Leaders",
-//   keywords: this.article.keywords,
-// };
-// const meta = getSiteMeta(metaData);
-
-// useHead({
-//   title: article.metaTitle,
-//   meta: meta,
-// });
+useHead({
+  link: [
+    {
+      rel: "canonical",
+      href: `https://www.acronglobus.com/blog/${useRoute().params.slug}`,
+    },
+  ],
+});
 </script>
 
 <style>
